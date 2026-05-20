@@ -1,0 +1,10 @@
+U1
+U2
+U4
+U5
+U6
+U1_yeast
+TPP
+RNaseP_nuc
+RNase_MRP
+Fungi_SRP
