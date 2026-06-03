@@ -4,13 +4,13 @@ use Cwd 'abs_path';
 my $cd_path = abs_path($0); 
 $cd_path = get_path($cd_path);
 
-my $fna_in = "NA"; #"/Volumes/archive/brownlab/DB/RefSeq219/fungi/C/Coprinopsis_cinerea_okayama7#130-240176#GCF_000182895.1/GCF_000182895.1_CC3_genomic.fna";
-my $gff_in = "NA"; #"/Volumes/archive/brownlab/DB/RefSeq219/fungi/C/Coprinopsis_cinerea_okayama7#130-240176#GCF_000182895.1/GCF_000182895.1_CC3_genomic.gff";
+my $fna_in = "NA";
+my $gff_in = "NA";
 my $outdir = "Fungi_ncRNA";
 my $fungal_class = "Fungi";
 my $run_rnammer_trnascan = 0;
 my $gffcmp = 0;
-my $assm = "NA"; #"GCF_000182895.1";
+my $assm = "NA";
 my $core_cm_cutoff = 60;
 my $sno_cm_cutoff = 30;
 my $srp_cm_cutoff = 30;
@@ -46,7 +46,7 @@ foreach(@ARGV) {
 		$run_rnammer_trnascan = 1;
 	}
 	
-	#Run optional dependencies GFFCompare. Not run by default. Skipped if a GFF annotation is not provided.
+	#Run GFFCompare to test whether predict ncRNAs overlap with features on the same strand. Not run by default. Skipped if a GFF annotation is not provided.
 	if (@ARGV[$ind] eq '-gffcmp') {
 		$gffcmp = 1;
 	}
