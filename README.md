@@ -173,22 +173,23 @@ perl Fungi_ncRNA.pl \
 
 ## Command-line options
 
-| Option                  |       Required? | Default          | Description                                                                                                                                                         |
-| ----------------------- | --------------: | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `-fna`                  |             Yes | `NA`             | Input genome assembly in FASTA format.                                                                                                                              |
-| `-gff`                  | No, recommended | `NA`             | Existing genome annotation in GFF format. Used for combined output and optional GFFCompare analysis.                                                                |
-| `-fungal_class`         |              No | `Fungi`          | Fungal taxonomic class. If supplied, class-specific covariation models are used where available. Otherwise, fungi-wide models are used.                             |
-| `-run_rnammer_trnascan` |              No | off              | Run optional RNAmmer and tRNAscan-SE predictions.                                                                                                                   |
-| `-gffcmp`               |              No | off              | Run GFFCompare. Skipped if no GFF annotation is provided.                                                                                                           |
-| `-out`                  |              No | `Fungi_ncRNA`    | Output directory. Existing directories with the same name will be removed and recreated.                                                                            |
-| `-gcf`                  |              No | `NA`             | Assembly ID for multi-contig genome files.                                                                                                                          |
-| `-core_cm_cutoff`       |              No | `60`             | `cmsearch` score cutoff for fungi fine-tuned or class-specific core ncRNA models.                                                                                   |
-| `-sno_cm_cutoff`        |              No | `30`             | `cmsearch` score cutoff for fungi fine-tuned snoRNA models.                                                                                                         |
-| `-srp_cm_cutoff`        |              No | `30`             | `cmsearch` score cutoff for fungal SRP covariation models.                                                                                                          |
-| `-include_sn_variants`  |              No | off              | Also predict snRNA variants. By default, these variants are excluded.                                                                                               |
-| `-reanalyse`            |              No | `NA`             | Reanalyse a previous output directory, for example to add RNAmmer and tRNAscan-SE predictions if they were not run previously.                                      |
-| `-merge_separately`     |              No | off              | When overlaps occur, prefer RNAmmer rRNA predictions and tRNAscan-SE tRNA predictions where available; otherwise use the best-scoring covariation-model prediction. |
-| `-rfam_path`            |              No | `Rfam/Rfam_f.cm` | Path to an alternative Rfam covariance-model file. Useful when using an updated Rfam release or custom model set.                                                   |
+| Option                  |       Required?     | Default          | Description                                                                                                                                                         |
+| ----------------------- | ------------------: | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-fna`                  |                 Yes | `NA`             | Input genome assembly in FASTA format.                                                                                                                              |
+| `-gff`                  | No, but recommended | `NA`             | Existing genome annotation in GFF format. Used for combined output and optional GFFCompare analysis.                                                                |
+| `-fungal_class`         |                  No | `Fungi`          | Fungal taxonomic class. If supplied, class-specific covariation models are used where available. Otherwise, fungi-wide models are used.                             |
+| `-run_rnammer_trnascan` |                  No | off              | Run optional RNAmmer and tRNAscan-SE predictions.                                                                                                                   |
+| `-gffcmp`               | No, but recommended | off              | Run GFFCompare. Skipped if no GFF annotation is provided.                                                                                                           |
+| `-out`                  |                  No | `Fungi_ncRNA`    | Output directory. Existing directories with the same name will be removed and recreated.                                                                            |
+| `-gcf`                  |                  No | `NA`             | Assembly ID for multi-contig genome files.                                                                                                                          |
+| `-core_cm_cutoff`       |                  No | `60`             | `cmsearch` score cutoff for fungi fine-tuned or class-specific core ncRNA models.                                                                                   |
+| `-sno_cm_cutoff`        |                  No | `30`             | `cmsearch` score cutoff for fungi fine-tuned snoRNA models.                                                                                                         |
+| `-srp_cm_cutoff`        |                  No | `30`             | `cmsearch` score cutoff for fungal SRP covariation models.                                                                                                          |
+| `-include_sn_variants`  |                  No | off              | Also predict snRNA variants. By default, these variants are excluded.                                                                                               |
+| `-reanalyse`            |                  No | `NA`             | Reanalyse a previous output directory, for example to add RNAmmer and tRNAscan-SE predictions if they were not run previously.                                      |
+| `-merge_separately`     | No, but recommended | off              | When overlaps occur, prefer RNAmmer rRNA predictions and tRNAscan-SE tRNA predictions where available; otherwise use the best-scoring covariation-model prediction. |
+| `-rfam_path`            |                  No | `Rfam/Rfam_f.cm` | Path to an alternative Rfam covariance-model file. Useful when using an updated Rfam release or custom model set.                                                   |
+| `-h`                    |                  No | off              | Display `help.txt`, the help manual.                                                                                                                                |
 
 ## Choosing `-fungal_class`
 
