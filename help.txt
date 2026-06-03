@@ -1,0 +1,266 @@
+Fun_ncRNA: fungal non-coding RNA prediction pipeline
+
+USAGE
+perl Fungi_ncRNA.pl -fna genome.fna [options]
+
+DESCRIPTION
+Fun_ncRNA predicts non-coding RNAs in fungal genomes using covariance
+models fine-tuned for fungi. It can use fungi-wide models or
+class-specific fungal models, optionally integrates RNAmmer and
+tRNAscan-SE predictions, removes redundant/overlapping predictions,
+and writes GFF and summary outputs.
+
+REQUIRED ARGUMENTS
+-fna FILE
+Input genome assembly in FASTA format.
+
+OPTIONAL INPUTS
+-gff FILE
+Existing genome annotation in GFF format.
+Recommended if you want combined annotation output or GFFCompare
+comparison against an existing annotation.
+
+-fungal_class CLASS
+Fungal taxonomic class. Class-specific covariance models will be
+used where available. If not supplied, the default fungi-wide model
+setting is used.
+
+```
+  Default: Fungi
+
+  Examples:
+    Eurotiomycetes
+    Sordariomycetes
+    Saccharomycetes
+    Dothideomycetes
+    Agaricomycetes
+    Leotiomycetes
+    Tremellomycetes
+    Microsporidia
+    Fungi
+```
+
+-gcf ID
+Assembly ID for the input genome, useful for multi-contig genome
+files and downstream summaries.
+
+```
+  Default: NA
+```
+
+OUTPUT OPTIONS
+-out DIR
+Output directory.
+
+```
+  Default: Fungi_ncRNA
+
+  WARNING: if the output directory already exists, it will be removed
+  and recreated.
+```
+
+SEARCH CUTOFF OPTIONS
+-core_cm_cutoff NUMBER
+CMSearch score cutoff for fungi fine-tuned or class-specific core
+ncRNA covariance models.
+
+```
+  Default: 60
+```
+
+-sno_cm_cutoff NUMBER
+CMSearch score cutoff for fungi fine-tuned snoRNA covariance models.
+
+```
+  Default: 30
+```
+
+-srp_cm_cutoff NUMBER
+CMSearch score cutoff for fungal SRP covariance models.
+
+```
+  Default: 30
+```
+
+PREDICTION OPTIONS
+-include_sn_variants
+Also predict snRNA variants.
+By default, snRNA variants are excluded.
+
+-run_rnammer_trnascan
+Run optional RNAmmer and tRNAscan-SE prediction steps.
+These are not run by default.
+
+-merge_separately
+Use a specialised merge strategy for rRNA and tRNA predictions.
+
+```
+  When overlapping predictions occur, this option prioritises the best
+  LSU, SSU or 5S rRNA prediction from RNAmmer if available; otherwise
+  it uses the best corresponding Rfam covariance-model prediction.
+
+  Similarly, for tRNAs, it prioritises the best tRNAscan-SE prediction
+  if available; otherwise it uses the best corresponding Rfam
+  covariance-model prediction.
+
+  For all remaining overlaps, the best-scoring prediction is retained.
+
+  By default, the pipeline keeps the best-scoring prediction whenever
+  overlapping predictions occur.
+```
+
+-rfam_path FILE
+Path to an alternative Rfam covariance-model file.
+
+```
+  Default:
+    Rfam/Rfam_f.cm
+
+  The default file is a subset of Rfam models with at least one hit
+  in RefSeq v219 fungal genomes.
+```
+
+REANALYSIS OPTIONS
+-reanalyse DIR
+Reanalyse a previous Fun_ncRNA output directory.
+
+```
+  This is useful if the pipeline was previously run without RNAmmer
+  and tRNAscan-SE, and you later want to add these optional predictions.
+
+  The previous output directory should contain an NCRNA/ subdirectory.
+```
+
+COMPARISON OPTIONS
+-gffcmp
+Run GFFCompare against the provided GFF annotation.
+
+```
+  This option is skipped if -gff is not supplied.
+```
+
+HELP
+-h
+Show this help message and exit.
+
+--help
+Show this help message and exit.
+
+EXAMPLES
+
+1. Minimal run:
+
+   perl Fungi_ncRNA.pl 
+   -fna genome.fna
+
+2. Run with genome annotation and custom output directory:
+
+   perl Fungi_ncRNA.pl 
+   -fna genome.fna 
+   -gff genome.gff 
+   -out Fun_ncRNA_output
+
+3. Run with a fungal class-specific model setting:
+
+   perl Fungi_ncRNA.pl 
+   -fna genome.fna 
+   -gff genome.gff 
+   -fungal_class Sordariomycetes 
+   -gcf GCF_000000000.1 
+   -out Fun_ncRNA_output
+
+4. Full run with optional RNAmmer/tRNAscan-SE predictions and GFFCompare:
+
+   perl Fungi_ncRNA.pl 
+   -fna genome.fna 
+   -gff genome.gff 
+   -fungal_class Sordariomycetes 
+   -gcf GCF_000000000.1 
+   -out Fun_ncRNA_full 
+   -run_rnammer_trnascan 
+   -gffcmp 
+   -merge_separately
+
+5. Reanalyse previous output after installing optional dependencies:
+
+   perl Fungi_ncRNA.pl 
+   -reanalyse previous_output_directory 
+   -out reanalysed_output 
+   -run_rnammer_trnascan
+
+MAIN OUTPUT FILES <outdir>/input_genome.ncrna.gff
+Final predicted ncRNA annotation in GFF-like gene/mRNA/exon format.
+
+<outdir>/input_genome.gff
+Copy of the input GFF annotation, if -gff was supplied.
+
+<outdir>/input_genome.combined.gff
+Combined input annotation and predicted ncRNA annotation, sorted by
+contig and genomic start coordinate. Produced when -gff is supplied.
+
+<outdir>/summary.txt
+Summary of predicted ncRNA features.
+
+<outdir>/log.txt
+Standard pipeline log.
+
+<outdir>/log.err.txt
+Error log.
+
+<outdir>/NCRNA/input_genome.all.nr.gff
+Non-redundant ncRNA predictions after filtering and merging.
+
+<outdir>/NCRNA/input_genome.all.nr.assm.gff
+Non-redundant predictions with additional ID, assembly and ncRNA
+class fields.
+
+<outdir>/NCRNA/input_genome.all.nr.assm.gffcmp.gff
+Predictions annotated with GFFCompare-style comparison codes,
+when available.
+
+DEPENDENCIES
+Required:
+Perl
+Infernal
+bedtools
+gffread
+gffcompare
+
+Optional:
+tRNAscan-SE
+RNAmmer
+HMMER or HMMER2, required by RNAmmer depending on the RNAmmer setup
+
+Most required dependencies can be installed with conda/bioconda, for example:
+
+```
+conda create -n fun_ncrna \
+  -c conda-forge -c bioconda \
+  perl infernal bedtools gffread gffcompare
+
+conda activate fun_ncrna
+```
+
+tRNAscan-SE and HMMER can also usually be installed with bioconda:
+
+```
+conda install -n fun_ncrna \
+  -c conda-forge -c bioconda \
+  trnascan-se hmmer
+```
+
+RNAmmer must be obtained and installed separately according to the
+RNAmmer developer instructions. After installing RNAmmer, make sure
+the rnammer executable and the required HMMER/HMMER2 executable are
+available in your PATH or correctly configured in the RNAmmer setup.
+
+NOTES
+
+* The pipeline expects the supporting scripts and model/data directories
+  to remain in their repository locations relative to Fungi_ncRNA.pl.
+* If -rfam_path is not supplied, the pipeline uses Rfam/Rfam_f.cm.
+* If -gffcmp is supplied without -gff, GFFCompare will be skipped.
+* Optional RNAmmer and tRNAscan-SE steps are only run when
+  -run_rnammer_trnascan is supplied.
+* Use a new output directory for each run unless you intentionally want
+  to overwrite the previous output.

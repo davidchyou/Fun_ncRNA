@@ -97,6 +97,11 @@ foreach(@ARGV) {
 		$rfam_path = @ARGV[$ind + 1];
 	}
 	
+	#print help.
+	if (@ARGV[$ind] eq '-h') {
+		system("cat $cd_path/help.txt");
+	}
+	
 	$ind++;
 }
 
