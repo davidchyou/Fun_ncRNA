@@ -14,6 +14,11 @@ my $version = '1.2';
 
 use Getopt::Long;
 use strict;
+use Cwd 'getcwd';
+use Cwd 'abs_path';
+
+my $cd_path = abs_path($0); 
+$cd_path = get_path($cd_path);
 
 #############################################################
 ##      RNAmmer Wrapper version ('rnammer')                ##
@@ -32,7 +37,7 @@ my ($TEMP_WORKING_DIR , $multi,@MOL,%MOL_KEYS,$mol,$kingdom,%FLANK,$gff, $xml , 
 ## PROGRAM CONFIGURATION BEGIN
 
 # the path of the program
-my $INSTALL_PATH = "/Volumes/userdata/staff_users/davidchyou/JGI_Fungal_Pipeline/rnammer"; #"/usr/local/bin/rnammer";
+my $INSTALL_PATH = "$cd_path"; #"/usr/local/bin/rnammer";
 
 # The library in which HMMs can be found
 my $HMM_LIBRARY = "$INSTALL_PATH/lib";
@@ -47,10 +52,10 @@ chomp ( my $uname = `uname`);
 my $HMMSEARCH_BINARY;
 my $PERL;
 if ( $uname eq "Linux" ) {
-	$HMMSEARCH_BINARY = "/Volumes/userdata/staff_users/davidchyou/JGI_Fungal_Pipeline/hmmsearch2"; #"/usr/local/bin/hmmsearch2";
+	$HMMSEARCH_BINARY = "$cd_path/hmmsearch2"; #"/usr/local/bin/hmmsearch2";
 	$PERL = "/usr/bin/perl";
 } elsif ( $uname eq "IRIX64" ) {
-	$HMMSEARCH_BINARY = "/usr/local/bin/hmmsearch2";
+	$HMMSEARCH_BINARY = "$cd_path/hmmsearch2"; #"/usr/local/bin/hmmsearch2";
 	$PERL = "/usr/sbin/perl";
 } else {
 	die "unknown platform\n";
@@ -274,4 +279,14 @@ if ($fsa ne '') {
 foreach my $file (@TEMP_FILES) {
 	unlink $file if -e $file and $;
 }
+
+sub get_path() {
+	my $dir=shift(@_);
+	my @arr_p1=split('\/',$cd_path);
+	pop(@arr_p1);
+	$dir=join("\/",@arr_p1);
+		
+	return $dir;
+}
+
 

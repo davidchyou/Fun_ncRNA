@@ -78,8 +78,10 @@ if ($reformat_i2gff < 1) {
 }
 
 my $new_fun_gtf = "$outdir/input_genome.fun.gffcmp.gtf";
-system("$cd_path/bin/gffread $new_fun_gff -T -o $new_fun_gtf");
-system("$cd_path/bin/gffcompare --debug -d 10 -e 10 -o $outdir/input_genome.fun.gffcmp.out -r $outdir/input_genome.gff -s $outdir/input_genome.fna $new_fun_gtf >> $outdir/log.txt 2>> $outdir/log.err.txt");
+system("gffread $new_fun_gff -T -o $new_fun_gtf");
+system("gffcompare --debug -d 10 -e 10 -o $outdir/input_genome.fun.gffcmp.out -r $outdir/input_genome.gff -s $outdir/input_genome.fna $new_fun_gtf >> $outdir/log.txt 2>> $outdir/log.err.txt");
+#system("$cd_path/bin/gffread $new_fun_gff -T -o $new_fun_gtf");
+#system("$cd_path/bin/gffcompare --debug -d 10 -e 10 -o $outdir/input_genome.fun.gffcmp.out -r $outdir/input_genome.gff -s $outdir/input_genome.fna $new_fun_gtf >> $outdir/log.txt 2>> $outdir/log.err.txt");
 
 my $final_gffcmp_gtf = "$outdir/input_genome.fun.gffcmp.annotated.gtf";
 my $summ = "$outdir/input_genome.fun.gffcmp.annotated.summ";

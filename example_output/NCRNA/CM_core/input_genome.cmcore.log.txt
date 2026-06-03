@@ -1,0 +1,1063 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.5 (Sep 2023)
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/core_cm/Agaricomycetes.core.cm
+# target sequence database:              ./data/CopciAB_new_jgi_20220113.fasta
+# tabular output of hits:                example_output/NCRNA/CM_core/input_genome.cmcore.tbl
+# number of worker threads:              128 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Fungi_SRP_Agaricomycetes  [CLEN=266]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   8.9e-71  246.0   0.0  scaffold_2 2962131 2961867 -  cm    no 0.55  -
+ ------ inclusion threshold ------
+  (2) ?      0.12   17.9   0.0  scaffold_7  538617  538544 -  cm    no 0.64  -
+  (3) ?      0.81   15.2   0.0  scaffold_7 1684035 1683959 -  cm    no 0.55  -
+
+
+Hit alignments:
+>> scaffold_2  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   8.9e-71  246.0   0.0  cm        1      266 []     2962131     2961867 - .. 0.99    no 0.55
+
+                                                     vv                                vv      v                 NC
+                                   <<<<_______>>>>--((((((((-(((((((-----(-------------(((((((-((((((-----(((((( CS
+  Fungi_SRP_Agaricomycetes       1 cgGCUGUAAUGGCcguAaaccgGGaAUGcgagguGgUucuuuuCAgCGguuacacccgcucGuGCGCUGGUucacga 77     
+                                   CGGCUGU AUGGCCG AA  ::GGAAU:CG:::  +U :+U UCAGCGG U   :CC::  GUGCGCUGGUUCA:GA
+                scaffold_2 2962131 CGGCUGUCAUGGCCGCAACUCGGGAAUGCGGACGCUU-UAUCUCAGCGGGU-UCUCCAUCAGUGCGCUGGUUCAAGA 2962057
+                                   *********************************6655.59********998.789********************** PP
+
+                                                          v          v                  v                 v      NC
+                                   ((((((((((((((((((((((((,<<<--<<<<<<<<<<<<____>>>>>>>>.->>>>->>>,<___>,<<<<<< CS
+  Fungi_SRP_Agaricomycetes      78 ccguCCcCUCcaGAcAaCUcGGccuccauagcccccCgcccCGuAAGgggcGgg.ugggcuuggAaUAAuccgcccu 153    
+                                   C:G:CCCCUCCAGA:AACU:GG: UCCA+AG:CC :C:C:CCGUAAGG:G:G:  UGG:CUUGGAAUAAU+ G:CCU
+                scaffold_2 2962056 CUGUCCCCUCCAGAAAACUUGGUUUCCACAGACCCUCGCGCCGUAAGGUGUGAUuUGGUCUUGGAAUAAUUUGUCCU 2961980
+                                   ***************************************************************************** PP
+
+                                       v                        v       vv                                       NC
+                                   <---<<<<----<<<____>>>---->>>>->>>>>>>))))))))))-)))--))))---))))))-)))))))-- CS
+  Fungi_SRP_Agaricomycetes     154 cgacgGGcCAGGGAAGCAAUUCcGCAaCCcggagggcgggCCgAGuUgGUCuUagGAGAucaGGacgugucgucaGu 230    
+                                   :GAC GGCCAGGGAAGCAAUUCCGCAACC G:AGG:C  :CC:AGUU:GUCUU GGAGAUCAGG:C:UGUC:UCAGU
+                scaffold_2 2961979 UGACUGGCCAGGGAAGCAAUUCCGCAACCUGCAGGACUUGCCGAGUUAGUCUUCGGAGAUCAGGGCAUGUCGUCAGU 2961903
+                                   ***************************************************************************** PP
+
+                                        v     vv                  vv    NC
+                                   )))))))))))))--)--)))))))-)))))))):: CS
+  Fungi_SRP_Agaricomycetes     231 CGCgCggcgggugGugCcccucgCAAaCCcgguuuu 266    
+                                   CGCGC ::GG:  G : C:::CG:AAACC::  U U
+                scaffold_2 2961902 CGCGCAGUGGAACGCGUCGUCCGUAAACCUUUUUGU 2961867
+                                   ************************************ PP
+
+>> scaffold_7  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?      0.12   17.9   0.0  cm        1      266 []      538617      538544 - .. 0.84    no 0.64
+
+                                  v             v    v v                                              v v     NC
+                                  <<<<_______>>>>--((((((((-(((((((-----(--------~~~~~~~)--)))))))-)))))))):: CS
+  Fungi_SRP_Agaricomycetes      1 cgGCUGUAAUGGCcguAaaccgGGaAUGcgagguGgUucuuuuCAgC*[198]*gCcccucgCAAaCCcgguuuu 266   
+                                   G CUG A UGG C   :A :+GG:AUG G::G G+  :    CA+C       : CC::C CAA:CC : U:UU
+                scaffold_7 538617 GGGCUGAAGUGGUCA--CAGGAGGGAUGGGGAGGGUACU---CCAAC*[ 12]*GUCCUCCUCAACCC-CGUGUU 538544
+                                  *************99..788889999******9876654...44444....8..888*******9888.8899** PP
+
+>> scaffold_7  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?      0.81   15.2   0.0  cm        1      266 []     1684035     1683959 - .. 0.91    no 0.55
+
+                                                     vv  v        v                              v        v  vv  NC
+                                   <<<<___.____>>>>--((((((((-(((((((-----(----------~~~~~~~)--)))))))-)))))))): CS
+  Fungi_SRP_Agaricomycetes       1 cgGCUGU.AAUGGCcguAaaccgGGaAUGcgagguGgUucuuuuCAgCGg*[196]*gCcccucgCAAaCCcgguuu 265    
+                                   :: CUGU A UGG ::UA  :C GGAA:::G ::UGG  :UU   A+ GG       :CC:: C::: ACC G:   
+                scaffold_7 1684035 UCGCUGUuAUUGGUGAUAGAGCUGGAACAGGUACUGGAAGUUACGAAGGG*[  6]*CCCGUCCCUGUACCUGCAGC 1683960
+                                   ******735689****************************9888777665....7..******************** PP
+
+                                     NC
+                                   : CS
+  Fungi_SRP_Agaricomycetes     266 u 266    
+                                    
+                scaffold_7 1683959 G 1683959
+                                   * PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (266 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (27888 residues re-searched)
+Windows   passing  local HMM SSV           filter:          101069  (0.505); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           24040  (0.1339); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           19702  (0.1107); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1041  (0.006278); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:             824  (0.004962); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             337  (0.002357); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             319  (0.002217); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             314  (0.001278); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              39  (4.39e-05); expected (0.0001)
+Total CM hits reported:                                          3  (5.579e-06); includes 0 truncated hit(s)
+
+# CPU time: 44.04u 2.24s 00:00:46.28 Elapsed: 00:00:02.48
+//
+Query:       RNase_MRP_Agaricomycetes  [CLEN=366]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   6.8e-73  263.1   0.0  scaffold_4 1777615 1777209 -  cm    no 0.56  -
+
+
+Hit alignments:
+>> scaffold_4  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   6.8e-73  263.1   0.0  cm        1      366 []     1777615     1777209 - .. 0.83    no 0.56
+
+                                         v                                    v   v                              NC
+                                   :((((((((((,,<<<<<<--<<<<<<<---------<<<<<<<___>>>>>>>------->>>>>>>--------- CS
+  RNase_MRP_Agaricomycetes       1 gcGCcGcccGAAGaAUCGCUGUCGCAGCUCACGCACAGAgAGccucgggCUcUCuUcUUuaGCUGUGGGGAAAGUCC 77     
+                                    :GCCG ::GAAGAAUCGCUGUCGCAGCUCACG+AC GAGAGC UCG GCUCUCU  UU+ GCUGUGGGGAAAGUCC
+                scaffold_4 1777615 CUGCCGCUGGAAGAAUCGCUGUCGCAGCUCACGUACUGAGAGCCUCGAGCUCUCUCAUUCUGCUGUGGGGAAAGUCC 1777539
+                                   ***************************************************************************** PP
+
+                                                                                                                 NC
+                                   ---------------------------------------------------------------------......-- CS
+  RNase_MRP_Agaricomycetes      78 CCGGAGAuaCAGAGuaagCcucCcCguuCucaaugauGGAAAGCgaCCGcCUCuAAGCACGacGGgauu......ug 148    
+                                   CCGGAG U+CAGAG A++  UCC+CG  +UC+ + AUGGAAAGC  CCG  UC+AAGC C  CGG+ ++        
+                scaffold_4 1777538 CCGGAGGUGCAGAGAAUA--UCCUCG--UUCUGCAAUGGAAAGCUGCCGAUUCCAAGCGCAUCGGUCCAgggacg-- 1777468
+                                   ***************997..444444..4455778889*****************************99554433.. PP
+
+                                                                                                                 NC
+                                   --..........-------...............----------........................--------- CS
+  RNase_MRP_Agaricomycetes     149 au..........cGGaagu...............uggUuuuuua........................auuuggguu 176    
+                                                                                                         U G+ U 
+                scaffold_4 1777467 --uugggauggc-------gaaggucgauuugga----------ugcguucuaaguucgcguuagcggUCUCGUUUG 1777410
+                                   ..3222222221.......222222333332222..........223333455655566667777777777777788 PP
+
+                                                                                                                 NC
+                                   -----------------------.--............--..----------------------------------- CS
+  RNase_MRP_Agaricomycetes     177 uguccuCCcuuuuGcCcuCUCua.uu............cu..uucGaaugucuGucaAauGcgcguaggcGCGAAGA 238    
+                                     UCCUCC  UU G+CC+CUCU                     U G++ + ++G++ AA+GCG G+A+GCGC AAGA
+                scaffold_4 1777409 CAUCCUCCGCUUCGUCCACUCUGc--ugcucagcugaa--gcCUUGUCGCGUCGGUGAAGGCGGGAAUGCGCAAAGA 1777337
+                                   888888888888888888888842..346667766655..3466666999************9988*********** PP
+
+                                                                                                                 NC
+                                   ---------------.------------------------------------------------------>>>>>>, CS
+  RNase_MRP_Agaricomycetes     239 UAUGAGCGccuuugu.guugcgcuuGagugccuugGaagugGGcgauucGUUGCUCAUAGACAuAGUUAUGCGAUuG 314    
+                                   UAUGAGCGC UUU U G U  GC UGA  G  U   ++ UGGGC  +U+GUUGCUCAUAG CAUAGUUAUGCGAUUG
+                scaffold_4 1777336 UAUGAGCGCGUUUCUuGCUCGGCAUGACGGGGUAACGGCUGGGCAUCUUGUUGCUCAUAGUCAUAGUUAUGCGAUUG 1777260
+                                   *********555555388888******************************************************** PP
+
+                                    v                  v                         v      NC
+                                   <<<<<<__________>>>>>>,,,,,,,,,,,,,,,,,,,,)))))))))) CS
+  RNase_MRP_Agaricomycetes     315 cgggcccuuuuuggcgggcccgcAACuCAAUGGGGCUuACUCUCgggCgGCg 366    
+                                   : G:C:+ +  +    :G:C :+AACUCAAUGGGGCU+ACUCUC:: CGGC:
+                scaffold_4 1777259 UAGACUUGCG-CAAGCGGUCGUUAACUCAAUGGGGCUCACUCUCCAACGGCA 1777209
+                                   ******9998.78888************************************ PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (366 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (85680 residues re-searched)
+Windows   passing  local HMM SSV           filter:           26333  (0.4383); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:            5048  (0.0925); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:            4838  (0.08864); expected (0.15)
+Windows   passing  local HMM Forward       filter:             240  (0.00456); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:             236  (0.004485); expected (0.003)
+Windows   passing glocal HMM Forward       filter:              86  (0.001808); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:              84  (0.001765); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:              79  (0.0005127); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              21  (7.377e-05); expected (0.0001)
+Total CM hits reported:                                          1  (5.454e-06); includes 0 truncated hit(s)
+
+# CPU time: 36.57u 1.84s 00:00:38.41 Elapsed: 00:00:02.32
+//
+Query:       RNaseP_nuc_Agaricomycetes  [CLEN=547]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   2.3e-60  218.6   0.0  scaffold_8  838870  839327 +  cm    no 0.55  -
+  (2) !   8.1e-27  104.3   0.0  scaffold_4 1777613 1777210 -  cm    no 0.56  -
+ ------ inclusion threshold ------
+  (3) ?       6.5   12.7   0.9  scaffold_4  522106  522351 +  cm    no 0.58  -
+
+
+Hit alignments:
+>> scaffold_8  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.3e-60  218.6   0.0  cm        1      547 []      838870      839327 + .. 0.85    no 0.55
+
+                                                                                                                  NC
+                                   {{{{--{{{,,,,,,,,,,<<<<<---------<<<<<<_____......................>>>>>>------ CS
+  RNaseP_nuc_Agaricomycetes      1 gCAGcuCgAAGGCCGCGAuGCUCGuCaCGCACAGGauGcuUCac......................gCauCCacaUUC 56    
+                                   :CAG + :AA++CCGCGA GCUCG+ + G ACAG:A:G:                           :C:U:C +AUUC
+                 scaffold_8 838870 ACAGACGAAAAACCGCGAGGCUCGCACAGAACAGAAAGU-----aagggcucugcccgaguccuuuGCUUUCGUAUUC 838942
+                                   *************************************99.....68888888888999999999999*********** PP
+
+                                                                  vv                                              NC
+                                   ->>>>>,,,,,,,,,,[[[[[,,,,,,,,,,((((,,,,,,<<<<<_____>>>>>.<<<<<<____>>>>>>.,<<< CS
+  RNaseP_nuc_Agaricomycetes     57 GCGAGCGGGCUAAGGUCUGAGUAUUCcAAUCCCCCUCGAUCGgCuCUAGCaGaGcC.CgGCcgUAAucgGCcG.cGCG 132   
+                                   GCGAGCGGG UAAGGUCUGAGUAUUC+A+UC  ::UCGAUCGG::CUAGC+G::CC  GGC: UAA+ :GCC  CGC:
+                 scaffold_8 838943 GCGAGCGGGUUAAGGUCUGAGUAUUCUAGUCAUUCUCGAUCGGUCCUAGCUGGACCaAGGCUUUAACGAGCCUuCGCA 839020
+                                   ********************************************************777789999999998777**** PP
+
+                                                                                                                  NC
+                                   <<<<------------<<<.._____________________________._____...................... CS
+  RNaseP_nuc_Agaricomycetes    133 ACGuACCAGAAAagCAGCc..uCaUuUucCauuccCCcaagaaccuuccc.aucGC...................... 185   
+                                   ACG:A CAGAAA+ C+G C   CA +U++C++ C+ CC  GA  C  CCC A+                         
+                 scaffold_8 839021 ACGUAUCAGAAAU-CCGACuuGCAGCUCUCCAGCUUCCUCGAGGCAGCCCaACGA-cuggaucuauccaggagggugg 839096
+                                   *************.88888687777777777777777777777777777745444.6********************* PP
+
+                                                                                            vv                    NC
+                                   ......................________________>>>------->>>>>>>)))),,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes    186 ......................GGaGGGcGAGaAUGaagGCUUUGAAAgCGUCGCGGGGAUcGGGCGgaCuuguuucu 241   
+                                                         GGA GGCG       +G C U+GAA :CGU:GC::  A+CGGG  G+C  + U   
+                 scaffold_8 839097 uucuccuuucauucgugauuggGGAAGGCGGACUGUGGGUCAUGGAAGUCGUUGCAAUGACCGGGUUGGCCAUGUAAA 839174
+                                   ********************9767777777776666668888888888*******88888888888888887777777 PP
+
+                                                                                                                  NC
+                                   ,,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes    242 uU.uuugagccguuCucUcgucccUucgcCucucgcgccuguccuGcgggcucgcgggauggaugugcgucucggggc 318   
+                                      ++ ++G CGUU U  ++U  C                                                      
+                 scaffold_8 839175 GCaGGGCUGUCGUUGUGCUCUUUC------------------------------------------------------ 839198
+                                   766666666666666555555555...................................................... PP
+
+                                                                                                                  NC
+                                   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes    319 ccuugcguucguuuucgugguucuGccccuguccgcgcugggcuggccuuguccugccuucguuuuccguugcaacgg 396   
+                                                                                                                 
+                 scaffold_8      - ------------------------------------------------------------------------------      -
+                                   .............................................................................. PP
+
+                                                                                                                  NC
+                                   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes    397 cgggggggcgggaggggaggggcaaggggguGuuggggggguuGggggggaggugggguggcggugGgacugguucGU 474   
+                                                                                GGG    G+  GGU+ C+  +GG+ +G UU GU
+                 scaffold_8 839199 ---------------------------------------------GGGCACUGGACGGUUUCCCCUGGGUGGCUUGGU 839231
+                                   .............................................5555555556666666666666666777777** PP
+
+                                                                                                                  NC
+                                   ,,,,,,,,,,,,,,,,,,,,<<<<<<<___.....________..........................>>>>>>>,, CS
+  RNaseP_nuc_Agaricomycetes    475 CCUUgAGUGCACUUCGCGGCuCgCguaUcu.....CUUcGggG..........................aucGcGaAA 521   
+                                   CCUU AG +CACUUCGCGG :C:C:: U                                          ::G:G:AA
+                 scaffold_8 839232 CCUUUAGCUCACUUCGCGGUGCGCCAGUUAcgggc--------ggccauuucccucgggaggggucgucUUGGUGUAA 839301
+                                   ***************************66654444........55666666666666777899999999********* PP
+
+                                                              NC
+                                   ,,,,,]]]]],,,,,,,}}}--}}}} CS
+  RNaseP_nuc_Agaricomycetes    522 CUCGAUUCAGACUACUCUcGGuCUGc 547   
+                                   CUCGAUUCAGACUACUCU: GUCUG:
+                 scaffold_8 839302 CUCGAUUCAGACUACUCUUCGUCUGU 839327
+                                   ************************** PP
+
+>> scaffold_4  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   8.1e-27  104.3   0.0  cm        1      547 []     1777613     1777210 - .. 0.86    no 0.56
+
+                                                                                                                 NC
+                                    {{{{--{{{,,.,,,,,,,,<<<<<.---------<<<<<<_____>>>>>>-------.>>>>>,,,,,,,,,,[ CS
+  RNaseP_nuc_Agaricomycetes       1 gCAGcuCgAAG.GCCGCGAuGCUCG.uCaCGCACAGGauGcuUCacgCauCCacaUUCG.CGAGCGGGCUAAGGUC 73     
+                                    GC:GCU GAAG + CGC  U::::G UCACG+AC G:::GC+UC+ GC:::C+CAUUC  C::::GGG  AA GUC
+                 scaffold_4 1777613 GCCGCUGGAAGaAUCGCUGUCGCAGcUCACGUACUGAGAGCCUCGAGCUCUCUCAUUCUgCUGUGGGG--AAAGUC 1777540
+                                    *********************************************9**********************..****** PP
+
+                                                         vvvv                                     v    v         NC
+                                    [[[[,,,.,,,,......,,,((((,,,,,,<<<<<_____................>>>>><<<<<<____.... CS
+  RNaseP_nuc_Agaricomycetes      74 UGAGUAU.UCcA......AUCCCCCUCGAUCGgCuCUAGCa................GaGcCCgGCcgUAAu.... 122    
+                                    :::G A  U CA      AUC   CUCG UC                                G:::  AA     
+                 scaffold_4 1777539 CCCGGAGgUGCAgagaauAUC---CUCGUUC----------ugcaauggaaagcugc-----CGAUUCCAAGcgca 1777482
+                                    ***************999888...7899999..........4555666667777777.....88888888878888 PP
+
+                                     v    v                    vvv                                               NC
+                                    .>>>>>>,<<<<<<<------------<<<______________________________________________ CS
+  RNaseP_nuc_Agaricomycetes     123 .cgGCcGcGCGACGuACCAGAAAagCAGCcuCaUuUucCauuccCCcaagaaccuucccaucGCGGaGGGcGAGaA 197    
+                                      :::C +: :ACGU                                                  G+G  +G GAA
+                 scaffold_4 1777481 uCGGUCCAGGGACGU-------------------------------------------------UGGGAUGGCGAA 1777455
+                                    888888899999999.................................................456666666666 PP
+
+                                        vvv               vvvv                                                   NC
+                                    ____>>>-------.>>>>>>>)))),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes     198 UGaagGCUUUGAAA.gCGUCGCGGGGAUcGGGCGgaCuuguuucuuUuuugagccguuCucUcgucccUucgcCuc 272    
+                                     G  +G UUUG+A  GCGU: : + G UCG G  ++C  ++U  UUU   +A+CC+ +   UCGUCC         
+                 scaffold_4 1777454 GGU-CGAUUUGGA-uGCGUUCU-AAGUUCGCGUUAGCGGUCUCGUUU--GCAUCCUCCGCUUCGUCCA-------- 1777392
+                                    666.888889999.99999999.888788777777777777777774..4444444444444444444........ PP
+
+                                                                                                                 NC
+                                    ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes     273 ucgcgccuguccuGcgggcucgcgggauggaugugcgucucggggcccuugcguucguuuucgugguucuGccccu 348    
+                                                                                                                
+                 scaffold_4       - ----------------------------------------------------------------------------       -
+                                    ............................................................................ PP
+
+                                                                                                                 NC
+                                    ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes     349 guccgcgcugggcuggccuuguccugccuucguuuuccguugcaacggcgggggggcgggaggggaggggcaaggg 424    
+                                           CU  GCUG++C   U+  GCCUU+ ++ ++CG UG A+  G+G   G GC  ++  ++++G GC ++  
+                 scaffold_4 1777391 -------CUCUGCUGCUCAGCUGAAGCCUUGUCGCGUCGGUGAAGGCGGGAAUGCGCAAAGAUAUGAGCGCGUUUC 1777323
+                                    .......34455666677777888888999999******************************************* PP
+
+                                                                                                           vv    NC
+                                    ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<<<<<< CS
+  RNaseP_nuc_Agaricomycetes     425 gguGuuggggggguuGggggggaggugggguggcggugGgacugguucGUCCUUgAGUGCACUUCGCGGCuCgCgu 500    
+                                      + U+GG  +G+ +GGG++  +G UGGG+++   GU+G++C++++UC+U  UU   UGC +UU      :  :::
+                 scaffold_4 1777322 UUGCUCGGCAUGACGGGGUAACGGCUGGGCAUCUUGUUGCUCAUAGUCAUAGUUA--UGCGAUU------GUAGAC 1777255
+                                    *******************************************************..******9......888888 PP
+
+                                                          vv                              NC
+                                    <___.....________.>>>>>>>,,,,,,,]]]]],,,,,,,}}}--}}}} CS
+  RNaseP_nuc_Agaricomycetes     501 aUcu.....CUUcGggG.aucGcGaAACUCGAUUCAGACUACUCUcGGuCUGc 547    
+                                    :U                ::::  :AACUC+AU:::G   ACUCUC   C:GC
+                 scaffold_4 1777254 UUGCgcaag--------cGGUCGUUAACUCAAUGGGGCUCACUCUCCAACGGC 1777210
+                                    866555554........48888888**************************** PP
+
+>> scaffold_4  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       6.5   12.7   0.9  cm      244      519 ..      522106      522351 + .. 0.98    no 0.58
+
+                                                                                                                  NC
+                                   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes    244 uuugagccguuCucUcgucccUucgcCucucgcgccuguccuGcgggcucgcgggauggaugugcgucucggggcccu 321   
+                                   +UU+AGCC+U++U   G +C+U C CCU  CG  +++GUCCU  + G+U GC+G A +GAU U++    +++G  C+ 
+                 scaffold_4 522106 GUUCAGCCUUCUUGAGGAGCGUCCUCCUAACGGCUGGGUCCUCGCUGUUGGCAGCAGCGAUUUCGAGACUUCGAGCUG 522183
+                                   89**************************************************************************** PP
+
+                                                                                                                  NC
+                                   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes    322 ugcguucguuuucgugguucuGccccuguccgcgcugggcuggccuuguccugccuucguuuuccguugcaacggcgg 399   
+                                    G  UUCG +++C+                    + GG  U+G+C U   +   +U+C  + U++ UUG+ + G+ G 
+                 scaffold_4 522184 CGUUUUCGAGCGCU--------------------AAGGCUUCGUCGUCGAUAUAGUCCCGGCUGUAUUGGGGAGCAGU 522241
+                                   ****9999999996....................8999**************************************** PP
+
+                                                                                                                  NC
+                                   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, CS
+  RNaseP_nuc_Agaricomycetes    400 gggggcgggaggggaggggcaaggggguGuuggggggguuGggggggaggugggguggcggugGgacugguucGUCCU 477   
+                                   GG +GCGGGA +GGAG  G A+G GG  G    G +GG++G  ++    G+ GGG +  G U G + +GGUU GU  U
+                 scaffold_4 522242 GGCUGCGGGACCGGAGAUGGAUGUGGACGCGUCGCUGGGGGAAUAACCAGGAGGGCUUAGAUCGAUUGGGUUGGUGGU 522319
+                                   ****************************************************************************** PP
+
+                                                      v                   v   NC
+                                   ,,,,,,,,,,,,,,,,,<<<<<<<___________>>>>>>> CS
+  RNaseP_nuc_Agaricomycetes    478 UgAGUGCACUUCGCGGCuCgCguaUcuCUUcGggGaucGcGa 519   
+                                   U  GUGCACU CG+GG :C  :::U          :::  G:
+                 scaffold_4 522320 UUGGUGCACU-CGUGGUGCAAGUUUA---------UCUUCGC 522351
+                                   **********.***************.........******* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (547 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (365192 residues re-searched)
+Windows   passing  local HMM SSV           filter:           11025  (0.7478); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:            2002  (0.1594); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:            1604  (0.1282); expected (0.15)
+Windows   passing  local HMM Forward       filter:             424  (0.03666); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:             381  (0.03297); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             151  (0.01892); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             138  (0.01712); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             141  (0.001804); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              27  (0.0001304); expected (0.0001)
+Total CM hits reported:                                          3  (1.479e-05); includes 0 truncated hit(s)
+
+# CPU time: 209.99u 67.10s 00:04:37.09 Elapsed: 00:00:17.36
+//
+Query:       TPP_Agaricomycetes  [CLEN=162]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   1.5e-28  114.5   0.0  scaffold_5 2575888 2576014 +  cm    no 0.54  -
+ ------ inclusion threshold ------
+  (2) ?       2.2   16.4   0.0  scaffold_4 2996058 2995921 -  cm    no 0.46  -
+
+
+Hit alignments:
+>> scaffold_5  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.5e-28  114.5   0.0  cm        1      162 []     2575888     2576014 + .. 0.90    no 0.54
+
+                                  v                                                                              NC
+                             :::::(((((<<<<-<<<<<<___________________________~~~~~~>>>>>------->-->>>>,,,,,<<<<- CS
+  TPP_Agaricomycetes       1 uggaAgGGCUGCGGGUAuCCcuuuuugugucuaucuuuuuucuuuUuu*[44]*gGGgUUGAGAUuAUACCGCUuGAACCUGA 121    
+                             UGGAA GGCUGCGGGUA:CC: U+U+    ++AU U+  U ++ + U       :GG:UUGAGAUUA ACCGCUUGAACCUGA
+          scaffold_5 2575888 UGGAACGGCUGCGGGUAUCCUGUCUGCACCUCAUGUCCCUAUGGACUG*[ 9]*AGGAUUGAGAUUACACCGCUUGAACCUGA 2575973
+                             ***********************9999999888887776666654444...5..***************************** PP
+
+                                                         v             NC
+                             -<<<-<______>>>>-->>>>,,))))):::::::::::: CS
+  TPP_Agaricomycetes     122 UCAGCGCUCAUACCUGCGUAGGGAAGCCcCCAGUGUCgCcu 162    
+                             UCAGCGCU AUACCUGCGUAGGGAAGCC CCAG GU + C 
+          scaffold_5 2575974 UCAGCGCUGAUACCUGCGUAGGGAAGCCUCCAGAGUUAUCG 2576014
+                             ***************************************** PP
+
+>> scaffold_4  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?       2.2   16.4   0.0  cm        1      162 []     2996058     2995921 - .. 0.69    no 0.46
+
+                                                                                                                 NC
+                             :::::(((((<<<<-<<<<<<______________________________________________________________ CS
+  TPP_Agaricomycetes       1 uggaAgGGCUGCGGGUAuCCcuuuuugugucuaucuuuuuucuuuUuuuagucauaaacgucuguuuugucgaggacggcagA 83     
+                             UGG+  G CUGCGGGUAUC :U   +      AUC      +U U  +    C  A A + +U U U G+CG    C+G AGA
+          scaffold_4 2996058 UGGGGUGGCUGCGGGUAUCUUUAAAGCCAGGAAUCGAACAAUUGUGAAC---CCCAGAAACUUCUGUGGACGUCUUCAGAAGA 2995979
+                             *******************999877777666554443333333322222...2233333444444444444444444444444 PP
+
+                                                                                     NC
+                             _________>>>>>------->-->>>>,,~~~~~~,,))))):::::::::::: CS
+  TPP_Agaricomycetes      84 ggagCaguagGGgUUGAGAUuAUACCGCUu*[30]*GAAGCCcCCAGUGUCgCcu 162    
+                             G+       : GGU  AGAUUA ACCGC        GAAG C   AG  U  CC 
+          scaffold_4 2995978 GACUACCACAGGGU--AGAUUA-ACCGCAG*[12]*GAAGUCGAAAGAAUACCCA 2995921
+                             44444444499***..999***.9****65...9..******************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (162 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (28896 residues re-searched)
+Windows   passing  local HMM SSV           filter:           59120  (0.3223); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           15193  (0.08963); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           14642  (0.08641); expected (0.15)
+Windows   passing  local HMM Forward       filter:             475  (0.002893); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:             440  (0.002679); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             236  (0.001478); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             232  (0.001447); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             225  (0.000586); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              14  (1.902e-05); expected (0.0001)
+Total CM hits reported:                                          2  (3.554e-06); includes 0 truncated hit(s)
+
+# CPU time: 10.81u 0.66s 00:00:11.47 Elapsed: 00:00:00.94
+//
+Query:       U1_Agaricomycetes  [CLEN=167]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   8.7e-40  156.5   0.0  scaffold_4  595657  595825 +  cm    no 0.56  -
+  (2) !   7.4e-39  153.2   0.0  scaffold_4 2380921 2380753 -  cm    no 0.56  -
+ ------ inclusion threshold ------
+  (3) ?       1.9   16.3   0.0  scaffold_2  944919  945080 +  cm    no 0.53  -
+  (4) ?         2   16.2   0.0  scaffold_2 3637554 3637723 +  cm    no 0.52  -
+  (5) ?       2.3   16.1   0.0  scaffold_5 1310459 1310595 +  cm    no 0.61  -
+
+
+Hit alignments:
+>> scaffold_4  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   8.7e-40  156.5   0.0  cm        1      167 []      595657      595825 + .. 0.99    no 0.56
+
+                                                                                  vv                              NC
+                           :::::::::::((((<<<<<<<<<<<__________>>>>>>>>>>><<<<-<-<<<<<<<<________________________ CS
+  U1_Agaricomycetes      1 AUACUUACCUUGacgccacgcgCcCcUUCAuGUACcgGgGcgcgugggccgUcGggacccccCAUAGCACGGCGACCuUGUCCuCA 86    
+                           AUACUUACCUUG::::C:::: CCC:UUCA GUAC+:GGG ::::G:G:::U:G:  C:CCCCAU GCACGGCGACCUUGUCCUCA
+         scaffold_4 595657 AUACUUACCUUGGGAGCGUAGUCCCCUUCACGUACUUGGGGCUACGGGUGAUUGAGGCUCCCCAUUGCACGGCGACCUUGUCCUCA 595742
+                           ************************************************************************************** PP
+
+                                vv                                                                             NC
+                           >>>>>>>>-->>>>>,<<<<<<-<<_.___>>->>>>>>,))))---------------<---.--<-<<<<___>>>>->>: CS
+  U1_Agaricomycetes     87 gggggucccugcggcUUGuauGggCU.ucGGcuCaugCACcguCUcAAUAUUUuCCUGUcCug.cucgggCcCUCgGccuggc 167   
+                           GGG:G  :+ ::::CUUGUAU:GG:U UC :C :AUGCAC:::C  AAUAUUUUCC GUCCUG ++CGG:C:CUC:G:CUGG 
+         scaffold_4 595743 GGGAGAAUUGGUCACUUGUAUAGGGUaUCCCCCUAUGCACUCCCCAAAUAUUUUCCGGUCCUGcUACGGCCACUCUGGCUGGG 595825
+                           *************************978889********************************999***************** PP
+
+>> scaffold_4  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.4e-39  153.2   0.0  cm        1      167 []     2380921     2380753 - .. 0.99    no 0.56
+
+                                                v                    v             vv                            NC
+                            :::::::::::((((<<<<<<<<<<<__________>>>>>>>>>>><<<<-<-<<<<<<<<______________________ CS
+  U1_Agaricomycetes       1 AUACUUACCUUGacgccacgcgCcCcUUCAuGUACcgGgGcgcgugggccgUcGggacccccCAUAGCACGGCGACCuUGUCCu 84     
+                            AUACUUACCUUGA:G:C:::  CCC:UUCA GUAC+:GGG  :::G:G::: :G:  C:CCCCAU GCACGGCGACCUUGUCCU
+         scaffold_4 2380921 AUACUUACCUUGAAGGCGUACUCCCCUUCACGUACUUGGGGCUACGGGUGGCUGAGGCUCCCCAUUGCACGGCGACCUUGUCCU 2380838
+                            ************************************************************************************ PP
+
+                                   vv                                                                            NC
+                            __>>>>>>>>-->>>>>,<<<<<<-<<_.___>>->>>>>>,))))---------------<---.--<-<<<<___>>>>->> CS
+  U1_Agaricomycetes      85 CAgggggucccugcggcUUGuauGggCU.ucGGcuCaugCACcguCUcAAUAUUUuCCUGUcCug.cucgggCcCUCgGccugg 166    
+                            CAGGG:G  :+ ::::CUUGUAU:GG:U UC :C :AUGCACC:UC  AAUAUUUUCC GUCCUG +UCGG:C:CUC:G:CUGG
+         scaffold_4 2380837 CAGGGAGAAUUGGUCACUUGUAUAGGGUaUCCCCCUAUGCACCUUCCAAAUAUUUUCCGGUCCUGcUUCGGCCACUCUGGCUGG 2380754
+                            ***************************978889********************************999**************** PP
+
+                              NC
+                            : CS
+  U1_Agaricomycetes     167 c 167    
+                             
+         scaffold_4 2380753 G 2380753
+                            * PP
+
+>> scaffold_2  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       1.9   16.3   0.0  cm        1      167 []      944919      945080 + .. 0.87    no 0.53
+
+                                        vvv                              v           vv                           NC
+                           :::::::::::((((<<<<<<<<<<<__________>>>>>>>>>>><<<<-<-<<<<<<.<<_______________________ CS
+  U1_Agaricomycetes      1 AUACUUACCUUGacgccacgcgCcCcUUCAuGUACcgGgGcgcgugggccgUcGggaccc.ccCAUAGCACGGCGACCuUGUCCuC 85    
+                           AUA UU CC  GA   C :G:::C : UCAU     : G:::C: G :::: :G G::+  :: AU   A  GCGA C+UGUCC++
+         scaffold_2 944919 AUAAUUCCCACGAUGACUUGGCGCUCGUCAUAAGG-UGGCGUCGGGCGGGGAUGGGUGAGgUUGAUUAGA-UGCGAGCAUGUCCAU 945002
+                           ******************************99888.99*************9999988762556666555.57************* PP
+
+                              vv             vv                 vv  vv                          vvvv   vvvv     NC
+                           _>>>>>>>>-->>>>>,<<<<<<-<<____>.>->>>>>>,))))---------------<---.--<-<<<<___>>>>->>: CS
+  U1_Agaricomycetes     86 AgggggucccugcggcUUGuauGggCUucGG.cuCaugCACcguCUcAAUAUUUuCCUGUcCug.cucgggCcCUCgGccuggc 167   
+                           A::  ::C   :::::UU  :::GGCU +GG C :::  AC  UC CAA   UUUCC  UCCU  +U:+ ++ CUC     :G+
+         scaffold_2 945003 AAG--CACUGAAUCCUUUAACCAGGCUCUGGuCCUGGCAACACUCCCAACCCUUUCCCCUCCUCaUUUCCUUUCUC----CAGU 945080
+                           *76..6888999******999999***9999346888888888******************999666665555666....79** PP
+
+>> scaffold_2  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?         2   16.2   0.0  cm        1      167 []     3637554     3637723 + .. 0.88    no 0.52
+
+                                                 v                  v              v        v            v       NC
+                            :::::::::::((((<<<<<<<<<<<__________>>>>>>>>>>><<<<-<-<<<~~~~~~>>>-->>>>>,<<<<<<-<<_ CS
+  U1_Agaricomycetes       1 AUACUUACCUUGacgccacgcgCcCcUUCAuGUACcgGgGcgcgugggccgUcGgga*[34]*ucccugcggcUUGuauGggCU 112    
+                            A AC  A  UUGA:G      GC:C: UC  GU CC:G:G       : :: CG: A      U :+UG:: :UUGU :: :CU
+         scaffold_2 3637554 AAACCGAUUUUGAUG------GCGCUGUCGCGUGCCAGCG-------GGACGCGAAA*[58]*UGUUUGGUUUUUGUGGGCGCU 3637676
+                            ***************......4677777777777777776.......7888888765...9..66788999************* PP
+
+                                    v                                                 NC
+                            ___>>->>>>>>,))))---------------<-----<-<<<<..___>>>>->>: CS
+  U1_Agaricomycetes     113 ucGGcuCaugCACcguCUcAAUAUUUuCCUGUcCugcucgggCc..CUCgGccuggc 167    
+                            U+GG: :: GCA C:UC        U CC GU:CU   C :GC:  CU :GC:UG: 
+         scaffold_2 3637677 UUGGUCUCAGCA-CAUCA------GUCCCAGUUCU---CAGGCAgcCUUUGCUUGAA 3637723
+                            ************.****8......599******76...9*****76666******** PP
+
+>> scaffold_5  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) ?       2.3   16.1   0.0  cm        1      167 []     1310459     1310595 + .. 0.83    no 0.61
+
+                                           v                              vvv      vv                            NC
+                            :::::::::::((((<<<<<<<<<<<__________>>>>>>>>>>><<~~~~~~>>,<<<<<<.-<<____>>->>>>>>,)) CS
+  U1_Agaricomycetes       1 AUACUUACCUUGacgccacgcgCcCcUUCAuGUACcgGgGcgcgugggc*[50]*gcUUGuauG.ggCUucGGcuCaugCACcg 127    
+                             U CU   C  G:CG                                         CUUGU::G +:CU +GG: C::GCACCG
+         scaffold_5 1310459 UUUCUCCUCGGGGCGG--------------------------------A*[50]*CCUUGUCCGgUCCUCUGGGCCGGGCACCG 1310554
+                            ****988888888886................................0...7..57*******77889*************** PP
+
+                                                        v    v        NC
+                            ))---------------<-----<-<<<<.___>>>>->>: CS
+  U1_Agaricomycetes     128 uCUcAAUAUUUuCCUGUcCugcucgggCc.CUCgGccuggc 167    
+                            :CU  AUAUUU  CU U: +   :+G:C  CUC G:C+::C
+         scaffold_5 1310555 CCUGCAUAUUUGGCUCUGGCCGGUUGCCUuCUCUGGCGACC 1310595
+                            *****************99999999***99999******** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (167 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (17472 residues re-searched)
+Windows   passing  local HMM SSV           filter:          146001  (0.4772); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           29755  (0.1083); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           25613  (0.09351); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1498  (0.00581); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:            1215  (0.004711); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             555  (0.002383); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             525  (0.002236); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             515  (0.001315); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              89  (7.768e-05); expected (0.0001)
+Total CM hits reported:                                          5  (1.082e-05); includes 0 truncated hit(s)
+
+# CPU time: 21.87u 0.56s 00:00:22.43 Elapsed: 00:00:00.87
+//
+Query:       U2_Agaricomycetes  [CLEN=188]
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+  (1) !   2.5e-54  222.8   0.0  scaffold_11 1544518 1544705 +  cm    no 0.48  -
+  (2) !   1.1e-53  220.3   0.0  scaffold_11 1638903 1639090 +  cm    no 0.48  -
+  (3) !   2.1e-53  219.2   0.0  scaffold_11  841540  841727 +  cm    no 0.48  -
+ ------ inclusion threshold ------
+  (4) ?       2.2   17.4   0.0  scaffold_12  611454  611323 -  cm    no 0.57  -
+
+
+Hit alignments:
+>> scaffold_11  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.5e-54  222.8   0.0  cm        1      188 []     1544518     1544705 + .. 1.00    no 0.48
+
+                                                                                                                 NC
+                            :::::::<<<<<<<____>>>>->>>,,,,,,,,,,,,,,,,,,,,<<<<<<________>>>>>><<<<<<<___>>>>>>>, CS
+  U2_Agaricomycetes       1 UuAcCACucugGCCUUUUGGCuUagaUCAAGUGUAGUAUCUGUUCUuaauagUUUAACCAcuauuaugggGgcACcgcCcccau 84     
+                            UUACCACUCUGGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUAAUAGUUUAACCACUAUUAUG:GGGCACCGCCC:CAU
+        scaffold_11 1544518 UUACCACUCUGGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUAAUAGUUUAACCACUAUUAUGAGGGCACCGCCCUCAU 1544601
+                            ************************************************************************************ PP
+
+                                                              v                 v                                NC
+                            ,,,,,,,,,,,,,,,,,,,,,,,,,,,,<<<<<<<<-----<<<__>>>-->>>>>>>>,,<<<<<<<<<<<<___________ CS
+  U2_Agaricomycetes      85 UaUUGGUUAUCuAAUUUUUGCcGCCCuugccccccgaGCUCUGCUUGCAaccggggggcgugAUGAccccGCcacUGCAgUAcu 168    
+                            U+UUGGUUAUCUAAUUUUUGCCGCCC  G::CC: :AGCUCUGCUUGCAAC: :GG::CG+GAUGACC::GC:A+UGCAGUAC+
+        scaffold_11 1544602 UUUUGGUUAUCUAAUUUUUGCCGCCCCAGUUCCUCGAGCUCUGCUUGCAACUCGGGGACGCGAUGACCUUGCUAUUGCAGUACC 1544685
+                            ***************************************************99******************************* PP
+
+                                                 NC
+                            >>>>>>->>>>>>::::::: CS
+  U2_Agaricomycetes     169 gGCgggugUCGUcGGGGGAU 188    
+                            :GC::GUGUCGUCGGGGGAU
+        scaffold_11 1544686 GGCUUGUGUCGUCGGGGGAU 1544705
+                            ******************** PP
+
+>> scaffold_11  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.1e-53  220.3   0.0  cm        1      188 []     1638903     1639090 + .. 0.98    no 0.48
+
+                                                                                                                 NC
+                            :::::::<<<<<<<____>>>>->>>,,,,,,,,,,,,,,,,,,,,<<<<<<________>>>>>><<<<<<<___>>>>>>>, CS
+  U2_Agaricomycetes       1 UuAcCACucugGCCUUUUGGCuUagaUCAAGUGUAGUAUCUGUUCUuaauagUUUAACCAcuauuaugggGgcACcgcCcccau 84     
+                            UUACCACUCUGGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUAAUAGUUUAACCACUAUUAUG:GGGCACCGCCC:CAU
+        scaffold_11 1638903 UUACCACUCUGGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUAAUAGUUUAACCACUAUUAUGAGGGCACCGCCCUCAU 1638986
+                            ************************************************************************************ PP
+
+                                                            v v                 v v                              NC
+                            ,,,,,,,,,,,,,,,,,,,,,,,,,,,,<<<<<<<<-----<<<__>>>-->>>>>>>>,,<<<<<<<<<<<<___________ CS
+  U2_Agaricomycetes      85 UaUUGGUUAUCuAAUUUUUGCcGCCCuugccccccgaGCUCUGCUUGCAaccggggggcgugAUGAccccGCcacUGCAgUAcu 168    
+                            U+UUGGUUAUCUAAUUUUUGCCGCCC  G::C : :AGCUCUGCUUGCAAC: : G::CG+GAUGACC::GC:A+UGCAGUAC+
+        scaffold_11 1638987 UUUUGGUUAUCUAAUUUUUGCCGCCCCAGUUCCUCGAGCUCUGCUUGCAACUCGAGGACGCGAUGACCUUGCUAUUGCAGUACC 1639070
+                            *****************************88877777**************6667779************************** PP
+
+                                                 NC
+                            >>>>>>->>>>>>::::::: CS
+  U2_Agaricomycetes     169 gGCgggugUCGUcGGGGGAU 188    
+                            :GC::GUGUCGUCGGGGGAU
+        scaffold_11 1639071 GGCUUGUGUCGUCGGGGGAU 1639090
+                            ******************** PP
+
+>> scaffold_11  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   2.1e-53  219.2   0.0  cm        1      188 []      841540      841727 + .. 0.98    no 0.48
+
+                                                                                                                  NC
+                           :::::::<<<<<<<____>>>>->>>,,,,,,,,,,,,,,,,,,,,<<<<<<________>>>>>><<<<<<<___>>>>>>>,,, CS
+  U2_Agaricomycetes      1 UuAcCACucugGCCUUUUGGCuUagaUCAAGUGUAGUAUCUGUUCUuaauagUUUAACCAcuauuaugggGgcACcgcCcccauUa 86    
+                           UUACCACUCUGGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUAAUAGUUUAACCACUAUUAUG:GGGCACCGCCC:CAUU+
+        scaffold_11 841540 UUACCACUCUGGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUAAUAGUUUAACCACUAUUAUGAGGGCACCGCCCUCAUUU 841625
+                           ************************************************************************************** PP
+
+                                                         v v                 v v                                  NC
+                           ,,,,,,,,,,,,,,,,,,,,,,,,,,<<<<<<<<-----<<<__>>>-->>>>>>>>,,<<<<<<<<<<<<___________>>>> CS
+  U2_Agaricomycetes     87 UUGGUUAUCuAAUUUUUGCcGCCCuugccccccgaGCUCUGCUUGCAaccggggggcgugAUGAccccGCcacUGCAgUAcugGCg 172   
+                           UUGGUUAUCUAAUUUUUGCCGCCC  G::C : :AGCUCUGCUUGCAAC: : G::CG+GAUGACC::GC:A+UGCAGUAC+:GC:
+        scaffold_11 841626 UUGGUUAUCUAAUUUUUGCCGCCCCAGUUCCUCGAGCUCUGCUUGCAACUCGAGGGCGCGAUGACCUUGCUAUUGCAGUACCGGCU 841711
+                           ***************************88877777**************6666679****************************** PP
+
+                                            NC
+                           >>->>>>>>::::::: CS
+  U2_Agaricomycetes    173 ggugUCGUcGGGGGAU 188   
+                           :GUGUCGUCGGGGGAU
+        scaffold_11 841712 UGUGUCGUCGGGGGAU 841727
+                           **************** PP
+
+>> scaffold_12  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?       2.2   17.4   0.0  cm        1      188 []      611454      611323 - .. 0.86    no 0.57
+
+                                                                                                 v                NC
+                           :::::::<<<.<<<<____>>>>->>>,,,,,,,~~~~~~,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<<<<<<<<-----<<<_ CS
+  U2_Agaricomycetes      1 UuAcCACucu.gGCCUUUUGGCuUagaUCAAGUG*[50]*uUaUUGGUUAUCuAAUUUUUGCcGCCCuugccccccgaGCUCUGCU 129   
+                            UACCAC::: :::C   UG::: :::  AA U         + UGG UA +U AUUU  GCCGCC U G :C:    G UCUG U
+        scaffold_12 611454 CUACCACGGGgGCGCAAAUGCGCCCCCGUAAAUC*[ 2]*GAUAUGGAUAGUUCAUUUCAGCCGCCGUCGCUCU----GAUCUGGU 611377
+                           *******988355666666666667887777665...5..66789************************99998....88888887 PP
+
+                                         v     v     v                 v      v          NC
+                           _..>>>-->>>>>>>>,,<<<<<<<<<<<<___________>>>>>>->>>>>>::::::: CS
+  U2_Agaricomycetes    130 U..GCAaccggggggcgugAUGAccccGCcacUGCAgUAcugGCgggugUCGUcGGGGGAU 188   
+                           U   CAA    :G: C +G: GA: : GCC +U    UA +GGC : +:UC :CG   G  
+        scaffold_12 611376 UggCCAAA---AGGCCCCGGAGAUUAUGCCGUU----UAACGGCCUGCAUCCCCGUCUGCA 611323
+                           77788888...89999***************98....5777******************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (188 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (19824 residues re-searched)
+Windows   passing  local HMM SSV           filter:          102694  (0.4023); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           22887  (0.09717); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           19225  (0.08158); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1063  (0.004893); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:             786  (0.003596); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             361  (0.00186); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             320  (0.001639); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             317  (0.0009268); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              25  (3.284e-05); expected (0.0001)
+Total CM hits reported:                                          4  (9.334e-06); includes 0 truncated hit(s)
+
+# CPU time: 19.52u 0.83s 00:00:20.34 Elapsed: 00:00:00.80
+//
+Query:       U4atac_Agaricomycetes  [CLEN=120]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   2.6e-27  141.1   0.0  scaffold_1 3777168 3777288 +  cm    no 0.49  -
+
+
+Hit alignments:
+>> scaffold_1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.6e-27  141.1   0.0  cm        1      120 []     3777168     3777288 + .. 0.99    no 0.49
+
+                                                                                                                 NC
+                                ::::<<<<<>>>>>,<<<<<<<-<<<-----<<______>>-->>>>>>>----.>->>--------------------- CS
+  U4atac_Agaricomycetes       1 CUUGuGCuCGgGCauGcacuguCgccAGUGAgGUcUuUACcGAggcacagUcuU.uUgCUGAUUGCAAAUUAcAcAUCCG 79     
+                                CUUGUGCUCGGGCAUG::CUGUCGCCAGUGAGGU+U UACCGAGGCACAG CU  :U:CUGAUUGCAAAUUACACAUCCG
+             scaffold_1 3777168 CUUGUGCUCGGGCAUGUGCUGUCGCCAGUGAGGUUUCUACCGAGGCACAGCCUAuUUGCUGAUUGCAAAUUACACAUCCG 3777247
+                                **************************************************998758************************ PP
+
+                                                                          NC
+                                -----<-<<<-<<<<<__>>>>>->>>>::::::::::::: CS
+  U4atac_Agaricomycetes      80 AACcCGUCugUcgGCuUcgGCcgucaGCAAUUUUUGgAAaa 120    
+                                AACCCGUCU:U::GCUUCGGC::U:AGCAAUUUUUGGAAAA
+             scaffold_1 3777248 AACCCGUCUCUUAGCUUCGGCUAUGAGCAAUUUUUGGAAAA 3777288
+                                ***************************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (120 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (12936 residues re-searched)
+Windows   passing  local HMM SSV           filter:          154568  (0.3961); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           46099  (0.1266); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           43759  (0.1204); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1270  (0.003716); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:            1162  (0.003412); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             560  (0.001751); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             551  (0.001721); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             529  (0.001014); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              38  (4.567e-05); expected (0.0001)
+Total CM hits reported:                                          1  (1.623e-06); includes 0 truncated hit(s)
+
+# CPU time: 11.75u 0.59s 00:00:12.34 Elapsed: 00:00:00.57
+//
+Query:       U4_Agaricomycetes  [CLEN=130]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   2.3e-32  154.1   0.0  scaffold_1 3777165 3777295 +  cm    no 0.47  -
+ ------ inclusion threshold ------
+  (2) ?       7.5   18.2   0.0  scaffold_5 2664977 2664865 -  cm    no 0.60  -
+
+
+Hit alignments:
+>> scaffold_1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.3e-32  154.1   0.0  cm        1      130 []     3777165     3777295 + .. 1.00    no 0.47
+
+                                                                                                                 NC
+                            ::::::::::::::::::::<<<<<-<<<-----<<<____>>>-->>>>>>>>--.--------------------------- CS
+  U4_Agaricomycetes       1 ucUCUUGUGCUCGGGCAuGUacuguCGcCAGUGAgGUcUuUACcGAGgCacaguCU.UUUGCUGAUUGCAAAUUAcACAUCCGA 83     
+                            UCUCUUGUGCUCGGGCAUGU:CUGUCGCCAGUGAGGU+U UACCGAGGCACAG:CU UUUGCUGAUUGCAAAUUACACAUCCGA
+         scaffold_1 3777165 UCUCUUGUGCUCGGGCAUGUGCUGUCGCCAGUGAGGUUUCUACCGAGGCACAGCCUaUUUGCUGAUUGCAAAUUACACAUCCGA 3777248
+                            ********************************************************9*************************** PP
+
+                                                                            NC
+                            ----<-<<<<<<<<____>>>>>>>>>:::::::::::::::::::: CS
+  U4_Agaricomycetes      84 ACcCGUCugccgGCUUcGGCcggcaGCAAUUUUUGGAAaaccuuucu 130    
+                            ACCCGUCU::::GCUUCGGC::::AGCAAUUUUUGGAAAA +UU+  
+         scaffold_1 3777249 ACCCGUCUCUUAGCUUCGGCUAUGAGCAAUUUUUGGAAAAAUUUCAC 3777295
+                            *********************************************** PP
+
+>> scaffold_5  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?       7.5   18.2   0.0  cm        1      130 []     2664977     2664865 - .. 0.91    no 0.60
+
+                                                v vv            v    v        vv v                               NC
+                            ::::::::::::::::::::<<<<<-<<<-----<<<____>>>-->>>>>>>>------------------------------ CS
+  U4_Agaricomycetes       1 ucUCUUGUGCUCGGGCAuGUacuguCGcCAGUGAgGUcUuUACcGAGgCacaguCUUUUGCUGAUUGCAAAUUAcACAUCCGAA 84     
+                             C  U  UGCUCGGGC  G     :C:CCA  G :G +UUU C:G GG::C   CUU U  UGAUUG A A         CGAA
+         scaffold_5 2664977 CCCUUCCUGCUCGGGCGGGAAU--CCCCCA--GGAGAUUUUCCUGGGGGGCGGACUUAUAGUGAUUGUACA---------CGAA 2664907
+                            ******************9855..467777..57999********9999999*************997543.........6676 PP
+
+                                  v   v        v   v                       NC
+                            ---<-<<<<<<<<____>>>>>>>>>:::::::::::::::::::: CS
+  U4_Agaricomycetes      85 CcCGUCugccgGCUUcGGCcggcaGCAAUUUUUGGAAaaccuuucu 130    
+                               G C GC: GCU CGGC :GC GCA U   UGGAAA     ++U
+         scaffold_5 2664906 ---G-CCGCUCGCUGCGGCCUGCUGCAGUCACUGGAAAGGAAGCUU 2664865
+                            ...6.889************************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (130 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (13608 residues re-searched)
+Windows   passing  local HMM SSV           filter:          189877  (0.5059); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           42554  (0.1262); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           39876  (0.1185); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1487  (0.004739); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:            1349  (0.004302); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             572  (0.002043); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             560  (0.002); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             535  (0.001093); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              65  (9.287e-05); expected (0.0001)
+Total CM hits reported:                                          2  (3.273e-06); includes 0 truncated hit(s)
+
+# CPU time: 14.49u 0.46s 00:00:14.95 Elapsed: 00:00:00.59
+//
+Query:       U5_Agaricomycetes  [CLEN=118]
+Hit scores:
+ rank     E-value  score  bias  sequence     start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ---------- ------- -------   --- ----- ----  -----------
+  (1) !   1.2e-18  101.0   0.0  scaffold_6 2366879 2366994 +  cm    no 0.52  -
+
+
+Hit alignments:
+>> scaffold_6  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.2e-18  101.0   0.0  cm        1      118 []     2366879     2366994 + .. 0.96    no 0.52
+
+                                         v  v                                         v  v                       NC
+                            ::<<<<--<<<<<<<<<<<-------<<<<<<<<___________>>>>>>>>--->>>>>>>>>>>--------->>>>---- CS
+  U5_Agaricomycetes       1 aGcgGCaGggggcggcaCAAacagACaaccCCCUCGCCUUUUACUAGGGgguuCCGUGugccgccccCAuuuuAAuGCcgCaUu 84     
+                             GC:GCAG:GGG: :: CAAACAGACAA:CCCCUCGCCUUUUACUAGGGG:UUCCGUG :: :CCC:CA+U UAAUGC:GC UU
+         scaffold_6 2366879 CGCAGCAGUGGGAACGUCAAACAGACAAUCCCCUCGCCUUUUACUAGGGGAUUCCGUGCCGCUCCCACACUAUAAUGCUGCGUU 2366962
+                            ************************************************************************************ PP
+
+                                               v        v      NC
+                            ------------<--<<<<<<______>>>>>>> CS
+  U5_Agaricomycetes      85 accAAUuUUUcacauccuccguUuguucggaggg 118    
+                            +C AAU UUU +:A+C::: :+ U   : :::G:
+         scaffold_6 2366963 UC-AAUCUUUGGAAACUCUCUCCUC-GAAGGAGU 2366994
+                            **.**********888888887766.6888999* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (118 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (12348 residues re-searched)
+Windows   passing  local HMM SSV           filter:          162834  (0.3915); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           53741  (0.1392); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           48969  (0.1274); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1278  (0.003533); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:            1029  (0.00284); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             561  (0.001665); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             539  (0.001585); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             529  (0.0009546); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              46  (4.086e-05); expected (0.0001)
+Total CM hits reported:                                          1  (1.556e-06); includes 0 truncated hit(s)
+
+# CPU time: 11.09u 0.59s 00:00:11.68 Elapsed: 00:00:00.46
+//
+Query:       U6_Agaricomycetes  [CLEN=117]
+Hit scores:
+ rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
+  (1) !   1.2e-42  154.5   0.0  scaffold_3  2258445 2258561 +  cm    no 0.49  -
+  (2) !   1.2e-42  154.5   0.0  scaffold_3  2306950 2307066 +  cm    no 0.49  -
+  (3) !   1.2e-42  154.5   0.0  scaffold_9   815469  815353 -  cm    no 0.49  -
+  (4) !   1.2e-22   89.0   0.0  scaffold_3  1630747 1630643 -  cm    no 0.46  -
+ ------ inclusion threshold ------
+  (5) ?      0.33   18.9   0.0  scaffold_7  1096947 1096829 -  cm    no 0.48  -
+  (6) ?       1.2   17.1   0.0  scaffold_2   519250  519307 +  cm    no 0.34  -
+  (7) ?       3.4   15.6   0.0  scaffold_6   520897  520787 -  cm    no 0.35  -
+  (8) ?       5.5   14.9   0.0  scaffold_2  3465321 3465424 +  cm    no 0.50  -
+  (9) ?       9.9   14.1   0.0  scaffold_11  934046  934082 +  cm    no 0.46  -
+
+
+Hit alignments:
+>> scaffold_3  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.2e-42  154.5   0.0  cm        1      117 []     2258445     2258561 + .. 1.00    no 0.49
+
+                                                                                                                 NC
+                            <<<<________>->>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes       1 guCccCUUcGGGgUGacAUAcgaAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUuC 84     
+                            GUCCCCUUCGGGGUGACAUACGAAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUU+C
+         scaffold_3 2258445 GUCCCCUUCGGGGUGACAUACGAAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUCC 2258528
+                            ************************************************************************************ PP
+
+                                                              NC
+                            ::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      85 CgGAGUGGuaGaccUAcGGguCuCAAUAUUUAU 117    
+                            CGGAGUGGUAGACCUACGGGUCUCAAUAUUUAU
+         scaffold_3 2258529 CGGAGUGGUAGACCUACGGGUCUCAAUAUUUAU 2258561
+                            ********************************* PP
+
+>> scaffold_3  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.2e-42  154.5   0.0  cm        1      117 []     2306950     2307066 + .. 1.00    no 0.49
+
+                                                                                                                 NC
+                            <<<<________>->>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes       1 guCccCUUcGGGgUGacAUAcgaAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUuC 84     
+                            GUCCCCUUCGGGGUGACAUACGAAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUU+C
+         scaffold_3 2306950 GUCCCCUUCGGGGUGACAUACGAAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUCC 2307033
+                            ************************************************************************************ PP
+
+                                                              NC
+                            ::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      85 CgGAGUGGuaGaccUAcGGguCuCAAUAUUUAU 117    
+                            CGGAGUGGUAGACCUACGGGUCUCAAUAUUUAU
+         scaffold_3 2307034 CGGAGUGGUAGACCUACGGGUCUCAAUAUUUAU 2307066
+                            ********************************* PP
+
+>> scaffold_9  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.2e-42  154.5   0.0  cm        1      117 []      815469      815353 - .. 1.00    no 0.49
+
+                                                                                                                  NC
+                           <<<<________>->>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      1 guCccCUUcGGGgUGacAUAcgaAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUuCCg 86    
+                           GUCCCCUUCGGGGUGACAUACGAAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUU+CCG
+         scaffold_9 815469 GUCCCCUUCGGGGUGACAUACGAAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUCCCG 815384
+                           ************************************************************************************** PP
+
+                                                           NC
+                           ::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes     87 GAGUGGuaGaccUAcGGguCuCAAUAUUUAU 117   
+                           GAGUGGUAGACCUACGGGUCUCAAUAUUUAU
+         scaffold_9 815383 GAGUGGUAGACCUACGGGUCUCAAUAUUUAU 815353
+                           ******************************* PP
+
+>> scaffold_3  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   1.2e-22   89.0   0.0  cm        1      117 []     1630747     1630643 - .. 0.95    no 0.46
+
+                                                                                                                 NC
+                            <<<<________>->>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes       1 guCccCUUcGGGgUGacAUAcgaAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUuC 84     
+                            GUCCC UU+ GGGUGAC UA            A  GAUAC  AGAAGAUU G AUGGCCCCUGCACAAGGAUGACAC CUUUUC
+         scaffold_3 1630747 GUCCCUUUUAGGGUGACGUA-----------AAUUGAUACUAAGAAGAUUGGGAUGGCCCCUGCACAAGGAUGACACUCUUUUC 1630675
+                            *****************987...........345689*********************************************** PP
+
+                                                              NC
+                            ::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      85 CgGAGUGGuaGaccUAcGGguCuCAAUAUUUAU 117    
+                            CGG GUG U GACC   GGGUCUCAA AUUU  
+         scaffold_3 1630674 CGGGGUGAU-GACCCUAGGGUCUCAAAAUUUUA 1630643
+                            ******988.99999999*************** PP
+
+>> scaffold_7  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) ?      0.33   18.9   0.0  cm        1      117 []     1096947     1096829 - .. 0.93    no 0.48
+
+                                                                                                                 NC
+                            <<<<_______~~~~~>->>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes       1 guCccCUUcGG*[1]*gUGacAUAcgaAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCU 80     
+                            ::::+CUU+GG     : :::AUAC A     U  GA C     AGAG AG UU G  U  CCCCU C C AGGAUGACA  CU
+         scaffold_7 1096947 CCGAUCUUUGG*[9]*UGCGGAUACCAUCUCUUGAGACC-----AGAGUAGGUUUGAUUUUCCCCUUCUCGAGGAUGACAAACU 1096865
+                            *****999886..9..99*******99999988777765.....9*************************************** PP
+
+                                                                  NC
+                            ::::::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      81 UUuCCgGAGUGGuaGaccUAcGGguCuCAAUAUUUAU 117    
+                                C+GAG   UAG  C   G   CU  A AU U U
+         scaffold_7 1096864 CAGGCAGAGAAAUAGGAC-GUGAUCCUUGACAUGUUU 1096829
+                            *************99887.568999************ PP
+
+>> scaffold_2  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?       1.2   17.1   0.0  cm        1       57 [.      519250      519307 + .. 0.94    no 0.34
+
+                                                                                      NC
+                           <<<<________>->>>::::::.:::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      1 guCccCUUcGGGgUGacAUAcga.AAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGG 57    
+                           GU C  UU+ GGGU AC U        A UUGGAA GAUA  GA AAGAU A  AUGG
+         scaffold_2 519250 GUUCAAUUUCGGGUGACUUGAAUaCCCAGUUGGAAUGAUAAUGAUAAGAUAAAAAUGG 519307
+                           *****************997776256799***************************** PP
+
+>> scaffold_6  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) ?       3.4   15.6   0.0  cm        1      117 []      520897      520787 - .. 0.90    no 0.35
+
+                                                                                                                  NC
+                           <<<<________>->>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      1 guCccCUUcGGGgUGacAUAcgaAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUGACACGCUUUuCCg 86    
+                            U::C  U+ G :U:A  U C A AAA U  GAA G       GAA AU AG  UGG    UG   AA GAUGAC   CUU U   
+         scaffold_6 520897 GUUUCUAUUAGAAUAAUGUGCUAUAAAGUCUGAAGGGAGACAUGAACAUCAGUCUGGAAUUUGAGGAAAGAUGACGAACUUAUG-- 520814
+                           ***************************9999998776555567************************************99874.. PP
+
+                                                           NC
+                           ::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes     87 GAGUGGuaGaccUAcGGguCuCAAUAUUUAU 117   
+                            A   GUAG +C AC  GU   A  A UU U
+         scaffold_6 520813 -A---GUAGUUCAACAUGUGGUAUAACUUCU 520787
+                           .3...466778888888888899999***** PP
+
+>> scaffold_2  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?       5.5   14.9   0.0  cm        1      117 []     3465321     3465424 + .. 0.76    no 0.50
+
+                            v               v                                                                    NC
+                            <<<<________>->>>::::::::::::::::::::::::::::::::::::::::::::::::::::::::.:::::::::: CS
+  U6_Agaricomycetes       1 guCccCUUcGGGgUGacAUAcgaAAAAAUUGGAACGAUACAGAGAAGAUUAGCAUGGCCCCUGCACAAGGAUG.ACACGCUUUu 83     
+                             :C:CCUUCGGG: G:       A    U G AA      AGAGA GA  AG AUGG CCCUG ACAA GA G AC   C   +
+         scaffold_2 3465321 AACACCUUCGGGUCGUGCAUGAUAGCCCUAGCAA---A--AGAGAUGAG-AGAAUGGACCCUGAACAACGACGgACGAACGAAC 3465398
+                            ***************9755555555555554443...3..555555554.59******************98527777777777 PP
+
+                                                               NC
+                            :::::::::::::::::::::::::::::::::: CS
+  U6_Agaricomycetes      84 CCgGAGUGGuaGaccUAcGGguCuCAAUAUUUAU 117    
+                            C GG           UA G + C C AUA UU  
+         scaffold_2 3465399 CAGG--------UGUUAGGAAACACGAUACUUCC 3465424
+                            7654........445888999************* PP
+
+>> scaffold_11  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) ?       9.9   14.1   0.0  cm        1       37 [.      934046      934082 + .. 1.00    no 0.46
+
+                                                                 NC
+                           <<<<________>->>>:::::::::::::::::::: CS
+  U6_Agaricomycetes      1 guCccCUUcGGGgUGacAUAcgaAAAAAUUGGAACGA 37    
+                           G C:+CUUC GG: G CAU CGA  AA UUG AA GA
+        scaffold_11 934046 GGCGUCUUCUGGCGGUCAUUCGAGUAAUUUGAAAUGA 934082
+                           ************************************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (117 consensus positions)
+Target sequences:                                               21  (74542730 residues searched)
+Target sequences re-searched for truncated hits:                21  (15876 residues re-searched)
+Windows   passing  local HMM SSV           filter:          149817  (0.4688); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           45539  (0.155); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           41620  (0.142); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1951  (0.007218); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:            1532  (0.005651); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             664  (0.002728); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             618  (0.002513); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             591  (0.001155); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              88  (0.0001216); expected (0.0001)
+Total CM hits reported:                                          9  (1.187e-05); includes 0 truncated hit(s)
+
+# CPU time: 14.24u 0.47s 00:00:14.71 Elapsed: 00:00:00.64
+//
+[ok]

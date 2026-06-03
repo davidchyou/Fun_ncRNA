@@ -37,6 +37,7 @@ mkdir $RNAMMER_OUT
 cp $INFILE $RNAMMER_OUT/input_genome.fna
 cd $RNAMMER_OUT
 perl $SCRIPTPATH/bin/rnammer/rnammer -S euk -m tsu,ssu,lsu -gff input_genome.rnammer.gff input_genome.fna -multi > input_genome.rnammer.log.txt 2> input_genome.rnammer.err.txt
+#rnammer -S euk -m tsu,ssu,lsu -gff input_genome.rnammer.gff input_genome.fna -multi > input_genome.rnammer.log.txt 2> input_genome.rnammer.err.txt
 rm -f input_genome.fna
 cd $CURDIR
 cat $RNAMMER_OUT/input_genome.rnammer.gff | grep -v '^#' | awk -F'\t' '{print $1, $2, $9, $4, $5, $6, $7, $8, $3}' 'OFS=\t' > $OUTDIR/input_genome.rnammer.gff
@@ -61,7 +62,9 @@ rm -rf $TRNA_OUT
 mkdir $TRNA_OUT
 cp $INFILE $TRNA_OUT/input_genome.fna
 cd $TRNA_OUT
-tRNAscan-SE -j input_genome.trna.gff input_genome.fna > input_genome.trna.log.txt 2> input_genome.trna.err.txt
+#tRNAscan-SE -j input_genome.trna.gff input_genome.fna > input_genome.trna.log.txt 2> input_genome.trna.err.txt
+tRNAscan-SE -b input_genome.trna.bed input_genome.fna > input_genome.trna.log.txt 2> input_genome.trna.err.txt
+cat input_genome.trna.bed | awk -F'\t' '{print $1, "tRNAScan-SE", "tRNA", $2, $3, $5, $6, ".", "ID="$4}' OFS='\t' | sort -k1,1 -k4,4n > input_genome.trna.gff 2> input_genome.trna.err.txt
 rm -f input_genome.fna
 cd $CURDIR
 cat $TRNA_OUT/input_genome.trna.gff | grep -v '^#' > $OUTDIR/input_genome.trna.gff
@@ -139,5 +142,5 @@ perl $SCRIPTPATH/bin/infernal-tblout2gff.pl  -T $CORE_CM_CUTOFF --all $CORE_CM_O
 fi
 
 cat $OUTDIR/input_genome.*.gff | sort -k1,1 -k4,4n > $OUTDIR/input_genome.all.gff
-$SCRIPTPATH/bin/bedtools cluster -i $OUTDIR/input_genome.all.gff -d 0 -s | sort -k10,10 -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $OUTDIR/input_genome.all.nr.gff
+bedtools cluster -i $OUTDIR/input_genome.all.gff -d 0 -s | sort -k10,10 -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $OUTDIR/input_genome.all.nr.gff
 

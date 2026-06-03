@@ -22,7 +22,8 @@ my $rfam_path = "$cd_path/Rfam/Rfam_f.cm";
 
 my $ind = 0;
 foreach(@ARGV) {
-
+	
+	#Required!! Input genome (fasta format)
 	if (@ARGV[$ind] eq '-fna') {
 		$fna_in = @ARGV[$ind + 1];
 		if (! (-e $fna_in)) {
@@ -30,55 +31,68 @@ foreach(@ARGV) {
 		}
 	}
 	
+	#Optional, but recommended. Annotation file in GFF format
 	if (@ARGV[$ind] eq '-gff') {
 		$gff_in = @ARGV[$ind + 1];
 	}
 	
+	#Optional, taxomonical class of fungus. Class-specific covariation models will be used. Otherwise, it will be one fine-tuned for all fungi (class unspecific).
 	if (@ARGV[$ind] eq '-fungal_class') {
 		$fungal_class = @ARGV[$ind + 1];
 	}
 	
+	#Run optional dependencies RNAMMER and tRNAScan-SE. Not run by default. 
 	if (@ARGV[$ind] eq '-run_rnammer_trnascan') {
 		$run_rnammer_trnascan = 1;
 	}
 	
+	#Run optional dependencies GFFCompare. Not run by default. Skipped if a GFF annotation is not provided.
 	if (@ARGV[$ind] eq '-gffcmp') {
 		$gffcmp = 1;
 	}
 	
+	#Optional, the output directory path. Fungi_ncRNA if unspecified.
 	if (@ARGV[$ind] eq '-out') {
 		$outdir = @ARGV[$ind + 1];
 	}
 	
+	#Optional, assembly ID for multi-contig genomic files. NA if unspecified.
 	if (@ARGV[$ind] eq '-gcf') {
 		$assm = @ARGV[$ind + 1];
 	}
 	
+	#CMSearch cutoff used for fungi fine-tuned or class-specific core ncRNA covariation models. Default 60.
 	if (@ARGV[$ind] eq '-core_cm_cutoff') {
 		$core_cm_cutoff = @ARGV[$ind + 1];
 	}
 	
+	#CMSearch cutoff used for fungi fine-tuned snoRNA covariation models. Default 30.
 	if (@ARGV[$ind] eq '-sno_cm_cutoff') {
 		$sno_cm_cutoff = @ARGV[$ind + 1];
 	}
 	
+	#CMSearch cutoff used for fungi SRP covariation models. Default 30.
 	if (@ARGV[$ind] eq '-srp_cm_cutoff') {
 		$srp_cm_cutoff = @ARGV[$ind + 1];
 	}
 	
+	#Also predict variants of snRNAs. Default no.
 	if (@ARGV[$ind] eq '-include_sn_variants') {
 		$exclude_sn_variants = 0;
 	}
 	
+	#Reanalyse an output directory, running RNAMMER and tRNAScan-SE for additional tRNA and tRNA if not ran previously.
 	if (@ARGV[$ind] eq '-reanalyse') {
 		$precomp_dir = @ARGV[$ind + 1];
 		$recomp = 1;
 	}
 	
+	#When overlapping occurs, take the best LSU, SSU or 5S rRNA predicted by RNAMMER if any, otherwise the best LSU, SSU and 5S predicted by CMSearch using the Rfam covariation model. Similarly, take the best tRNA predicted by tRNAScan-SE if any, otherwise the best tRNA predicted by CMSearch using the Rfam covariation model. For the remaining, take the one with the best score. Default behaviour is to always take the one with the best score when overlapping occurs. 
 	if (@ARGV[$ind] eq '-merge_separately') {
 		$merge_separately = 1;
 	}
 	
+	#Specify a different path to the Rfam covariation models, useful when Rfam is updated. Default is Rfam/Rfam_f.cm (a subset containing models with at least one hit over the RefSeq v219 fungal genomes).
 	if (@ARGV[$ind] eq '-rfam_path') {
 		$rfam_path = @ARGV[$ind + 1];
 	}
@@ -287,6 +301,8 @@ while(my $line = <R_ASSMGFF>) {
 }
 close(ASSMGFFCMPGFF);
 close(R_ASSMGFF);
+
+system("perl $cd_path/PredictionSummary.pl $new_fun_gff_assm_gffcmp > $outdir/summary.txt");
 
 sub get_path() {
 	my $dir=shift(@_);

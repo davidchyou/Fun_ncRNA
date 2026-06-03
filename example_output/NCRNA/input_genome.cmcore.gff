@@ -1,0 +1,16 @@
+scaffold_2	cmsearch	Fungi_SRP_Agaricomycetes	2961867	2962131	246.0	-	.	evalue=8.9e-71;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=266;trunc=no;pass=1;gc=0.55;bias=0.0;inc=!;desc=-
+scaffold_4	cmsearch	RNase_MRP_Agaricomycetes	1777209	1777615	263.1	-	.	evalue=6.8e-73;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=366;trunc=no;pass=1;gc=0.56;bias=0.0;inc=!;desc=-
+scaffold_8	cmsearch	RNaseP_nuc_Agaricomycetes	838870	839327	218.6	+	.	evalue=2.3e-60;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=547;trunc=no;pass=1;gc=0.55;bias=0.0;inc=!;desc=-
+scaffold_4	cmsearch	RNaseP_nuc_Agaricomycetes	1777210	1777613	104.3	-	.	evalue=8.1e-27;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=547;trunc=no;pass=1;gc=0.56;bias=0.0;inc=!;desc=-
+scaffold_5	cmsearch	TPP_Agaricomycetes	2575888	2576014	114.5	+	.	evalue=1.5e-28;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=162;trunc=no;pass=1;gc=0.54;bias=0.0;inc=!;desc=-
+scaffold_4	cmsearch	U1_Agaricomycetes	595657	595825	156.5	+	.	evalue=8.7e-40;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=167;trunc=no;pass=1;gc=0.56;bias=0.0;inc=!;desc=-
+scaffold_4	cmsearch	U1_Agaricomycetes	2380753	2380921	153.2	-	.	evalue=7.4e-39;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=167;trunc=no;pass=1;gc=0.56;bias=0.0;inc=!;desc=-
+scaffold_11	cmsearch	U2_Agaricomycetes	1544518	1544705	222.8	+	.	evalue=2.5e-54;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=188;trunc=no;pass=1;gc=0.48;bias=0.0;inc=!;desc=-
+scaffold_11	cmsearch	U2_Agaricomycetes	1638903	1639090	220.3	+	.	evalue=1.1e-53;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=188;trunc=no;pass=1;gc=0.48;bias=0.0;inc=!;desc=-
+scaffold_11	cmsearch	U2_Agaricomycetes	841540	841727	219.2	+	.	evalue=2.1e-53;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=188;trunc=no;pass=1;gc=0.48;bias=0.0;inc=!;desc=-
+scaffold_1	cmsearch	U4_Agaricomycetes	3777165	3777295	154.1	+	.	evalue=2.3e-32;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=130;trunc=no;pass=1;gc=0.47;bias=0.0;inc=!;desc=-
+scaffold_6	cmsearch	U5_Agaricomycetes	2366879	2366994	101.0	+	.	evalue=1.2e-18;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=118;trunc=no;pass=1;gc=0.52;bias=0.0;inc=!;desc=-
+scaffold_3	cmsearch	U6_Agaricomycetes	2258445	2258561	154.5	+	.	evalue=1.2e-42;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=117;trunc=no;pass=1;gc=0.49;bias=0.0;inc=!;desc=-
+scaffold_3	cmsearch	U6_Agaricomycetes	2306950	2307066	154.5	+	.	evalue=1.2e-42;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=117;trunc=no;pass=1;gc=0.49;bias=0.0;inc=!;desc=-
+scaffold_9	cmsearch	U6_Agaricomycetes	815353	815469	154.5	-	.	evalue=1.2e-42;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=117;trunc=no;pass=1;gc=0.49;bias=0.0;inc=!;desc=-
+scaffold_3	cmsearch	U6_Agaricomycetes	1630643	1630747	89.0	-	.	evalue=1.2e-22;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=117;trunc=no;pass=1;gc=0.46;bias=0.0;inc=!;desc=-

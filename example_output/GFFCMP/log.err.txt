@@ -1,0 +1,8 @@
+No fasta index found for example_output/GFFCMP/input_genome.fna. Rebuilding, please wait..
+Fasta index rebuilt.
+Prefix for output files: input_genome.fun.gffcmp
+Loading reference transcripts..
+  14750 reference transcripts loaded.
+  342 query transfrags loaded.
+Cleaning up..
+Done.
