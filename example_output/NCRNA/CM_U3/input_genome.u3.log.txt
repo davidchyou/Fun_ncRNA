@@ -107,6 +107,6 @@ Windows passing local HMM Viterbi  filter:               8  (0.0002508); expecte
 Windows passing local HMM Forward  filter:               4  (0.0001375); expected (1e-05)
 Total HMM hits reported:                                 3  (7.137e-06)
 
-# CPU time: 1.67u 0.60s 00:00:02.27 Elapsed: 00:00:00.39
+# CPU time: 1.97u 0.74s 00:00:02.71 Elapsed: 00:00:00.52
 //
 [ok]

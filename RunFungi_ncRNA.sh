@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=IPS_KOFAM
+#SBATCH --job-name=Fun_ncRNA
 #SBATCH --account=chyte02p
 #SBATCH --partition=aoraki
 #SBATCH --nodes=1

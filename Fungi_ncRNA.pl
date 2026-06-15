@@ -307,7 +307,7 @@ while(my $line = <R_ASSMGFF>) {
 close(ASSMGFFCMPGFF);
 close(R_ASSMGFF);
 
-system("perl $cd_path/PredictionSummary.pl $new_fun_gff_assm_gffcmp > $outdir/summary.txt");
+system("perl $cd_path/PredictionSummary.pl $new_fun_gff_assm_gffcmp $outdir/tmp > $outdir/summary.txt 2> $outdir/log.err.txt");
 
 sub get_path() {
 	my $dir=shift(@_);

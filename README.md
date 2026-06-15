@@ -1,23 +1,30 @@
 # Fun_ncRNA
 
-Predict non-coding RNAs in fungal genomes using covariation models fine-tuned for fungi.
+Predicts core non-coding RNAs in fungal genomes using covariation models fine-tuned for fungi.
 
-`Fun_ncRNA` is a command-line pipeline for fungal ncRNA annotation. It searches fungal genome assemblies with curated/fine-tuned covariation models, integrates optional predictions from RNAmmer and tRNAscan-SE, removes overlapping/redundant predictions, and produces GFF files and a prediction summary.
+`Fun_ncRNA` is a command-line pipeline for fungal core ncRNA annotation. It searches fungal genome assemblies with curated/fine-tuned covariation models, integrates optional predictions from RNAmmer and tRNAscan-SE, removes overlapping/redundant predictions, and produces GFF files and a prediction summary.
+Currently supported core ncRNAs are snRNA, snoRNA, RNase P, RNase MRP, SRP, rRNA and tRNA.
 
-The main entry point is:
-
+Simple use
 ```bash
 perl Fungi_ncRNA.pl -fna genome.fna [options]
 ```
 
 ## Main features
 
-* Predicts fungal non-coding RNAs from genome FASTA files.
+* Predicts a set of fungal core non-coding RNAs from genome FASTA files.
 * Uses fungal class-specific covariation models when requested.
 * Supports optional comparison against an existing genome annotation in GFF format.
 * Supports optional integration of RNAmmer rRNA predictions and tRNAscan-SE tRNA predictions.
-* Produces GFF-formatted ncRNA annotations and a summary table.
+* Produces GFF-formatted ncRNA annotations and a summary table suitable for publication.
 * Can reanalyse a previous output directory to add optional RNAmmer/tRNAscan-SE results.
+* Produces summary outputs for publication or submission
+
+## Key outputs
+
+* Machine readable gff3 formatted nc_RNA and combined files (input_genome.ncrna.gff) 
+* Simple summary (summary.txt). For example: Core ncRNAs were predicted with Fun_ncRNA (Chyou et al 2026). There were 11 snRNA, 35 snoRNA, 1 RNase P, 1 RNase MRP, 1 SRP, 268 tRNA and 23 rRNA predicted. Of the 23 rRNA, there were 2 5S rRNA, 12 LSU, 3 5.8S rRNA, and 6 SSU predicted.
+
 
 ## Repository structure
 
@@ -63,7 +70,7 @@ The following tools are optional:
 
 `tRNAscan-SE` is used for additional tRNA prediction. RNAmmer is used for additional rRNA prediction. By default, these optional tools are not run unless `-run_rnammer_trnascan` is supplied.
 
-## Installation
+## Installation and use
 
 ### 1. Clone the repository
 
@@ -88,7 +95,7 @@ Activate the environment:
 conda activate fun_ncrna
 ```
 
-Check that the required programs are available:
+Check that the required programs are working:
 
 ```bash
 cmsearch -h
@@ -124,7 +131,7 @@ hmmsearch -h
 
 Depending on your RNAmmer installation, the required `hmmsearch` may be from HMMER2 rather than the current HMMER3 package. If RNAmmer fails while calling `hmmsearch`, check the RNAmmer configuration and install the HMMER version expected by your RNAmmer release.
 
-## Basic usage
+### 4. Run Fun_ncRNA on a genome in fasta format.
 
 The minimum required input is a fungal genome assembly in FASTA format:
 
@@ -145,23 +152,24 @@ perl Fungi_ncRNA.pl \
   -fna genome.fna \
   -gff genome.gff \
   -fungal_class Sordariomycetes \
-  -gcf GCF_000000000.1 \
   -out Fun_ncRNA_output
 ```
+(see section on the main output files below)
 
-To also run RNAmmer and tRNAscan-SE:
+## Additional options
+To also run RNAmmer and tRNAscan-SE if these options have been installed, summarise results by an assembly ID. 
+Run GFFCompare and compare to an existing annotation:
 
 ```bash
 perl Fungi_ncRNA.pl \
-  -fna genome.fna \
-  -gff genome.gff \
-  -fungal_class Sordariomycetes \
-  -gcf GCF_000000000.1 \
-  -out Fun_ncRNA_output \
+  -fna data/GCF_024613125.1_Pisori2_genomic.fna \
+  -gff data/GCF_024613125.1_Pisori2_genomic.gff \
+  -fungal_class Agaricomycetes \
+  -gcf GCF_024613125.1 \
+  -out Fun_ncRNA_Pisori2_output \
+  -gffcmp  \
   -run_rnammer_trnascan
 ```
-
-To run GFFCompare against an existing annotation:
 
 ```bash
 perl Fungi_ncRNA.pl \
@@ -176,12 +184,12 @@ perl Fungi_ncRNA.pl \
 | Option                  |       Required?     | Default          | Description                                                                                                                                                         |
 | ----------------------- | ------------------: | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `-fna`                  |                 Yes | `NA`             | Input genome assembly in FASTA format.                                                                                                                              |
-| `-gff`                  | No, but recommended | `NA`             | Existing genome annotation in GFF format. Used for combined output and optional GFFCompare analysis.                                                                |
-| `-fungal_class`         |                  No | `Fungi`          | Fungal taxonomic class. If supplied, class-specific covariation models are used where available. Otherwise, fungi-wide models are used.                             |
+| `-gff`                  | No, but recommended | `NA`             | Input existing genome annotation in GFF format. Used for combined output and optional GFFCompare analysis.                                                                |
+| `-fungal_class`         |                  No | `Fungi`          | Fungal taxonomic class (see below). If supplied, class-specific covariation models are used where available. Otherwise, fungi-wide models are used.                             |
 | `-run_rnammer_trnascan` |                  No | off              | Run optional RNAmmer and tRNAscan-SE predictions.                                                                                                                   |
 | `-gffcmp`               | No, but recommended | off              | Run GFFCompare. Skipped if no GFF annotation is provided.                                                                                                           |
-| `-out`                  |                  No | `Fungi_ncRNA`    | Output directory. Existing directories with the same name will be removed and recreated.                                                                            |
-| `-gcf`                  |                  No | `NA`             | Assembly ID for multi-contig genome files.                                                                                                                          |
+| `-out`                  |                  No | `Fungi_ncRNA`    | Output directory. Existing directories with the same name will be removed and recreated (overwritten).                                                                            |
+| `-gcf`                  |                  No | `NA`             | Assembly ID for multi-contig genome files.  Appears as the Assembly name in the summary output.                                                                                                                        |
 | `-core_cm_cutoff`       |                  No | `60`             | `cmsearch` score cutoff for fungi fine-tuned or class-specific core ncRNA models.                                                                                   |
 | `-sno_cm_cutoff`        |                  No | `30`             | `cmsearch` score cutoff for fungi fine-tuned snoRNA models.                                                                                                         |
 | `-srp_cm_cutoff`        |                  No | `30`             | `cmsearch` score cutoff for fungal SRP covariation models.                                                                                                          |
@@ -203,12 +211,6 @@ Use `-fungal_class` when the fungal class is known. The script supports class-sp
 * `Leotiomycetes`
 * `Tremellomycetes`
 * `Microsporidia`
-
-If the class is unknown or not represented by a class-specific model set, omit this option or use the default:
-
-```bash
--fungal_class Fungi
-```
 
 ## Output files
 
@@ -256,6 +258,18 @@ perl Fungi_ncRNA.pl \
 The previous directory should contain an `NCRNA/` subdirectory generated by an earlier run.
 
 ## Suggested workflows
+
+### Test example 
+
+```bash
+  perl Fungi_ncRNA.pl \
+  -fna data/CopciAB_new_jgi_20220113.fasta \
+  -gff data/CopciAB_new_jgi_20220113.gff \
+  -fungal_class Agaricomycetes \
+  --gffcmp \
+  -out CociAB_ncRNA_output
+```
+The result should be the similar to 'example_output'
 
 ### Core ncRNA prediction only
 
