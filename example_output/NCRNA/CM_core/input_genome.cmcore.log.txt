@@ -102,7 +102,7 @@ Envelopes passing glocal HMM envelope defn filter:             314  (0.001278); 
 Envelopes passing  local CM  CYK           filter:              39  (4.39e-05); expected (0.0001)
 Total CM hits reported:                                          3  (5.579e-06); includes 0 truncated hit(s)
 
-# CPU time: 45.93u 2.52s 00:00:48.45 Elapsed: 00:00:02.64
+# CPU time: 45.92u 2.06s 00:00:47.98 Elapsed: 00:00:02.56
 //
 Query:       RNase_MRP_Agaricomycetes  [CLEN=366]
 Hit scores:
@@ -177,7 +177,7 @@ Envelopes passing glocal HMM envelope defn filter:              79  (0.0005127);
 Envelopes passing  local CM  CYK           filter:              21  (7.377e-05); expected (0.0001)
 Total CM hits reported:                                          1  (5.454e-06); includes 0 truncated hit(s)
 
-# CPU time: 37.75u 1.91s 00:00:39.65 Elapsed: 00:00:02.49
+# CPU time: 38.17u 1.72s 00:00:39.89 Elapsed: 00:00:02.40
 //
 Query:       RNaseP_nuc_Agaricomycetes  [CLEN=547]
 Hit scores:
@@ -370,7 +370,7 @@ Envelopes passing glocal HMM envelope defn filter:             141  (0.001804); 
 Envelopes passing  local CM  CYK           filter:              27  (0.0001304); expected (0.0001)
 Total CM hits reported:                                          3  (1.479e-05); includes 0 truncated hit(s)
 
-# CPU time: 211.25u 14.89s 00:03:46.14 Elapsed: 00:00:11.61
+# CPU time: 230.04u 19.06s 00:04:09.10 Elapsed: 00:00:12.80
 //
 Query:       TPP_Agaricomycetes  [CLEN=162]
 Hit scores:
@@ -438,7 +438,7 @@ Envelopes passing glocal HMM envelope defn filter:             225  (0.000586); 
 Envelopes passing  local CM  CYK           filter:              14  (1.902e-05); expected (0.0001)
 Total CM hits reported:                                          2  (3.554e-06); includes 0 truncated hit(s)
 
-# CPU time: 11.33u 1.85s 00:00:13.18 Elapsed: 00:00:00.77
+# CPU time: 11.50u 0.45s 00:00:11.95 Elapsed: 00:00:00.55
 //
 Query:       U1_Agaricomycetes  [CLEN=167]
 Hit scores:
@@ -573,7 +573,7 @@ Envelopes passing glocal HMM envelope defn filter:             515  (0.001315); 
 Envelopes passing  local CM  CYK           filter:              89  (7.768e-05); expected (0.0001)
 Total CM hits reported:                                          5  (1.082e-05); includes 0 truncated hit(s)
 
-# CPU time: 23.23u 1.39s 00:00:24.62 Elapsed: 00:00:01.38
+# CPU time: 22.85u 0.46s 00:00:23.31 Elapsed: 00:00:01.07
 //
 Query:       U2_Agaricomycetes  [CLEN=188]
 Hit scores:
@@ -702,7 +702,7 @@ Envelopes passing glocal HMM envelope defn filter:             317  (0.0009268);
 Envelopes passing  local CM  CYK           filter:              25  (3.284e-05); expected (0.0001)
 Total CM hits reported:                                          4  (9.334e-06); includes 0 truncated hit(s)
 
-# CPU time: 21.15u 1.09s 00:00:22.24 Elapsed: 00:00:01.04
+# CPU time: 20.34u 0.48s 00:00:20.82 Elapsed: 00:00:00.80
 //
 Query:       U4atac_Agaricomycetes  [CLEN=120]
 Hit scores:
@@ -749,7 +749,7 @@ Envelopes passing glocal HMM envelope defn filter:             529  (0.001014); 
 Envelopes passing  local CM  CYK           filter:              38  (4.567e-05); expected (0.0001)
 Total CM hits reported:                                          1  (1.623e-06); includes 0 truncated hit(s)
 
-# CPU time: 12.84u 0.97s 00:00:13.81 Elapsed: 00:00:00.72
+# CPU time: 12.63u 0.47s 00:00:13.10 Elapsed: 00:00:00.61
 //
 Query:       U4_Agaricomycetes  [CLEN=130]
 Hit scores:
@@ -817,7 +817,7 @@ Envelopes passing glocal HMM envelope defn filter:             535  (0.001093); 
 Envelopes passing  local CM  CYK           filter:              65  (9.287e-05); expected (0.0001)
 Total CM hits reported:                                          2  (3.273e-06); includes 0 truncated hit(s)
 
-# CPU time: 15.61u 0.80s 00:00:16.41 Elapsed: 00:00:00.68
+# CPU time: 15.54u 0.39s 00:00:15.93 Elapsed: 00:00:00.61
 //
 Query:       U5_Agaricomycetes  [CLEN=118]
 Hit scores:
@@ -864,7 +864,7 @@ Envelopes passing glocal HMM envelope defn filter:             529  (0.0009546);
 Envelopes passing  local CM  CYK           filter:              46  (4.086e-05); expected (0.0001)
 Total CM hits reported:                                          1  (1.556e-06); includes 0 truncated hit(s)
 
-# CPU time: 11.95u 1.08s 00:00:13.03 Elapsed: 00:00:00.54
+# CPU time: 11.70u 0.38s 00:00:12.08 Elapsed: 00:00:00.46
 //
 Query:       U6_Agaricomycetes  [CLEN=117]
 Hit scores:
@@ -1058,6 +1058,6 @@ Envelopes passing glocal HMM envelope defn filter:             591  (0.001155); 
 Envelopes passing  local CM  CYK           filter:              88  (0.0001216); expected (0.0001)
 Total CM hits reported:                                          9  (1.187e-05); includes 0 truncated hit(s)
 
-# CPU time: 15.29u 1.07s 00:00:16.36 Elapsed: 00:00:00.80
+# CPU time: 15.03u 0.39s 00:00:15.42 Elapsed: 00:00:00.67
 //
 [ok]

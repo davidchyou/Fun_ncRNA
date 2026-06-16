@@ -39,5 +39,5 @@ scaffold_11          -         U6_Agaricomycetes    -          cm        1      
 # Target file:     ./data/CopciAB_new_jgi_20220113.fasta
 # Option settings: cmsearch --tblout example_output/NCRNA/CM_core/input_genome.cmcore.tbl --cpu 128 /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/core_cm/Agaricomycetes.core.cm ./data/CopciAB_new_jgi_20220113.fasta 
 # Current dir:     /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026
-# Date:            Tue Jun 16 00:47:25 2026
+# Date:            Tue Jun 16 18:29:32 2026
 # [ok]

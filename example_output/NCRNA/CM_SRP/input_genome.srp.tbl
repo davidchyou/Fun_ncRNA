@@ -13,5 +13,5 @@ scaffold_13          -         SRP_Basido           -          cm        1      
 # Target file:     ./data/CopciAB_new_jgi_20220113.fasta
 # Option settings: cmsearch --tblout example_output/NCRNA/CM_SRP/input_genome.srp.tbl --cpu 128 /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/SRP_Basidio/SRP_Basidio.cm ./data/CopciAB_new_jgi_20220113.fasta 
 # Current dir:     /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026
-# Date:            Tue Jun 16 00:48:40 2026
+# Date:            Tue Jun 16 18:30:37 2026
 # [ok]

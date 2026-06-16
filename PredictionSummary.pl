@@ -111,7 +111,7 @@ if ($n_lsu_rsu_exact > 0) {
 	}
 }
 
-print "# Core ncRNAs were predicted with Fun_ncRNA (Chyou et al 2026). There were $n_snrna snRNA, $n_snorna snoRNA, $n_rnasep RNase P, $n_rnasemrp RNase MRP, $n_rnasesrp SRP, $n_trna tRNA and $n_rrna rRNA predicted. Of the $n_rrna rRNA, there were $n_5s 5S rRNA, $n_lsu LSU, $n_58s 5.8S rRNA, and $n_ssu SSU predicted. The number of complete or partial rRNA repeat units of SSU, 5.8S and LSU in this assembly is estimated to be $n_repeat.\n";
+print "# Core ncRNAs were predicted with Fun_ncRNA (Chyou et al 2026). There were $n_snrna snRNA, $n_snorna snoRNA, $n_rnasep RNase P, $n_rnasemrp RNase MRP, $n_rnasesrp SRP, $n_trna tRNA and $n_rrna rRNA predicted. Of the $n_rrna rRNA, there were $n_5s 5S rRNA, $n_lsu LSU, $n_58s 5.8S rRNA, and $n_ssu SSU predicted. Typically functional rRNA units are found in tandem arrays of SSU-5.8S-LSU.\n";
 
 foreach my $t (@ncrna_types) {
 	my $count = $counts{$t};

@@ -156,10 +156,12 @@ if (($merge_separately > 0) and ((-e "$outdir/NCRNA/input_genome.rnammer.gff") o
 }
 
 my $new_fun_gff = "$outdir/input_genome.ncrna.gff";
+my $new_fun_gff_safe = "$outdir/input_genome.ncrna.compatible.gff";
 my $new_fun_gff_assm = "$outdir/NCRNA/input_genome.all.nr.assm.gff";
 
 my $count = 0;
 open(NEWGFF, ">$new_fun_gff");
+open(NEWGFF_SAFE, ">$new_fun_gff_safe");
 open(ASSMGFF, ">$new_fun_gff_assm");
 open(FUNGFF, "$outdir/NCRNA/input_genome.all.nr.gff");
 while(my $line = <FUNGFF>) {
@@ -175,10 +177,17 @@ while(my $line = <FUNGFF>) {
 	my $comment_1 = "ID=$id;Name=$id;Dbxref=$type";
 	my $comment_2 = "ID=$id.1;Name=$id.1;Parent=$id";
 	my $comment_3 = "ID=$id.1.exon.1;Parent=$id.1";
+	my $comment_4 = "ID=$id.1.cds.1;Parent=$id.1";
+	
+	my $comment_3a = "ID=$id.1.cds.1;Parent=$id";
+	
+	$toks[2] = "gene"; $toks[8] = $comment_1; print NEWGFF_SAFE join("\t",@toks) . "\n";
+	$toks[2] = "mRNA"; $toks[8] = $comment_2; print NEWGFF_SAFE join("\t",@toks) . "\n";
+	$toks[2] = "exon"; $toks[8] = $comment_3; print NEWGFF_SAFE join("\t",@toks) . "\n";
+	$toks[2] = "CDS"; $toks[8] = $comment_4; print NEWGFF_SAFE join("\t",@toks) . "\n";
 	
 	$toks[2] = "gene"; $toks[8] = $comment_1; print NEWGFF join("\t",@toks) . "\n";
-	$toks[2] = "mRNA"; $toks[8] = $comment_2; print NEWGFF join("\t",@toks) . "\n";
-	$toks[2] = "exon"; $toks[8] = $comment_3; print NEWGFF join("\t",@toks) . "\n";
+	$toks[2] = "exon"; $toks[8] = $comment_3a; print NEWGFF join("\t",@toks) . "\n";
 	
 	my $query = $type;
 	
@@ -227,17 +236,21 @@ while(my $line = <FUNGFF>) {
 }
 close(FUNGFF);
 close(ASSMGFF);
+close(NEWGFF_SAFE);
 close(NEWGFF);
 
 if (($gffcmp > 0) and (-e $gff_in)) {
-	system("perl $cd_path/GFFCompare_wrapper.pl $new_fun_gff $gff_in $fna_in $outdir/GFFCMP $assm 0");
+	system("perl $cd_path/GFFCompare_wrapper.pl $new_fun_gff_safe $gff_in $fna_in $outdir/GFFCMP $assm 0");
 }
 
 if (-e $gff_in) {
 	system("cp $gff_in $outdir/input_genome.gff");
 	system(qq~cat $gff_in $new_fun_gff | grep -v '^#' > $outdir/input_genome.combined.gff.tmp~);
-	system(qq~sort -k1,1 -k4,4n $outdir/input_genome.combined.gff.tmp > $outdir/input_genome.combined.gff~);
+	system(qq~cat $gff_in $new_fun_gff_safe | grep -v '^#' > $outdir/input_genome.combined.compatible.gff.tmp~);
+	system(qq~sort -k1,1 -k4,4n $outdir/input_genome.combined.gff.tmp > $outdir/input_genome.combined.gff~);	
+	system(qq~sort -k1,1 -k4,4n $outdir/input_genome.combined.compatible.gff.tmp > $outdir/input_genome.combined.compatible.gff~);
 	unlink("$outdir/input_genome.combined.gff.tmp");
+	unlink("$outdir/input_genome.combined.compatible.gff.tmp");
 }
 
 my %gffcmp_code = ();
@@ -280,6 +293,36 @@ if (-e "$outdir/GFFCMP/input_genome.fun.gffcmp.annotated.summ.txt") {
 		}
 	}
 	close(GFFCMP_SUM);
+}
+
+if (-e "$outdir/GFFCMP/input_genome.fun.gffcmp.input_genome.fun.gffcmp.gtf.tmap") {
+	my %oid = ();
+	open(GFFCMP_TMAP, "$outdir/GFFCMP/input_genome.fun.gffcmp.input_genome.fun.gffcmp.gtf.tmap");
+	open(OVERLAP_TMAP, ">$outdir/overlapped_ref_genes.txt");
+	while(my $line = <GFFCMP_TMAP>) {
+		chomp $line;
+	
+		my @toks = split(/[\t]/, $line);
+		my $id_1 = $toks[0];
+		my $id_2 = $toks[1];
+		my $loc = $toks[2];
+		my $cov = $toks[9];
+		
+		if (($code_interp{$loc} eq "Reference match") or ($code_interp{$loc} eq "Reference overlap") or ($code_interp{$loc} eq "Antisense to reference")) {
+			print OVERLAP_TMAP "$id_1\t$id_2\t$loc\t$cov\n";
+			if (not exists $oid{$id_1}) {
+				$oid{$id_1} = 1;
+			}
+		}
+	}
+	close(OVERLAP_TMAP);
+	close(GFFCMP_TMAP);
+	
+	open(OVERLAP_TMAP_ID, ">$outdir/overlapped_ref_genes.id.txt");
+	foreach my $gid (keys(%oid)) {
+		print OVERLAP_TMAP_ID "$gid\n";
+	}
+	close(OVERLAP_TMAP_ID);
 }
 
 my $new_fun_gff_assm_gffcmp = "$outdir/NCRNA/input_genome.all.nr.assm.gffcmp.gff";
