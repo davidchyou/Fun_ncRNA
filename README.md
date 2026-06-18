@@ -221,9 +221,13 @@ Fun_ncRNA_output/
 ├── input_genome.ncrna.gff
 ├── input_genome.gff
 ├── input_genome.combined.gff
+├── input_genome.ncrna.compatible.gff
+├── input_genome.combined.compatible.gff
 ├── summary.txt
 ├── log.txt
 ├── log.err.txt
+├── overlapped_ref_genes.id.txt
+├── overlapped_ref_genes.txt
 └── NCRNA/
     ├── input_genome.all.nr.gff
     ├── input_genome.all.nr.assm.gff
@@ -234,12 +238,16 @@ Main output files:
 
 | File                                        | Description                                                                                                                              |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `input_genome.ncrna.gff`                    | Final predicted ncRNA annotation in GFF-like gene/mRNA/exon format.                                                                      |
+| `input_genome.ncrna.gff`                    | Final predicted ncRNA annotation in GFF-like gene/exon format.                                                                           |
 | `input_genome.gff`                          | Copy of the input GFF annotation, if `-gff` was supplied.                                                                                |
 | `input_genome.combined.gff`                 | Combined input annotation and predicted ncRNA annotation, sorted by contig and genomic start position. Produced when `-gff` is supplied. |
+| `input_genome.ncrna.compatible.gff`         | Final predicted ncRNA annotation in GFF-like gene/mRNA/exon/CDS format. Useful when downstream software requires mRNA and CDS features.  |
+| `input_genome.combined.compatible.gff`      | Combined input annotation and predicted ncRNA annotation with ncRNAs in gene/mRNA/exon/CDS format. Produced when `-gff` is supplied.     |
 | `summary.txt`                               | Summary of predicted ncRNA features.                                                                                                     |
 | `log.txt`                                   | Standard pipeline log.                                                                                                                   |
-| `log.err.txt`                               | Error log.                                                                                                                               |
+| `log.error.txt`                             | Error log.                                                                                                                               |
+| `overlapped_ref_genes.id.txt`               | Gene IDs in the reference GFF annotation that are overlapped by predicted ncRNAs. Produced when `-gffcmp` is supplied.                   |
+| `overlapped_ref_genes.txt`                  | As above, key GFFCompare outputs showing genes in the reference GFF annotation that are overlapped by predicted ncRNAs.                  |
 | `NCRNA/input_genome.all.nr.gff`             | Non-redundant ncRNA predictions after merging/filtering.                                                                                 |
 | `NCRNA/input_genome.all.nr.assm.gff`        | Non-redundant predictions with additional ID, assembly, and ncRNA class fields.                                                          |
 | `NCRNA/input_genome.all.nr.assm.gffcmp.gff` | Predictions annotated with GFFCompare-style comparison codes, when available.                                                            |
@@ -352,6 +360,26 @@ cmsearch -h
 ### Existing output directory is deleted
 
 The script removes and recreates the output directory if it already exists. To avoid losing previous results, always choose a new `-out` directory or back up the existing directory before rerunning.
+
+## Advanced uses
+
+### Preparing for RNASeq analysis
+
+Because ncRNAs often overlap with coding genes, it is recommended that users quantify ncRNAs and coding genes separately. For this purpose, we provided a list of IDs of genes in the reference GFF annotation that overlap with predicted ncRNAs. Users can use the `grep` command to remove them from the reference GFF annotation.
+
+```bash
+grep -v -f overlapped_ref_genes.id.txt input_genome.gff | grep -v '^--' > input_genome.no_ncrna.gff
+```
+
+Then, to analyse or quantify ncRNAs, users can use one of the ncRNA-only GFF annotations. Because RNASeq pipelines often requires the gene/mRNA/exon/CDS formatting for all genes even if they are non-coding, the software-compatible version, `input_genome.ncrna.compatible.gff` is recommended.
+
+### Detecting mitochondrial chromosome or contigs
+
+In the official collection Rfam covariation models, `Intron_gpI` and `Intron_gpII` are key ncRNA biomarkers of mitochondria. While we have removed Rfam models that are associated with prokaryotes or organelles as well as models with zero hits in RefSeq 219 fungal genomes, users will need to download the full set of Rfam models for these markers, and provided it with the command-line argument `-rfam`.
+
+Mitochondrial chromosome can also be inferred from genome-assembly statistics, as a contig with high and well-above average coverage, and predicted to be circular.
+
+It is recommended that users annotate mitochondrial chromosome or contigs using specialised organelle-genome gene annotators, and run `Fun_ncRNA` with the annotation and the official collection Rfam models that covers organelle ncRNA genes.
 
 ## Citation
 
