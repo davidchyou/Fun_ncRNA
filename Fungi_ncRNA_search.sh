@@ -63,7 +63,7 @@ cd $TRNA_OUT
 #tRNAscan-SE -j input_genome.trna.gff input_genome.fna > input_genome.trna.log.txt 2> input_genome.trna.err.txt
 #/projects/health_sciences/bms/biochemistry/brown_lab/davidc/bioinfo_tools.v5.sif tRNAscan-SE -b input_genome.trna.bed input_genome.fna > input_genome.trna.log.txt 2> input_genome.trna.err.txt
 tRNAscan-SE -b input_genome.trna.bed input_genome.fna > input_genome.trna.log.txt 2> input_genome.trna.err.txt
-cat input_genome.trna.bed | awk -F'\t' '{print $1, "tRNAScan-SE", "tRNA", $2, $3, $5, $6, ".", "ID="$4}' OFS='\t' | sort -k1,1 -k4,4n > input_genome.trna.gff 2> input_genome.trna.err.txt
+cat input_genome.trna.bed | awk -F'\t' '{print $1, "tRNAScan-SE", "tRNA", ($2>0)?$2:1, $3, $5, $6, ".", "ID="$4}' OFS='\t' | sort -k1,1 -k4,4n > input_genome.trna.gff 2> input_genome.trna.err.txt
 rm -f input_genome.fna
 cd $CURDIR
 cat $TRNA_OUT/input_genome.trna.gff | grep -v '^#' > $OUTDIR/input_genome.trna.gff
@@ -104,5 +104,5 @@ perl $SCRIPTPATH/bin/infernal-tblout2gff.pl -T $CORE_CM_CUTOFF --all $CORE_CM_OU
 fi
 
 cat $OUTDIR/input_genome.*.gff | sort -k1,1 -k4,4n > $OUTDIR/input_genome.all.gff
-bedtools cluster -i $OUTDIR/input_genome.all.gff -d 0 -s | sort -k10,10 -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $OUTDIR/input_genome.all.nr.gff
+bedtools cluster -i $OUTDIR/input_genome.all.gff -d 0 -s | sort -k10,10 -k6,6nr -u | sort -k1,1 -k4,4n | cut -f 1-9 > $OUTDIR/input_genome.all.nr.gff
 
