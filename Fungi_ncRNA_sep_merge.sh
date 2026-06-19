@@ -20,7 +20,7 @@ cat $BASEDIR/input_genome.trna.gff | sort -k1,1 -k4,4n > $OUTDIR/input_genome.tr
 bedtools cluster -i $OUTDIR/input_genome.trna.sorted.gff -d 0 -s | sort -k10,10 -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $OUTDIR/input_genome.trna.nr.gff
 
 cat $OUTDIR/input_genome.trna.nr.gff $OUTDIR/input_genome.rfamtr.nr.gff | sort -k1,1 -k4,4n > $OUTDIR/input_genome.alltrna.sorted.gff
-bedtools cluster -i $OUTDIR/input_genome.alltrna.sorted.gff -d 0 -s | awk -F'\t' '{print $0, ($2~/tRNAscan-SE/)?1:0}' 'OFS=\t' | sort -k10,10 -k11,11nr -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $TRNA_GFF_2
+bedtools cluster -i $OUTDIR/input_genome.alltrna.sorted.gff -d 0 -s | awk -F'\t' '{print $0, ($2~/tRNAScan-SE/)?1:0}' OFS='\t' | sort -k10,10 -k11,11nr -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $TRNA_GFF_2
 
 fi
 
@@ -37,7 +37,7 @@ cat $BASEDIR/input_genome.rnammer.gff | sort -k1,1 -k4,4n > $OUTDIR/input_genome
 bedtools cluster -i $OUTDIR/input_genome.rnammer.sorted.gff -d 0 -s | sort -k10,10 -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $OUTDIR/input_genome.rnammer.nr.gff
 
 cat $OUTDIR/input_genome.rnammer.nr.gff $OUTDIR/input_genome.rfamrr.nr.gff | sort -k1,1 -k4,4n > $OUTDIR/input_genome.allrrna.sorted.gff
-bedtools cluster -i $OUTDIR/input_genome.allrrna.sorted.gff -d 0 -s | awk -F'\t' '{print $0, ($2~/RNAmmer/)?1:0}' 'OFS=\t' | sort -k10,10 -k11,11nr -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $RRNA_GFF_2
+bedtools cluster -i $OUTDIR/input_genome.allrrna.sorted.gff -d 0 -s | awk -F'\t' '{print $0, ($2~/RNAmmer/)?1:0}' OFS='\t' | sort -k10,10 -k11,11nr -k6,6nr | sort -k10,10 -u | sort -k1,1 -k4,4n | cut -f 1-9 > $RRNA_GFF_2
 
 fi
 

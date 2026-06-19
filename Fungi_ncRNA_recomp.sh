@@ -24,7 +24,7 @@ if [ -e $BASEDIR/RNAMMER/input_genome.rnammer.gff ]
 then
 
 cp -r $BASEDIR/RNAMMER $RNAMMER_OUT
-cat $RNAMMER_OUT/input_genome.rnammer.gff | grep -v '^#' | awk -F'\t' '{print $1, $2, $9, $4, $5, $6, $7, $8, $3}' 'OFS=\t' > $OUTDIR/input_genome.rnammer.gff
+cat $RNAMMER_OUT/input_genome.rnammer.gff | grep -v '^#' | awk -F'\t' '{print $1, $2, $9, $4, $5, $6, $7, $8, $3}' OFS='\t' > $OUTDIR/input_genome.rnammer.gff
 #cat $RNAMMER_OUT/input_genome.rnammer.gff | grep -v '^#' | cut -f 1,2,9,4,5,6,7,8,3 > $OUTDIR/input_genome.rnammer.gff
 
 else
@@ -40,7 +40,7 @@ perl $SCRIPTPATH/bin/rnammer/rnammer -S euk -m tsu,ssu,lsu -gff input_genome.rna
 #rnammer -S euk -m tsu,ssu,lsu -gff input_genome.rnammer.gff input_genome.fna -multi > input_genome.rnammer.log.txt 2> input_genome.rnammer.err.txt
 rm -f input_genome.fna
 cd $CURDIR
-cat $RNAMMER_OUT/input_genome.rnammer.gff | grep -v '^#' | awk -F'\t' '{print $1, $2, $9, $4, $5, $6, $7, $8, $3}' 'OFS=\t' > $OUTDIR/input_genome.rnammer.gff
+cat $RNAMMER_OUT/input_genome.rnammer.gff | grep -v '^#' | awk -F'\t' '{print $1, $2, $9, $4, $5, $6, $7, $8, $3}' OFS='\t' > $OUTDIR/input_genome.rnammer.gff
 #cat $RNAMMER_OUT/input_genome.rnammer.gff | grep -v '^#' | cut -f 1,2,9,4,5,6,7,8,3 > $OUTDIR/input_genome.rnammer.gff
 
 fi
