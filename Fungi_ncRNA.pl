@@ -219,7 +219,7 @@ while(my $line = <FUNGFF>) {
 		$class = "snoRNA";
 	}
 	
-	if ((index($app, "tRNAscan-SE") >= 0) and (index($query, "pseudogene") >= 0)) {
+	if ((index($app, "tRNAScan-SE") >= 0) and (index($query, "pseudogene") >= 0)) {
 		$class = "tRNA";
 	}
 	
