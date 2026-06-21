@@ -113,7 +113,7 @@ Windows passing local HMM Viterbi  filter:             102  (0.0003435); expecte
 Windows passing local HMM Forward  filter:               6  (2.011e-05); expected (1e-05)
 Total HMM hits reported:                                 6  (5.46e-06)
 
-# CPU time: 1.13u 0.61s 00:00:01.73 Elapsed: 00:00:00.27
+# CPU time: 1.20u 0.61s 00:00:01.81 Elapsed: 00:00:00.29
 //
 Query:       CD_11  [CLEN=103]
 Hit scores:
@@ -219,7 +219,7 @@ Windows passing local HMM Viterbi  filter:             218  (0.000629); expected
 Windows passing local HMM Forward  filter:              10  (3.175e-05); expected (1e-05)
 Total HMM hits reported:                                 7  (5.299e-06)
 
-# CPU time: 1.19u 0.49s 00:00:01.68 Elapsed: 00:00:00.24
+# CPU time: 1.12u 0.56s 00:00:01.68 Elapsed: 00:00:00.23
 //
 Query:       CD_12  [CLEN=104]
 Hit scores:
@@ -295,7 +295,7 @@ Windows passing local HMM Viterbi  filter:             103  (0.000429); expected
 Windows passing local HMM Forward  filter:               5  (2.419e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (3.998e-06)
 
-# CPU time: 1.08u 0.53s 00:00:01.61 Elapsed: 00:00:00.23
+# CPU time: 1.14u 0.49s 00:00:01.63 Elapsed: 00:00:00.22
 //
 Query:       CD_13  [CLEN=92]
 Hit scores:
@@ -377,7 +377,7 @@ Windows passing local HMM Viterbi  filter:             228  (0.0007122); expecte
 Windows passing local HMM Forward  filter:               5  (1.562e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (3.582e-06)
 
-# CPU time: 1.06u 0.53s 00:00:01.59 Elapsed: 00:00:00.23
+# CPU time: 0.99u 0.69s 00:00:01.68 Elapsed: 00:00:00.21
 //
 Query:       CD_14  [CLEN=88]
 Hit scores:
@@ -447,7 +447,7 @@ Windows passing local HMM Viterbi  filter:             221  (0.0007391); expecte
 Windows passing local HMM Forward  filter:               4  (1.328e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (2.911e-06)
 
-# CPU time: 1.08u 0.46s 00:00:01.54 Elapsed: 00:00:00.21
+# CPU time: 0.99u 0.60s 00:00:01.59 Elapsed: 00:00:00.20
 //
 Query:       CD_15  [CLEN=95]
 Hit scores:
@@ -481,7 +481,7 @@ Windows passing local HMM Viterbi  filter:             127  (0.0003897); expecte
 Windows passing local HMM Forward  filter:               1  (2.992e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (3.89e-07)
 
-# CPU time: 1.02u 0.51s 00:00:01.53 Elapsed: 00:00:00.21
+# CPU time: 0.98u 0.60s 00:00:01.58 Elapsed: 00:00:00.21
 //
 Query:       CD_16  [CLEN=127]
 Hit scores:
@@ -599,7 +599,7 @@ Windows passing local HMM Viterbi  filter:             194  (0.0006792); expecte
 Windows passing local HMM Forward  filter:               9  (3.438e-05); expected (1e-05)
 Total HMM hits reported:                                 7  (5.795e-06)
 
-# CPU time: 1.32u 0.46s 00:00:01.78 Elapsed: 00:00:00.24
+# CPU time: 1.30u 0.55s 00:00:01.85 Elapsed: 00:00:00.23
 //
 Query:       CD_17  [CLEN=91]
 Hit scores:
@@ -729,7 +729,7 @@ Windows passing local HMM Viterbi  filter:             247  (0.0006582); expecte
 Windows passing local HMM Forward  filter:               9  (2.317e-05); expected (1e-05)
 Total HMM hits reported:                                 9  (5.675e-06)
 
-# CPU time: 1.00u 0.45s 00:00:01.45 Elapsed: 00:00:00.21
+# CPU time: 0.97u 0.63s 00:00:01.60 Elapsed: 00:00:00.21
 //
 Query:       CD_18  [CLEN=103]
 Hit scores:
@@ -775,7 +775,7 @@ Windows passing local HMM Viterbi  filter:             148  (0.0004983); expecte
 Windows passing local HMM Forward  filter:               2  (5.232e-06); expected (1e-05)
 Total HMM hits reported:                                 2  (8.586e-07)
 
-# CPU time: 1.00u 0.58s 00:00:01.58 Elapsed: 00:00:00.22
+# CPU time: 1.14u 0.54s 00:00:01.68 Elapsed: 00:00:00.21
 //
 Query:       CD_19  [CLEN=95]
 Hit scores:
@@ -959,7 +959,7 @@ Windows passing local HMM Viterbi  filter:             152  (0.0004211); expecte
 Windows passing local HMM Forward  filter:              12  (3.304e-05); expected (1e-05)
 Total HMM hits reported:                                12  (1.052e-05)
 
-# CPU time: 1.06u 0.46s 00:00:01.52 Elapsed: 00:00:00.22
+# CPU time: 1.04u 0.60s 00:00:01.64 Elapsed: 00:00:00.21
 //
 Query:       CD_1  [CLEN=133]
 Hit scores:
@@ -1071,7 +1071,7 @@ Windows passing local HMM Viterbi  filter:             110  (0.0004117); expecte
 Windows passing local HMM Forward  filter:               9  (3.601e-05); expected (1e-05)
 Total HMM hits reported:                                 6  (5.5e-06)
 
-# CPU time: 1.23u 0.51s 00:00:01.74 Elapsed: 00:00:00.24
+# CPU time: 1.24u 0.60s 00:00:01.84 Elapsed: 00:00:00.23
 //
 Query:       CD_20  [CLEN=98]
 Hit scores:
@@ -1153,7 +1153,7 @@ Windows passing local HMM Viterbi  filter:             294  (0.0008152); expecte
 Windows passing local HMM Forward  filter:               6  (1.847e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (3.085e-06)
 
-# CPU time: 1.14u 0.44s 00:00:01.57 Elapsed: 00:00:00.21
+# CPU time: 1.14u 0.56s 00:00:01.70 Elapsed: 00:00:00.20
 //
 Query:       CD_21  [CLEN=88]
 Hit scores:
@@ -1235,7 +1235,7 @@ Windows passing local HMM Viterbi  filter:             256  (0.0007173); expecte
 Windows passing local HMM Forward  filter:               6  (1.833e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (3.528e-06)
 
-# CPU time: 1.04u 0.52s 00:00:01.56 Elapsed: 00:00:00.21
+# CPU time: 1.00u 0.67s 00:00:01.67 Elapsed: 00:00:00.21
 //
 Query:       CD_22  [CLEN=88]
 Hit scores:
@@ -1305,7 +1305,7 @@ Windows passing local HMM Viterbi  filter:             232  (0.0006496); expecte
 Windows passing local HMM Forward  filter:               4  (1.14e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (2.307e-06)
 
-# CPU time: 0.97u 0.53s 00:00:01.50 Elapsed: 00:00:00.20
+# CPU time: 0.97u 0.62s 00:00:01.59 Elapsed: 00:00:00.21
 //
 Query:       CD_23  [CLEN=85]
 Hit scores:
@@ -1351,7 +1351,7 @@ Windows passing local HMM Viterbi  filter:             157  (0.0006202); expecte
 Windows passing local HMM Forward  filter:               2  (8.559e-06); expected (1e-05)
 Total HMM hits reported:                                 2  (1.851e-06)
 
-# CPU time: 1.01u 0.46s 00:00:01.47 Elapsed: 00:00:00.21
+# CPU time: 0.97u 0.62s 00:00:01.59 Elapsed: 00:00:00.21
 //
 Query:       CD_24  [CLEN=94]
 Hit scores:
@@ -1457,7 +1457,7 @@ Windows passing local HMM Viterbi  filter:             172  (0.0004796); expecte
 Windows passing local HMM Forward  filter:               9  (2.636e-05); expected (1e-05)
 Total HMM hits reported:                                 7  (3.984e-06)
 
-# CPU time: 1.04u 0.49s 00:00:01.53 Elapsed: 00:00:00.21
+# CPU time: 1.04u 0.56s 00:00:01.60 Elapsed: 00:00:00.21
 //
 Query:       CD_25  [CLEN=95]
 Hit scores:
@@ -1515,7 +1515,7 @@ Windows passing local HMM Viterbi  filter:             180  (0.0004981); expecte
 Windows passing local HMM Forward  filter:               3  (7.942e-06); expected (1e-05)
 Total HMM hits reported:                                 3  (2.026e-06)
 
-# CPU time: 1.05u 0.49s 00:00:01.54 Elapsed: 00:00:00.21
+# CPU time: 1.09u 0.54s 00:00:01.63 Elapsed: 00:00:00.22
 //
 Query:       CD_26  [CLEN=101]
 Hit scores:
@@ -1603,7 +1603,7 @@ Windows passing local HMM Viterbi  filter:             166  (0.0005399); expecte
 Windows passing local HMM Forward  filter:               5  (1.621e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (3.555e-06)
 
-# CPU time: 1.06u 0.51s 00:00:01.57 Elapsed: 00:00:00.21
+# CPU time: 1.09u 0.58s 00:00:01.67 Elapsed: 00:00:00.22
 //
 Query:       CD_27  [CLEN=93]
 Hit scores:
@@ -1757,7 +1757,7 @@ Windows passing local HMM Viterbi  filter:             198  (0.0006251); expecte
 Windows passing local HMM Forward  filter:              11  (3.66e-05); expected (1e-05)
 Total HMM hits reported:                                11  (6.869e-06)
 
-# CPU time: 1.02u 0.51s 00:00:01.53 Elapsed: 00:00:00.21
+# CPU time: 0.98u 0.63s 00:00:01.61 Elapsed: 00:00:00.21
 //
 Query:       CD_28  [CLEN=89]
 Hit scores:
@@ -1869,7 +1869,7 @@ Windows passing local HMM Viterbi  filter:             343  (0.0009365); expecte
 Windows passing local HMM Forward  filter:              11  (3.409e-05); expected (1e-05)
 Total HMM hits reported:                                 7  (5.218e-06)
 
-# CPU time: 1.08u 0.49s 00:00:01.57 Elapsed: 00:00:00.21
+# CPU time: 0.99u 0.66s 00:00:01.65 Elapsed: 00:00:00.21
 //
 Query:       CD_2  [CLEN=107]
 Hit scores:
@@ -1939,7 +1939,7 @@ Windows passing local HMM Viterbi  filter:             169  (0.0007048); expecte
 Windows passing local HMM Forward  filter:               5  (2.277e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (2.562e-06)
 
-# CPU time: 1.10u 0.46s 00:00:01.56 Elapsed: 00:00:00.21
+# CPU time: 1.14u 0.56s 00:00:01.70 Elapsed: 00:00:00.23
 //
 Query:       CD_30  [CLEN=94]
 Hit scores:
@@ -1964,7 +1964,7 @@ Windows passing local HMM Viterbi  filter:             186  (0.0005282); expecte
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 0.99u 0.49s 00:00:01.48 Elapsed: 00:00:00.21
+# CPU time: 1.00u 0.60s 00:00:01.60 Elapsed: 00:00:00.21
 //
 Query:       CD_31  [CLEN=101]
 Hit scores:
@@ -2010,7 +2010,7 @@ Windows passing local HMM Viterbi  filter:              97  (0.0003895); expecte
 Windows passing local HMM Forward  filter:               3  (1.193e-05); expected (1e-05)
 Total HMM hits reported:                                 2  (1.556e-06)
 
-# CPU time: 1.16u 0.50s 00:00:01.66 Elapsed: 00:00:00.22
+# CPU time: 0.99u 0.71s 00:00:01.70 Elapsed: 00:00:00.21
 //
 Query:       CD_32  [CLEN=99]
 Hit scores:
@@ -2056,7 +2056,7 @@ Windows passing local HMM Viterbi  filter:             138  (0.0003998); expecte
 Windows passing local HMM Forward  filter:               2  (5.929e-06); expected (1e-05)
 Total HMM hits reported:                                 2  (1.328e-06)
 
-# CPU time: 1.04u 0.54s 00:00:01.58 Elapsed: 00:00:00.21
+# CPU time: 0.99u 0.66s 00:00:01.65 Elapsed: 00:00:00.22
 //
 Query:       CD_33  [CLEN=127]
 Hit scores:
@@ -2090,7 +2090,7 @@ Windows passing local HMM Viterbi  filter:              20  (0.0001783); expecte
 Windows passing local HMM Forward  filter:               1  (9.176e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (4.561e-07)
 
-# CPU time: 1.16u 0.55s 00:00:01.71 Elapsed: 00:00:00.23
+# CPU time: 1.10u 0.64s 00:00:01.74 Elapsed: 00:00:00.23
 //
 Query:       CD_34  [CLEN=92]
 Hit scores:
@@ -2172,7 +2172,7 @@ Windows passing local HMM Viterbi  filter:             284  (0.0007708); expecte
 Windows passing local HMM Forward  filter:               5  (1.307e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (2.71e-06)
 
-# CPU time: 1.09u 0.46s 00:00:01.55 Elapsed: 00:00:00.21
+# CPU time: 1.04u 0.57s 00:00:01.61 Elapsed: 00:00:00.22
 //
 Query:       CD_35  [CLEN=105]
 Hit scores:
@@ -2230,7 +2230,7 @@ Windows passing local HMM Viterbi  filter:             170  (0.000518); expected
 Windows passing local HMM Forward  filter:               4  (1.287e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (2.361e-06)
 
-# CPU time: 1.14u 0.50s 00:00:01.64 Elapsed: 00:00:00.22
+# CPU time: 1.06u 0.62s 00:00:01.68 Elapsed: 00:00:00.23
 //
 Query:       CD_36  [CLEN=104]
 Hit scores:
@@ -2300,7 +2300,7 @@ Windows passing local HMM Viterbi  filter:             102  (0.0004285); expecte
 Windows passing local HMM Forward  filter:               4  (2.012e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (2.764e-06)
 
-# CPU time: 1.12u 0.47s 00:00:01.59 Elapsed: 00:00:00.23
+# CPU time: 1.05u 0.61s 00:00:01.66 Elapsed: 00:00:00.21
 //
 Query:       CD_37  [CLEN=117]
 Hit scores:
@@ -2394,7 +2394,7 @@ Windows passing local HMM Viterbi  filter:             130  (0.0004274); expecte
 Windows passing local HMM Forward  filter:               5  (1.701e-05); expected (1e-05)
 Total HMM hits reported:                                 6  (3.904e-06)
 
-# CPU time: 1.08u 0.56s 00:00:01.64 Elapsed: 00:00:00.22
+# CPU time: 1.17u 0.56s 00:00:01.73 Elapsed: 00:00:00.23
 //
 Query:       CD_38  [CLEN=98]
 Hit scores:
@@ -2536,7 +2536,7 @@ Windows passing local HMM Viterbi  filter:             276  (0.0008436); expecte
 Windows passing local HMM Forward  filter:              12  (4.604e-05); expected (1e-05)
 Total HMM hits reported:                                 9  (6.614e-06)
 
-# CPU time: 1.18u 0.47s 00:00:01.65 Elapsed: 00:00:00.21
+# CPU time: 1.12u 0.52s 00:00:01.64 Elapsed: 00:00:00.22
 //
 Query:       CD_39  [CLEN=90]
 Hit scores:
@@ -2594,7 +2594,7 @@ Windows passing local HMM Viterbi  filter:             143  (0.000438); expected
 Windows passing local HMM Forward  filter:               3  (9.163e-06); expected (1e-05)
 Total HMM hits reported:                                 3  (1.972e-06)
 
-# CPU time: 1.00u 0.52s 00:00:01.52 Elapsed: 00:00:00.22
+# CPU time: 0.93u 0.61s 00:00:01.54 Elapsed: 00:00:00.21
 //
 Query:       CD_40  [CLEN=112]
 Hit scores:
@@ -2619,7 +2619,7 @@ Windows passing local HMM Viterbi  filter:             106  (0.0003354); expecte
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.07u 0.53s 00:00:01.60 Elapsed: 00:00:00.22
+# CPU time: 1.01u 0.68s 00:00:01.69 Elapsed: 00:00:00.22
 //
 Query:       CD_41  [CLEN=96]
 Hit scores:
@@ -2677,7 +2677,7 @@ Windows passing local HMM Viterbi  filter:             251  (0.0007248); expecte
 Windows passing local HMM Forward  filter:               5  (1.493e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (1.61e-06)
 
-# CPU time: 1.04u 0.55s 00:00:01.59 Elapsed: 00:00:00.21
+# CPU time: 1.00u 0.64s 00:00:01.64 Elapsed: 00:00:00.21
 //
 Query:       CD_42  [CLEN=90]
 Hit scores:
@@ -2831,7 +2831,7 @@ Windows passing local HMM Viterbi  filter:             458  (0.001225); expected
 Windows passing local HMM Forward  filter:              12  (3.185e-05); expected (1e-05)
 Total HMM hits reported:                                11  (6.077e-06)
 
-# CPU time: 1.08u 0.53s 00:00:01.61 Elapsed: 00:00:00.21
+# CPU time: 0.98u 0.73s 00:00:01.71 Elapsed: 00:00:00.21
 //
 Query:       CD_43  [CLEN=109]
 Hit scores:
@@ -2913,7 +2913,7 @@ Windows passing local HMM Viterbi  filter:             173  (0.0005273); expecte
 Windows passing local HMM Forward  filter:               6  (1.855e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (3.112e-06)
 
-# CPU time: 1.11u 0.56s 00:00:01.67 Elapsed: 00:00:00.22
+# CPU time: 1.12u 0.62s 00:00:01.74 Elapsed: 00:00:00.22
 //
 Query:       CD_44  [CLEN=96]
 Hit scores:
@@ -3007,7 +3007,7 @@ Windows passing local HMM Viterbi  filter:             200  (0.0006135); expecte
 Windows passing local HMM Forward  filter:               6  (1.826e-05); expected (1e-05)
 Total HMM hits reported:                                 6  (2.374e-06)
 
-# CPU time: 1.03u 0.52s 00:00:01.55 Elapsed: 00:00:00.21
+# CPU time: 0.98u 0.64s 00:00:01.62 Elapsed: 00:00:00.21
 //
 Query:       CD_45  [CLEN=106]
 Hit scores:
@@ -3089,7 +3089,7 @@ Windows passing local HMM Viterbi  filter:             301  (0.0009948); expecte
 Windows passing local HMM Forward  filter:              43  (0.0001643); expected (1e-05)
 Total HMM hits reported:                                 5  (3.783e-06)
 
-# CPU time: 1.41u 0.46s 00:00:01.87 Elapsed: 00:00:00.22
+# CPU time: 1.36u 0.59s 00:00:01.95 Elapsed: 00:00:00.23
 //
 Query:       CD_46  [CLEN=104]
 Hit scores:
@@ -3171,7 +3171,7 @@ Windows passing local HMM Viterbi  filter:             194  (0.000566); expected
 Windows passing local HMM Forward  filter:               4  (1.422e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (3.743e-06)
 
-# CPU time: 1.00u 0.58s 00:00:01.58 Elapsed: 00:00:00.21
+# CPU time: 1.01u 0.68s 00:00:01.69 Elapsed: 00:00:00.22
 //
 Query:       CD_47  [CLEN=92]
 Hit scores:
@@ -3289,7 +3289,7 @@ Windows passing local HMM Viterbi  filter:             300  (0.0008869); expecte
 Windows passing local HMM Forward  filter:               8  (2.545e-05); expected (1e-05)
 Total HMM hits reported:                                 8  (4.789e-06)
 
-# CPU time: 1.04u 0.55s 00:00:01.59 Elapsed: 00:00:00.21
+# CPU time: 1.00u 0.64s 00:00:01.64 Elapsed: 00:00:00.21
 //
 Query:       CD_49  [CLEN=97]
 Hit scores:
@@ -3359,7 +3359,7 @@ Windows passing local HMM Viterbi  filter:             239  (0.0007304); expecte
 Windows passing local HMM Forward  filter:               5  (1.716e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (3.085e-06)
 
-# CPU time: 1.09u 0.51s 00:00:01.60 Elapsed: 00:00:00.22
+# CPU time: 1.06u 0.63s 00:00:01.69 Elapsed: 00:00:00.21
 //
 Query:       CD_4  [CLEN=100]
 Hit scores:
@@ -3489,7 +3489,7 @@ Windows passing local HMM Viterbi  filter:             254  (0.0007595); expecte
 Windows passing local HMM Forward  filter:              11  (3.475e-05); expected (1e-05)
 Total HMM hits reported:                                 9  (5.286e-06)
 
-# CPU time: 1.13u 0.51s 00:00:01.64 Elapsed: 00:00:00.21
+# CPU time: 1.07u 0.64s 00:00:01.71 Elapsed: 00:00:00.22
 //
 Query:       CD_50  [CLEN=82]
 Hit scores:
@@ -3523,7 +3523,7 @@ Windows passing local HMM Viterbi  filter:              90  (0.0005092); expecte
 Windows passing local HMM Forward  filter:               1  (5.084e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (4.159e-07)
 
-# CPU time: 1.02u 0.56s 00:00:01.58 Elapsed: 00:00:00.40
+# CPU time: 1.03u 0.62s 00:00:01.65 Elapsed: 00:00:00.21
 //
 Query:       CD_51  [CLEN=87]
 Hit scores:
@@ -3556,7 +3556,7 @@ Windows passing local HMM Viterbi  filter:             124  (0.00037); expected 
 Windows passing local HMM Forward  filter:               1  (3.689e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (1.14e-06)
 
-# CPU time: 1.04u 0.56s 00:00:01.60 Elapsed: 00:00:00.22
+# CPU time: 0.97u 0.63s 00:00:01.60 Elapsed: 00:00:00.22
 //
 Query:       CD_53  [CLEN=222]
 Hit scores:
@@ -3650,7 +3650,7 @@ Windows passing local HMM Viterbi  filter:              74  (0.0004077); expecte
 Windows passing local HMM Forward  filter:               9  (5.204e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (6.332e-06)
 
-# CPU time: 1.85u 0.44s 00:00:02.29 Elapsed: 00:00:00.29
+# CPU time: 1.69u 0.59s 00:00:02.27 Elapsed: 00:00:00.29
 //
 Query:       CD_54  [CLEN=130]
 Hit scores:
@@ -3702,7 +3702,7 @@ Windows passing local HMM Viterbi  filter:              96  (0.0003705); expecte
 Windows passing local HMM Forward  filter:               2  (7.66e-06); expected (1e-05)
 Total HMM hits reported:                                 2  (1.972e-06)
 
-# CPU time: 1.43u 0.40s 00:00:01.83 Elapsed: 00:00:00.24
+# CPU time: 1.26u 0.58s 00:00:01.84 Elapsed: 00:00:00.23
 //
 Query:       CD_55  [CLEN=144]
 Hit scores:
@@ -3760,7 +3760,7 @@ Windows passing local HMM Viterbi  filter:             133  (0.000544); expected
 Windows passing local HMM Forward  filter:              10  (4.41e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (2.267e-06)
 
-# CPU time: 1.42u 0.46s 00:00:01.88 Elapsed: 00:00:00.25
+# CPU time: 1.34u 0.57s 00:00:01.91 Elapsed: 00:00:00.24
 //
 Query:       CD_56  [CLEN=101]
 Hit scores:
@@ -3824,7 +3824,7 @@ Windows passing local HMM Viterbi  filter:             197  (0.0008102); expecte
 Windows passing local HMM Forward  filter:               3  (1.394e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (3.206e-06)
 
-# CPU time: 1.12u 0.48s 00:00:01.60 Elapsed: 00:00:00.22
+# CPU time: 1.08u 0.58s 00:00:01.66 Elapsed: 00:00:00.22
 //
 Query:       CD_57  [CLEN=129]
 Hit scores:
@@ -3954,7 +3954,7 @@ Windows passing local HMM Viterbi  filter:             276  (0.001067); expected
 Windows passing local HMM Forward  filter:              17  (6.958e-05); expected (1e-05)
 Total HMM hits reported:                                 9  (7.875e-06)
 
-# CPU time: 1.33u 0.52s 00:00:01.85 Elapsed: 00:00:00.23
+# CPU time: 1.32u 0.56s 00:00:01.88 Elapsed: 00:00:00.23
 //
 Query:       CD_58  [CLEN=102]
 Hit scores:
@@ -3979,7 +3979,7 @@ Windows passing local HMM Viterbi  filter:             119  (0.0004409); expecte
 Windows passing local HMM Forward  filter:               2  (7.043e-06); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.17u 0.47s 00:00:01.64 Elapsed: 00:00:00.22
+# CPU time: 1.06u 0.62s 00:00:01.68 Elapsed: 00:00:00.23
 //
 Query:       CD_59  [CLEN=101]
 Hit scores:
@@ -4073,7 +4073,7 @@ Windows passing local HMM Viterbi  filter:             189  (0.0005562); expecte
 Windows passing local HMM Forward  filter:               8  (2.734e-05); expected (1e-05)
 Total HMM hits reported:                                 6  (4.776e-06)
 
-# CPU time: 1.02u 0.57s 00:00:01.59 Elapsed: 00:00:00.23
+# CPU time: 1.06u 0.60s 00:00:01.66 Elapsed: 00:00:00.22
 //
 Query:       CD_5  [CLEN=92]
 Hit scores:
@@ -4173,7 +4173,7 @@ Windows passing local HMM Viterbi  filter:             168  (0.0004927); expecte
 Windows passing local HMM Forward  filter:              12  (4.07e-05); expected (1e-05)
 Total HMM hits reported:                                 6  (5.353e-06)
 
-# CPU time: 1.04u 0.49s 00:00:01.53 Elapsed: 00:00:00.23
+# CPU time: 0.99u 0.68s 00:00:01.67 Elapsed: 00:00:00.22
 //
 Query:       CD_61  [CLEN=146]
 Hit scores:
@@ -4237,7 +4237,7 @@ Windows passing local HMM Viterbi  filter:              65  (0.0003385); expecte
 Windows passing local HMM Forward  filter:               3  (1.438e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (3.112e-06)
 
-# CPU time: 1.32u 0.49s 00:00:01.81 Elapsed: 00:00:00.24
+# CPU time: 1.25u 0.61s 00:00:01.86 Elapsed: 00:00:00.24
 //
 Query:       CD_63  [CLEN=99]
 Hit scores:
@@ -4262,7 +4262,7 @@ Windows passing local HMM Viterbi  filter:             213  (0.0006169); expecte
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.05u 0.50s 00:00:01.55 Elapsed: 00:00:00.22
+# CPU time: 1.03u 0.66s 00:00:01.69 Elapsed: 00:00:00.23
 //
 Query:       CD_65  [CLEN=129]
 Hit scores:
@@ -4332,7 +4332,7 @@ Windows passing local HMM Viterbi  filter:              50  (0.0002205); expecte
 Windows passing local HMM Forward  filter:               4  (1.768e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (3.434e-06)
 
-# CPU time: 1.22u 0.47s 00:00:01.69 Elapsed: 00:00:00.24
+# CPU time: 1.14u 0.62s 00:00:01.75 Elapsed: 00:00:00.23
 //
 Query:       CD_66  [CLEN=112]
 Hit scores:
@@ -4357,7 +4357,7 @@ Windows passing local HMM Viterbi  filter:             114  (0.0003618); expecte
 Windows passing local HMM Forward  filter:               1  (4.011e-06); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.11u 0.53s 00:00:01.64 Elapsed: 00:00:00.23
+# CPU time: 0.98u 0.74s 00:00:01.72 Elapsed: 00:00:00.23
 //
 Query:       CD_67  [CLEN=110]
 Hit scores:
@@ -4451,7 +4451,7 @@ Windows passing local HMM Viterbi  filter:             175  (0.0005353); expecte
 Windows passing local HMM Forward  filter:               6  (1.831e-05); expected (1e-05)
 Total HMM hits reported:                                 6  (3.327e-06)
 
-# CPU time: 1.11u 0.42s 00:00:01.53 Elapsed: 00:00:00.22
+# CPU time: 1.10u 0.57s 00:00:01.67 Elapsed: 00:00:00.22
 //
 Query:       CD_68  [CLEN=87]
 Hit scores:
@@ -4509,7 +4509,7 @@ Windows passing local HMM Viterbi  filter:             153  (0.0004349); expecte
 Windows passing local HMM Forward  filter:               6  (1.654e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (2.227e-06)
 
-# CPU time: 0.98u 0.52s 00:00:01.50 Elapsed: 00:00:00.21
+# CPU time: 0.99u 0.60s 00:00:01.59 Elapsed: 00:00:00.23
 //
 Query:       CD_69  [CLEN=107]
 Hit scores:
@@ -4567,7 +4567,7 @@ Windows passing local HMM Viterbi  filter:             117  (0.0003603); expecte
 Windows passing local HMM Forward  filter:               3  (9.793e-06); expected (1e-05)
 Total HMM hits reported:                                 3  (2.16e-06)
 
-# CPU time: 1.17u 0.52s 00:00:01.69 Elapsed: 00:00:00.23
+# CPU time: 1.10u 0.61s 00:00:01.71 Elapsed: 00:00:00.22
 //
 Query:       CD_6  [CLEN=96]
 Hit scores:
@@ -4613,7 +4613,7 @@ Windows passing local HMM Viterbi  filter:             153  (0.0004241); expecte
 Windows passing local HMM Forward  filter:               3  (8.478e-06); expected (1e-05)
 Total HMM hits reported:                                 2  (1.395e-06)
 
-# CPU time: 1.05u 0.52s 00:00:01.57 Elapsed: 00:00:00.21
+# CPU time: 0.93u 0.67s 00:00:01.60 Elapsed: 00:00:00.21
 //
 Query:       CD_71  [CLEN=94]
 Hit scores:
@@ -4695,7 +4695,7 @@ Windows passing local HMM Viterbi  filter:             240  (0.0006544); expecte
 Windows passing local HMM Forward  filter:               8  (2.102e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (2.831e-06)
 
-# CPU time: 1.02u 0.53s 00:00:01.55 Elapsed: 00:00:00.22
+# CPU time: 0.92u 0.64s 00:00:01.56 Elapsed: 00:00:00.22
 //
 Query:       CD_7  [CLEN=98]
 Hit scores:
@@ -4951,7 +4951,7 @@ Windows passing local HMM Viterbi  filter:             431  (0.001226); expected
 Windows passing local HMM Forward  filter:              26  (8.195e-05); expected (1e-05)
 Total HMM hits reported:                                19  (1.156e-05)
 
-# CPU time: 1.19u 0.54s 00:00:01.73 Elapsed: 00:00:00.22
+# CPU time: 1.21u 0.59s 00:00:01.79 Elapsed: 00:00:00.23
 //
 Query:       CD_8  [CLEN=106]
 Hit scores:
@@ -5003,7 +5003,7 @@ Windows passing local HMM Viterbi  filter:             178  (0.0005871); expecte
 Windows passing local HMM Forward  filter:               3  (1.1e-05); expected (1e-05)
 Total HMM hits reported:                                 2  (1.838e-06)
 
-# CPU time: 1.09u 0.49s 00:00:01.58 Elapsed: 00:00:00.22
+# CPU time: 1.09u 0.59s 00:00:01.68 Elapsed: 00:00:00.22
 //
 Query:       CD_9  [CLEN=107]
 Hit scores:
@@ -5145,7 +5145,7 @@ Windows passing local HMM Viterbi  filter:             306  (0.0009179); expecte
 Windows passing local HMM Forward  filter:               9  (2.832e-05); expected (1e-05)
 Total HMM hits reported:                                 9  (5.379e-06)
 
-# CPU time: 1.13u 0.51s 00:00:01.64 Elapsed: 00:00:00.23
+# CPU time: 1.08u 0.62s 00:00:01.70 Elapsed: 00:00:00.22
 //
 Query:       HACA_10  [CLEN=309]
 Hit scores:
@@ -5185,7 +5185,7 @@ Windows passing local HMM Viterbi  filter:              59  (0.0004431); expecte
 Windows passing local HMM Forward  filter:               1  (7.271e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (1.65e-06)
 
-# CPU time: 2.48u 0.44s 00:00:02.92 Elapsed: 00:00:00.34
+# CPU time: 2.50u 0.46s 00:00:02.96 Elapsed: 00:00:00.33
 //
 Query:       HACA_11  [CLEN=179]
 Hit scores:
@@ -5219,7 +5219,7 @@ Windows passing local HMM Viterbi  filter:              41  (0.0001966); expecte
 Windows passing local HMM Forward  filter:               1  (4.588e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (1.02e-06)
 
-# CPU time: 1.42u 0.52s 00:00:01.94 Elapsed: 00:00:00.25
+# CPU time: 1.35u 0.61s 00:00:01.96 Elapsed: 00:00:00.26
 //
 Query:       HACA_14  [CLEN=230]
 Hit scores:
@@ -5307,7 +5307,7 @@ Windows passing local HMM Viterbi  filter:              61  (0.0003714); expecte
 Windows passing local HMM Forward  filter:               5  (3.507e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (5.876e-06)
 
-# CPU time: 1.98u 0.48s 00:00:02.46 Elapsed: 00:00:00.30
+# CPU time: 1.99u 0.51s 00:00:02.50 Elapsed: 00:00:00.31
 //
 Query:       HACA_15  [CLEN=225]
 Hit scores:
@@ -5347,7 +5347,7 @@ Windows passing local HMM Viterbi  filter:              58  (0.0004313); expecte
 Windows passing local HMM Forward  filter:               1  (7.217e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (1.731e-06)
 
-# CPU time: 1.72u 0.47s 00:00:02.19 Elapsed: 00:00:00.29
+# CPU time: 1.64u 0.55s 00:00:02.19 Elapsed: 00:00:00.28
 //
 Query:       HACA_16  [CLEN=179]
 Hit scores:
@@ -5513,7 +5513,7 @@ Windows passing local HMM Viterbi  filter:             275  (0.001453); expected
 Windows passing local HMM Forward  filter:              10  (5.31e-05); expected (1e-05)
 Total HMM hits reported:                                10  (1.103e-05)
 
-# CPU time: 1.56u 0.44s 00:00:02.00 Elapsed: 00:00:00.25
+# CPU time: 1.51u 0.62s 00:00:02.13 Elapsed: 00:00:00.28
 //
 Query:       HACA_18  [CLEN=183]
 Hit scores:
@@ -5538,7 +5538,7 @@ Windows passing local HMM Viterbi  filter:              50  (0.0002384); expecte
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.65u 0.45s 00:00:02.10 Elapsed: 00:00:00.27
+# CPU time: 1.54u 0.59s 00:00:02.13 Elapsed: 00:00:00.28
 //
 Query:       HACA_19  [CLEN=180]
 Hit scores:
@@ -5578,7 +5578,7 @@ Windows passing local HMM Viterbi  filter:              31  (0.0002011); expecte
 Windows passing local HMM Forward  filter:               1  (7.177e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (2.066e-06)
 
-# CPU time: 1.43u 0.49s 00:00:01.92 Elapsed: 00:00:00.25
+# CPU time: 1.39u 0.61s 00:00:02.00 Elapsed: 00:00:00.25
 //
 Query:       HACA_21  [CLEN=161]
 Hit scores:
@@ -5726,7 +5726,7 @@ Windows passing local HMM Viterbi  filter:              96  (0.0004749); expecte
 Windows passing local HMM Forward  filter:              11  (5.916e-05); expected (1e-05)
 Total HMM hits reported:                                10  (9.914e-06)
 
-# CPU time: 1.38u 0.49s 00:00:01.87 Elapsed: 00:00:00.24
+# CPU time: 1.36u 0.56s 00:00:01.92 Elapsed: 00:00:00.25
 //
 Query:       HACA_26  [CLEN=188]
 Hit scores:
@@ -5766,7 +5766,7 @@ Windows passing local HMM Viterbi  filter:              50  (0.0002434); expecte
 Windows passing local HMM Forward  filter:               1  (4.655e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (1.838e-06)
 
-# CPU time: 1.54u 0.46s 00:00:02.00 Elapsed: 00:00:00.27
+# CPU time: 1.44u 0.48s 00:00:01.92 Elapsed: 00:00:00.26
 //
 Query:       HACA_27  [CLEN=182]
 Hit scores:
@@ -5791,7 +5791,7 @@ Windows passing local HMM Viterbi  filter:              26  (0.0002265); expecte
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.50u 0.44s 00:00:01.94 Elapsed: 00:00:00.26
+# CPU time: 1.39u 0.58s 00:00:01.96 Elapsed: 00:00:00.26
 //
 Query:       HACA_2  [CLEN=148]
 Hit scores:
@@ -5825,7 +5825,7 @@ Windows passing local HMM Viterbi  filter:              35  (0.0001616); expecte
 Windows passing local HMM Forward  filter:               1  (4.601e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (1.06e-06)
 
-# CPU time: 1.30u 0.49s 00:00:01.79 Elapsed: 00:00:00.24
+# CPU time: 1.26u 0.56s 00:00:01.82 Elapsed: 00:00:00.24
 //
 Query:       HACA_32  [CLEN=260]
 Hit scores:
@@ -5850,7 +5850,7 @@ Windows passing local HMM Viterbi  filter:              26  (0.0001696); expecte
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.74u 0.45s 00:00:02.19 Elapsed: 00:00:00.29
+# CPU time: 1.67u 0.56s 00:00:02.23 Elapsed: 00:00:00.29
 //
 Query:       HACA_33  [CLEN=344]
 Hit scores:
@@ -5962,7 +5962,7 @@ Windows passing local HMM Viterbi  filter:              54  (0.0004231); expecte
 Windows passing local HMM Forward  filter:              15  (0.0001228); expected (1e-05)
 Total HMM hits reported:                                 6  (8.009e-06)
 
-# CPU time: 2.19u 0.47s 00:00:02.66 Elapsed: 00:00:00.33
+# CPU time: 2.20u 0.57s 00:00:02.77 Elapsed: 00:00:00.35
 //
 Query:       HACA_34  [CLEN=196]
 Hit scores:
@@ -6044,7 +6044,7 @@ Windows passing local HMM Viterbi  filter:              30  (0.0001967); expecte
 Windows passing local HMM Forward  filter:               3  (2.259e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (5.836e-06)
 
-# CPU time: 1.49u 0.50s 00:00:01.99 Elapsed: 00:00:00.25
+# CPU time: 1.41u 0.64s 00:00:02.04 Elapsed: 00:00:00.27
 //
 Query:       HACA_37  [CLEN=180]
 Hit scores:
@@ -6069,7 +6069,7 @@ Windows passing local HMM Viterbi  filter:              15  (0.000301); expected
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 1.46u 0.50s 00:00:01.96 Elapsed: 00:00:00.26
+# CPU time: 1.39u 0.61s 00:00:02.00 Elapsed: 00:00:00.26
 //
 Query:       HACA_42  [CLEN=245]
 Hit scores:
@@ -6187,7 +6187,7 @@ Windows passing local HMM Viterbi  filter:              33  (0.0002429); expecte
 Windows passing local HMM Forward  filter:               7  (5.755e-05); expected (1e-05)
 Total HMM hits reported:                                 5  (9.095e-06)
 
-# CPU time: 1.69u 0.51s 00:00:02.20 Elapsed: 00:00:00.30
+# CPU time: 1.74u 0.52s 00:00:02.25 Elapsed: 00:00:00.30
 //
 Query:       HACA_44  [CLEN=346]
 Hit scores:
@@ -6212,7 +6212,7 @@ Windows passing local HMM Viterbi  filter:              20  (0.0002555); expecte
 Windows passing local HMM Forward  filter:               0  (0); expected (1e-05)
 Total HMM hits reported:                                 0  (0)
 
-# CPU time: 2.04u 0.44s 00:00:02.48 Elapsed: 00:00:00.33
+# CPU time: 2.07u 0.57s 00:00:02.63 Elapsed: 00:00:00.33
 //
 Query:       HACA_4  [CLEN=181]
 Hit scores:
@@ -6294,7 +6294,7 @@ Windows passing local HMM Viterbi  filter:              23  (0.0001421); expecte
 Windows passing local HMM Forward  filter:               4  (3.08e-05); expected (1e-05)
 Total HMM hits reported:                                 4  (5.54e-06)
 
-# CPU time: 1.42u 0.51s 00:00:01.93 Elapsed: 00:00:00.26
+# CPU time: 1.39u 0.63s 00:00:02.02 Elapsed: 00:00:00.27
 //
 Query:       HACA_56  [CLEN=208]
 Hit scores:
@@ -6358,7 +6358,7 @@ Windows passing local HMM Viterbi  filter:             185  (0.0009616); expecte
 Windows passing local HMM Forward  filter:               4  (2.344e-05); expected (1e-05)
 Total HMM hits reported:                                 3  (3.367e-06)
 
-# CPU time: 1.61u 0.47s 00:00:02.08 Elapsed: 00:00:00.27
+# CPU time: 1.62u 0.51s 00:00:02.13 Elapsed: 00:00:00.27
 //
 Query:       HACA_5  [CLEN=187]
 Hit scores:
@@ -6398,7 +6398,7 @@ Windows passing local HMM Viterbi  filter:              47  (0.000236); expected
 Windows passing local HMM Forward  filter:               1  (4.749e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (1.261e-06)
 
-# CPU time: 1.52u 0.52s 00:00:02.04 Elapsed: 00:00:00.26
+# CPU time: 1.54u 0.58s 00:00:02.12 Elapsed: 00:00:00.26
 //
 Query:       HACA_6  [CLEN=161]
 Hit scores:
@@ -6528,7 +6528,7 @@ Windows passing local HMM Viterbi  filter:             291  (0.001446); expected
 Windows passing local HMM Forward  filter:              15  (7.982e-05); expected (1e-05)
 Total HMM hits reported:                                 8  (8.613e-06)
 
-# CPU time: 1.44u 0.51s 00:00:01.95 Elapsed: 00:00:00.23
+# CPU time: 1.53u 0.53s 00:00:02.06 Elapsed: 00:00:00.25
 //
 Query:       HACA_8  [CLEN=159]
 Hit scores:
@@ -6562,7 +6562,7 @@ Windows passing local HMM Viterbi  filter:              51  (0.0003082); expecte
 Windows passing local HMM Forward  filter:               1  (5.326e-06); expected (1e-05)
 Total HMM hits reported:                                 1  (6.573e-07)
 
-# CPU time: 1.56u 0.42s 00:00:01.98 Elapsed: 00:00:00.26
+# CPU time: 1.40u 0.57s 00:00:01.96 Elapsed: 00:00:00.25
 //
 Query:       HACA_9  [CLEN=212]
 Hit scores:
@@ -6692,7 +6692,7 @@ Windows passing local HMM Viterbi  filter:             134  (0.0006973); expecte
 Windows passing local HMM Forward  filter:               8  (4.741e-05); expected (1e-05)
 Total HMM hits reported:                                 7  (8.854e-06)
 
-# CPU time: 1.84u 0.47s 00:00:02.31 Elapsed: 00:00:00.29
+# CPU time: 1.66u 0.60s 00:00:02.25 Elapsed: 00:00:00.28
 //
 Query:       CD_29  [CLEN=115]
 Hit scores:
@@ -6723,7 +6723,7 @@ Envelopes passing glocal HMM envelope defn filter:             591  (0.001125); 
 Envelopes passing  local CM  CYK           filter:              46  (5.412e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 11.56u 0.46s 00:00:12.02 Elapsed: 00:00:00.53
+# CPU time: 11.29u 0.53s 00:00:11.81 Elapsed: 00:00:00.56
 //
 Query:       CD_3  [CLEN=99]
 Hit scores:
@@ -6771,7 +6771,7 @@ Envelopes passing glocal HMM envelope defn filter:            1233  (0.002039); 
 Envelopes passing  local CM  CYK           filter:             160  (0.0001935); expected (0.0001)
 Total CM hits reported:                                          1  (1.274e-06); includes 0 truncated hit(s)
 
-# CPU time: 19.42u 0.26s 00:00:19.68 Elapsed: 00:00:00.98
+# CPU time: 18.29u 0.52s 00:00:18.80 Elapsed: 00:00:00.93
 //
 Query:       CD_52  [CLEN=158]
 Hit scores:
@@ -6802,7 +6802,7 @@ Envelopes passing glocal HMM envelope defn filter:             327  (0.0007971);
 Envelopes passing  local CM  CYK           filter:             107  (0.0001507); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 17.52u 0.41s 00:00:17.93 Elapsed: 00:00:00.82
+# CPU time: 16.86u 0.73s 00:00:17.59 Elapsed: 00:00:00.87
 //
 Query:       CD_72  [CLEN=191]
 Hit scores:
@@ -6833,7 +6833,7 @@ Envelopes passing glocal HMM envelope defn filter:             200  (0.0006); ex
 Envelopes passing  local CM  CYK           filter:              29  (4.538e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 13.58u 0.74s 00:00:14.32 Elapsed: 00:00:00.75
+# CPU time: 13.32u 0.88s 00:00:14.20 Elapsed: 00:00:00.80
 //
 Query:       HACA_12  [CLEN=295]
 Hit scores:
@@ -6974,7 +6974,7 @@ Envelopes passing glocal HMM envelope defn filter:             219  (0.001039); 
 Envelopes passing  local CM  CYK           filter:              47  (6.83e-05); expected (0.0001)
 Total CM hits reported:                                          6  (1.038e-05); includes 0 truncated hit(s)
 
-# CPU time: 45.75u 1.80s 00:00:47.55 Elapsed: 00:00:02.24
+# CPU time: 43.56u 1.55s 00:00:45.11 Elapsed: 00:00:01.97
 //
 Query:       HACA_13  [CLEN=208]
 Hit scores:
@@ -7129,7 +7129,7 @@ Envelopes passing glocal HMM envelope defn filter:             289  (0.001103); 
 Envelopes passing  local CM  CYK           filter:              67  (0.0001624); expected (0.0001)
 Total CM hits reported:                                          6  (1.396e-05); includes 0 truncated hit(s)
 
-# CPU time: 29.88u 1.00s 00:00:30.88 Elapsed: 00:00:01.59
+# CPU time: 29.03u 1.32s 00:00:30.35 Elapsed: 00:00:01.55
 //
 Query:       HACA_17  [CLEN=167]
 Hit scores:
@@ -7183,7 +7183,7 @@ Envelopes passing glocal HMM envelope defn filter:             164  (0.0004548);
 Envelopes passing  local CM  CYK           filter:              23  (3.449e-05); expected (0.0001)
 Total CM hits reported:                                          1  (2.387e-06); includes 0 truncated hit(s)
 
-# CPU time: 12.79u 0.15s 00:00:12.94 Elapsed: 00:00:00.55
+# CPU time: 12.51u 0.56s 00:00:13.07 Elapsed: 00:00:00.56
 //
 Query:       HACA_1  [CLEN=144]
 Hit scores:
@@ -7251,7 +7251,7 @@ Envelopes passing glocal HMM envelope defn filter:             105  (0.0002968);
 Envelopes passing  local CM  CYK           filter:              25  (5.177e-05); expected (0.0001)
 Total CM hits reported:                                          2  (3.218e-06); includes 0 truncated hit(s)
 
-# CPU time: 8.15u 0.22s 00:00:08.37 Elapsed: 00:00:00.52
+# CPU time: 7.77u 0.26s 00:00:08.02 Elapsed: 00:00:00.41
 //
 Query:       HACA_20  [CLEN=168]
 Hit scores:
@@ -7282,7 +7282,7 @@ Envelopes passing glocal HMM envelope defn filter:             230  (0.0006029);
 Envelopes passing  local CM  CYK           filter:              11  (2.053e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 12.35u 0.46s 00:00:12.81 Elapsed: 00:00:00.76
+# CPU time: 12.02u 0.62s 00:00:12.63 Elapsed: 00:00:00.69
 //
 Query:       HACA_22  [CLEN=195]
 Hit scores:
@@ -7313,7 +7313,7 @@ Envelopes passing glocal HMM envelope defn filter:             146  (0.0004452);
 Envelopes passing  local CM  CYK           filter:               8  (1.041e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 12.33u 0.35s 00:00:12.68 Elapsed: 00:00:00.56
+# CPU time: 11.63u 0.16s 00:00:11.79 Elapsed: 00:00:00.47
 //
 Query:       HACA_24  [CLEN=176]
 Hit scores:
@@ -7361,7 +7361,7 @@ Envelopes passing glocal HMM envelope defn filter:             128  (0.0003364);
 Envelopes passing  local CM  CYK           filter:               7  (1.034e-05); expected (0.0001)
 Total CM hits reported:                                          1  (1.381e-06); includes 0 truncated hit(s)
 
-# CPU time: 9.20u 0.28s 00:00:09.47 Elapsed: 00:00:00.43
+# CPU time: 8.75u 0.13s 00:00:08.88 Elapsed: 00:00:00.42
 //
 Query:       HACA_25  [CLEN=224]
 Hit scores:
@@ -7392,7 +7392,7 @@ Envelopes passing glocal HMM envelope defn filter:             187  (0.000649); 
 Envelopes passing  local CM  CYK           filter:              41  (7.396e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 17.98u 1.07s 00:00:19.05 Elapsed: 00:00:00.82
+# CPU time: 17.36u 1.22s 00:00:18.57 Elapsed: 00:00:00.79
 //
 Query:       HACA_28  [CLEN=199]
 Hit scores:
@@ -7440,7 +7440,7 @@ Envelopes passing glocal HMM envelope defn filter:             160  (0.0004934);
 Envelopes passing  local CM  CYK           filter:              31  (6.72e-05); expected (0.0001)
 Total CM hits reported:                                          1  (2.092e-06); includes 0 truncated hit(s)
 
-# CPU time: 12.72u 0.31s 00:00:13.03 Elapsed: 00:00:00.73
+# CPU time: 12.32u 0.53s 00:00:12.85 Elapsed: 00:00:00.74
 //
 Query:       HACA_29  [CLEN=165]
 Hit scores:
@@ -7471,7 +7471,7 @@ Envelopes passing glocal HMM envelope defn filter:             134  (0.0003461);
 Envelopes passing  local CM  CYK           filter:              25  (5.075e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 9.52u 0.13s 00:00:09.65 Elapsed: 00:00:00.43
+# CPU time: 9.15u 0.18s 00:00:09.33 Elapsed: 00:00:00.42
 //
 Query:       HACA_30  [CLEN=307]
 Hit scores:
@@ -7519,7 +7519,7 @@ Envelopes passing glocal HMM envelope defn filter:             180  (0.0008359);
 Envelopes passing  local CM  CYK           filter:              23  (4.416e-05); expected (0.0001)
 Total CM hits reported:                                          1  (1.582e-06); includes 0 truncated hit(s)
 
-# CPU time: 29.98u 1.58s 00:00:31.56 Elapsed: 00:00:01.35
+# CPU time: 28.56u 1.17s 00:00:29.72 Elapsed: 00:00:01.23
 //
 Query:       HACA_31  [CLEN=269]
 Hit scores:
@@ -7550,7 +7550,7 @@ Envelopes passing glocal HMM envelope defn filter:             131  (0.0005283);
 Envelopes passing  local CM  CYK           filter:               8  (1.342e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 22.52u 1.04s 00:00:23.56 Elapsed: 00:00:00.96
+# CPU time: 21.22u 0.76s 00:00:21.98 Elapsed: 00:00:00.89
 //
 Query:       HACA_35  [CLEN=182]
 Hit scores:
@@ -7581,7 +7581,7 @@ Envelopes passing glocal HMM envelope defn filter:             148  (0.0004282);
 Envelopes passing  local CM  CYK           filter:              21  (5.348e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 14.04u 0.20s 00:00:14.23 Elapsed: 00:00:00.63
+# CPU time: 13.41u 0.20s 00:00:13.61 Elapsed: 00:00:00.63
 //
 Query:       HACA_36  [CLEN=1010]
 Hit scores:
@@ -7612,7 +7612,7 @@ Envelopes passing glocal HMM envelope defn filter:             115  (0.001672); 
 Envelopes passing  local CM  CYK           filter:              28  (7.207e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 224.76u 3.74s 00:03:48.50 Elapsed: 00:00:08.38
+# CPU time: 213.93u 4.01s 00:03:37.94 Elapsed: 00:00:07.77
 //
 Query:       HACA_38  [CLEN=191]
 Hit scores:
@@ -7643,7 +7643,7 @@ Envelopes passing glocal HMM envelope defn filter:             171  (0.000513); 
 Envelopes passing  local CM  CYK           filter:               6  (9.254e-06); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 12.44u 0.11s 00:00:12.55 Elapsed: 00:00:00.57
+# CPU time: 12.22u 0.40s 00:00:12.62 Elapsed: 00:00:00.67
 //
 Query:       HACA_39  [CLEN=164]
 Hit scores:
@@ -7674,7 +7674,7 @@ Envelopes passing glocal HMM envelope defn filter:             124  (0.0003318);
 Envelopes passing  local CM  CYK           filter:              15  (2.901e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 9.90u 0.18s 00:00:10.08 Elapsed: 00:00:00.48
+# CPU time: 9.14u 0.20s 00:00:09.34 Elapsed: 00:00:00.47
 //
 Query:       HACA_3  [CLEN=197]
 Hit scores:
@@ -7909,7 +7909,7 @@ Envelopes passing glocal HMM envelope defn filter:             152  (0.0004768);
 Envelopes passing  local CM  CYK           filter:              24  (5.366e-05); expected (0.0001)
 Total CM hits reported:                                         10  (1.816e-05); includes 0 truncated hit(s)
 
-# CPU time: 15.03u 0.21s 00:00:15.24 Elapsed: 00:00:00.97
+# CPU time: 14.22u 0.15s 00:00:14.37 Elapsed: 00:00:00.94
 //
 Query:       HACA_40  [CLEN=547]
 Hit scores:
@@ -7950,7 +7950,7 @@ Envelopes passing glocal HMM envelope defn filter:              92  (0.0008205);
 Envelopes passing  local CM  CYK           filter:              11  (3.792e-05); expected (0.0001)
 Total CM hits reported:                                          1  (8.311e-07); includes 0 truncated hit(s)
 
-# CPU time: 52.82u 2.79s 00:00:55.61 Elapsed: 00:00:02.58
+# CPU time: 52.37u 3.52s 00:00:55.89 Elapsed: 00:00:02.42
 //
 Query:       HACA_41  [CLEN=580]
 Hit scores:
@@ -8004,7 +8004,7 @@ Envelopes passing glocal HMM envelope defn filter:              75  (0.0006571);
 Envelopes passing  local CM  CYK           filter:              26  (9.194e-05); expected (0.0001)
 Total CM hits reported:                                          2  (2.614e-06); includes 0 truncated hit(s)
 
-# CPU time: 54.64u 3.37s 00:00:58.01 Elapsed: 00:00:02.78
+# CPU time: 53.11u 2.52s 00:00:55.63 Elapsed: 00:00:02.63
 //
 Query:       HACA_43  [CLEN=183]
 Hit scores:
@@ -8052,7 +8052,7 @@ Envelopes passing glocal HMM envelope defn filter:             236  (0.00076); e
 Envelopes passing  local CM  CYK           filter:              43  (8.348e-05); expected (0.0001)
 Total CM hits reported:                                          1  (2.025e-06); includes 0 truncated hit(s)
 
-# CPU time: 19.32u 0.14s 00:00:19.46 Elapsed: 00:00:00.77
+# CPU time: 18.36u 0.24s 00:00:18.59 Elapsed: 00:00:00.87
 //
 Query:       HACA_46  [CLEN=157]
 Hit scores:
@@ -8083,7 +8083,7 @@ Envelopes passing glocal HMM envelope defn filter:             281  (0.0006876);
 Envelopes passing  local CM  CYK           filter:               6  (1.025e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 11.77u 0.36s 00:00:12.13 Elapsed: 00:00:00.50
+# CPU time: 11.14u 0.50s 00:00:11.64 Elapsed: 00:00:00.52
 //
 Query:       HACA_47  [CLEN=143]
 Hit scores:
@@ -8124,7 +8124,7 @@ Envelopes passing glocal HMM envelope defn filter:             336  (0.0007665);
 Envelopes passing  local CM  CYK           filter:              15  (2.107e-05); expected (0.0001)
 Total CM hits reported:                                          1  (9.523e-07); includes 0 truncated hit(s)
 
-# CPU time: 10.89u 0.46s 00:00:11.35 Elapsed: 00:00:00.52
+# CPU time: 10.28u 0.38s 00:00:10.66 Elapsed: 00:00:00.47
 //
 Query:       HACA_48  [CLEN=152]
 Hit scores:
@@ -8155,7 +8155,7 @@ Envelopes passing glocal HMM envelope defn filter:             341  (0.0008124);
 Envelopes passing  local CM  CYK           filter:              30  (4.555e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 12.31u 0.20s 00:00:12.51 Elapsed: 00:00:00.52
+# CPU time: 12.15u 0.56s 00:00:12.71 Elapsed: 00:00:00.50
 //
 Query:       HACA_50  [CLEN=144]
 Hit scores:
@@ -8186,7 +8186,7 @@ Envelopes passing glocal HMM envelope defn filter:             442  (0.001018); 
 Envelopes passing  local CM  CYK           filter:              10  (1.337e-05); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 12.82u 0.37s 00:00:13.19 Elapsed: 00:00:00.53
+# CPU time: 12.42u 0.43s 00:00:12.85 Elapsed: 00:00:00.50
 //
 Query:       HACA_51  [CLEN=185]
 Hit scores:
@@ -8217,7 +8217,7 @@ Envelopes passing glocal HMM envelope defn filter:             480  (0.001411); 
 Envelopes passing  local CM  CYK           filter:              11  (9.495e-06); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 26.56u 0.57s 00:00:27.13 Elapsed: 00:00:01.07
+# CPU time: 25.45u 0.37s 00:00:25.82 Elapsed: 00:00:00.93
 //
 Query:       HACA_52  [CLEN=187]
 Hit scores:
@@ -8318,7 +8318,7 @@ Envelopes passing glocal HMM envelope defn filter:             461  (0.001391); 
 Envelopes passing  local CM  CYK           filter:              18  (1.919e-05); expected (0.0001)
 Total CM hits reported:                                          4  (6.545e-06); includes 0 truncated hit(s)
 
-# CPU time: 26.59u 0.78s 00:00:27.37 Elapsed: 00:00:01.45
+# CPU time: 25.63u 0.40s 00:00:26.02 Elapsed: 00:00:01.29
 //
 Query:       HACA_53  [CLEN=212]
 Hit scores:
@@ -8359,7 +8359,7 @@ Envelopes passing glocal HMM envelope defn filter:             238  (0.0007738);
 Envelopes passing  local CM  CYK           filter:              16  (3.055e-05); expected (0.0001)
 Total CM hits reported:                                          1  (1.234e-06); includes 0 truncated hit(s)
 
-# CPU time: 18.41u 0.67s 00:00:19.08 Elapsed: 00:00:00.79
+# CPU time: 17.79u 0.45s 00:00:18.23 Elapsed: 00:00:00.77
 //
 Query:       HACA_54  [CLEN=207]
 Hit scores:
@@ -8390,7 +8390,7 @@ Envelopes passing glocal HMM envelope defn filter:             144  (0.0004604);
 Envelopes passing  local CM  CYK           filter:               2  (3.071e-06); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 13.51u 0.24s 00:00:13.75 Elapsed: 00:00:00.55
+# CPU time: 12.91u 0.14s 00:00:13.05 Elapsed: 00:00:00.50
 //
 Query:       HACA_55  [CLEN=222]
 Hit scores:
@@ -8421,7 +8421,7 @@ Envelopes passing glocal HMM envelope defn filter:             379  (0.001316); 
 Envelopes passing  local CM  CYK           filter:               7  (6.84e-06); expected (0.0001)
 Total CM hits reported:                                          0  (0); includes 0 truncated hit(s)
 
-# CPU time: 28.89u 1.10s 00:00:29.99 Elapsed: 00:00:01.24
+# CPU time: 27.52u 0.73s 00:00:28.25 Elapsed: 00:00:01.11
 //
 Query:       HACA_7  [CLEN=171]
 Hit scores:
@@ -8502,6 +8502,6 @@ Envelopes passing glocal HMM envelope defn filter:             334  (0.0009027);
 Envelopes passing  local CM  CYK           filter:              59  (0.0001049); expected (0.0001)
 Total CM hits reported:                                          3  (5.163e-06); includes 0 truncated hit(s)
 
-# CPU time: 17.42u 0.37s 00:00:17.79 Elapsed: 00:00:00.69
+# CPU time: 17.06u 0.56s 00:00:17.61 Elapsed: 00:00:00.67
 //
 [ok]

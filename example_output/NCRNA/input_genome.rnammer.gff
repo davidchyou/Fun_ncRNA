@@ -1,9 +1,9 @@
+scaffold_16	RNAmmer-1.2	18s_rRNA	50428	52333	440.8	+	.	rRNA
+scaffold_21	RNAmmer-1.2	18s_rRNA	939	1994	126.2	+	.	rRNA
+scaffold_16	RNAmmer-1.2	18s_rRNA	36576	38302	446.9	+	.	rRNA
 scaffold_16	RNAmmer-1.2	8s_rRNA	33130	33243	63.8	+	.	rRNA
 scaffold_16	RNAmmer-1.2	8s_rRNA	47482	47595	63.8	+	.	rRNA
 scaffold_16	RNAmmer-1.2	28s_rRNA	28154	32532	694.2	+	.	rRNA
-scaffold_16	RNAmmer-1.2	28s_rRNA	43358	47192	3409.4	+	.	rRNA
 scaffold_19	RNAmmer-1.2	28s_rRNA	1	3482	3331.7	-	.	rRNA
 scaffold_20	RNAmmer-1.2	28s_rRNA	1131	4010	1944.8	+	.	rRNA
-scaffold_21	RNAmmer-1.2	18s_rRNA	939	1994	126.2	+	.	rRNA
-scaffold_16	RNAmmer-1.2	18s_rRNA	36576	38302	446.9	+	.	rRNA
-scaffold_16	RNAmmer-1.2	18s_rRNA	50428	52333	440.8	+	.	rRNA
+scaffold_16	RNAmmer-1.2	28s_rRNA	43358	47192	3409.4	+	.	rRNA

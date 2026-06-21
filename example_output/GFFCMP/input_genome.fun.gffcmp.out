@@ -3,7 +3,7 @@
 #
 
 #= Summary for dataset: example_output/GFFCMP/input_genome.fun.gffcmp.gtf 
-#     Query mRNAs :     342 in     334 loci  (0 multi-exon transcripts)
+#     Query mRNAs :     337 in     334 loci  (0 multi-exon transcripts)
 #            (0 multi-transcript loci, ~1.0 transcripts per locus)
 # Reference mRNAs :   14750 in   13315 loci  (13596 multi-exon)
 # Super-loci w/ reference transcripts:       22
@@ -20,10 +20,10 @@ Intron chain level:     0.0     |    -nan    |
               Matching loci:       0
 
           Missed exons:   81340/81367	(100.0%)
-           Novel exons:     319/342	( 93.3%)
+           Novel exons:     314/337	( 93.2%)
         Missed introns:   66225/66225	(100.0%)
            Missed loci:   13293/13315	( 99.8%)
             Novel loci:     311/334	( 93.1%)
 
  Total union super-loci across all input datasets: 333 
-342 out of 342 consensus transcripts written in example_output/GFFCMP/input_genome.fun.gffcmp.annotated.gtf (0 discarded as redundant)
+337 out of 337 consensus transcripts written in example_output/GFFCMP/input_genome.fun.gffcmp.annotated.gtf (0 discarded as redundant)

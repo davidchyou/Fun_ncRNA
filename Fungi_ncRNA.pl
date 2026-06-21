@@ -309,7 +309,7 @@ if (-e "$outdir/GFFCMP/input_genome.fun.gffcmp.input_genome.fun.gffcmp.gtf.tmap"
 		my $cov = $toks[9];
 		
 		if (($code_interp{$loc} eq "Reference match") or ($code_interp{$loc} eq "Reference overlap") or ($code_interp{$loc} eq "Antisense to reference")) {
-			print OVERLAP_TMAP "$id_1\t$id_2\t$loc\t$cov\n";
+			print OVERLAP_TMAP "$line\n";
 			if (not exists $oid{$id_1}) {
 				$oid{$id_1} = 1;
 			}

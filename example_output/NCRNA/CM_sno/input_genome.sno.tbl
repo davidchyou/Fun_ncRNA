@@ -413,5 +413,5 @@ scaffold_3           -         HACA_7               -          cm        1      
 # Target file:     ./data/CopciAB_new_jgi_20220113.fasta
 # Option settings: cmsearch --tblout example_output/NCRNA/CM_sno/input_genome.sno.tbl --cpu 128 /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/sno_u3_cm/sno.cm ./data/CopciAB_new_jgi_20220113.fasta 
 # Current dir:     /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026
-# Date:            Tue Jun 16 18:30:33 2026
+# Date:            Sun Jun 21 22:48:40 2026
 # [ok]
