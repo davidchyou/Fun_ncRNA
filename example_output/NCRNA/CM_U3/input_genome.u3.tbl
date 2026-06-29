@@ -1,15 +1,18 @@
 #target name         accession query name                 accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
 #------------------- --------- -------------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
-scaffold_11          -         basidiomycota_U3_precursor -         hmm        2      240   299121   298900      -     -    6 0.48   0.0  119.3   3.8e-34 !   -
-scaffold_1           -         basidiomycota_U3_precursor -         hmm       12      240  2913677  2913882      +     -    6 0.49   0.0  111.7   8.7e-32 !   -
-scaffold_5           -         basidiomycota_U3_precursor -         hmm       73      168  1986891  1986788      -     -    6 0.48   0.0   12.9      0.22 ?   -
+NW_026260976.1       -         basidiomycota_U3_precursor -         hmm        2      240     1446     1220      -     -    6 0.51   0.0  125.4   7.9e-36 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_195, whole genome shotgun sequence
+NW_026260805.1       -         basidiomycota_U3_precursor -         hmm        2      240   480848   480622      -     -    6 0.50   0.0  125.2   9.4e-36 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_24, whole genome shotgun sequence
+NW_026260797.1       -         basidiomycota_U3_precursor -         hmm        2      240   134325   134099      -     -    6 0.49   0.0  121.6   1.2e-34 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_16, whole genome shotgun sequence
+NW_026261002.1       -         basidiomycota_U3_precursor -         hmm        2      240     7709     7482      -     -    6 0.50   0.0  120.3     3e-34 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_221, whole genome shotgun sequence
+NW_026260783.1       -         basidiomycota_U3_precursor -         hmm        2      240  2310390  2310165      -     -    6 0.47   0.0  111.7   1.4e-31 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_2, whole genome shotgun sequence
+NW_026260972.1       -         basidiomycota_U3_precursor -         hmm        2      240    15574    15349      -     -    6 0.47   0.0  111.7   1.4e-31 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_191, whole genome shotgun sequence
 #
 # Program:         cmsearch
 # Version:         1.1.5 (Sep 2023)
 # Pipeline mode:   SEARCH
 # Query file:      /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/sno_u3_cm/u3.cm
-# Target file:     ./data/CopciAB_new_jgi_20220113.fasta
-# Option settings: cmsearch --tblout example_output/NCRNA/CM_U3/input_genome.u3.tbl --cpu 128 /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/sno_u3_cm/u3.cm ./data/CopciAB_new_jgi_20220113.fasta 
+# Target file:     ./data/GCF_024613125.1_Pisori2_genomic.fna
+# Option settings: cmsearch --tblout example_output/NCRNA/CM_U3/input_genome.u3.tbl --cpu 128 /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/sno_u3_cm/u3.cm ./data/GCF_024613125.1_Pisori2_genomic.fna 
 # Current dir:     /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026
-# Date:            Sun Jun 21 22:48:41 2026
+# Date:            Mon Jun 29 23:18:20 2026
 # [ok]

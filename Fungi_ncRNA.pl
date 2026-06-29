@@ -156,11 +156,13 @@ if (($merge_separately > 0) and ((-e "$outdir/NCRNA/input_genome.rnammer.gff") o
 }
 
 my $new_fun_gff = "$outdir/input_genome.ncrna.gff";
+my $new_fun_bed = "$outdir/input_genome.ncrna.bed";
 my $new_fun_gff_safe = "$outdir/input_genome.ncrna.compatible.gff";
 my $new_fun_gff_assm = "$outdir/NCRNA/input_genome.all.nr.assm.gff";
 
 my $count = 0;
 open(NEWGFF, ">$new_fun_gff");
+open(NEWBED, ">$new_fun_bed");
 open(NEWGFF_SAFE, ">$new_fun_gff_safe");
 open(ASSMGFF, ">$new_fun_gff_assm");
 open(FUNGFF, "$outdir/NCRNA/input_genome.all.nr.gff");
@@ -170,7 +172,11 @@ while(my $line = <FUNGFF>) {
 	my @toks = split(/[\t]/, $line);
 	my $contig = $toks[0];
 	my $app = $toks[1];
-	my $type = $toks[2]; 
+	my $type = $toks[2];
+	my $start = $toks[3];
+	my $end = $toks[4];
+	my $score = $toks[5];
+	my $strand = $toks[6];
 	$count++;
 	
 	my $id = "$contig.$type.$count";
@@ -232,11 +238,13 @@ while(my $line = <FUNGFF>) {
 	}
 	
 	print ASSMGFF "$line\t$id\t$assm\t$class\n";
+	print NEWBED "$contig\t$start\t$end\t$id\t$score\t$strand\n";
 	
 }
 close(FUNGFF);
 close(ASSMGFF);
 close(NEWGFF_SAFE);
+close(NEWBED);
 close(NEWGFF);
 
 if (($gffcmp > 0) and (-e $gff_in)) {

@@ -239,6 +239,7 @@ Main output files:
 | File                                        | Description                                                                                                                              |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | `input_genome.ncrna.gff`                    | Final predicted ncRNA annotation in GFF-like gene/exon format.                                                                           |
+| `input_genome.ncrna.bed`                    | Final predicted ncRNA annotation in BED format. Useful for generating an IGV report.                                                     |
 | `input_genome.gff`                          | Copy of the input GFF annotation, if `-gff` was supplied.                                                                                |
 | `input_genome.combined.gff`                 | Combined input annotation and predicted ncRNA annotation, sorted by contig and genomic start position. Produced when `-gff` is supplied. |
 | `input_genome.ncrna.compatible.gff`         | Final predicted ncRNA annotation in GFF-like gene/mRNA/exon/CDS format. Useful when downstream software requires mRNA and CDS features.  |
@@ -376,6 +377,15 @@ cmsearch -h
 
 The script removes and recreates the output directory if it already exists. To avoid losing previous results, always choose a new `-out` directory or back up the existing directory before rerunning.
 
+### Reference annotation file cannot be processed, if provided:
+
+A reference annotation file is required for merging ncRNA predictions with the referencing annotation, to excluding overlapping coding genes for RNASeq analyses. A reference annotation file need to be in GFF format. If it is in GFF format and it still cannot be processed, chances are that features are not presented following the NCBI-style gene/mRNA/exon/CDS formatting.
+
+A common example is a JGI-formatted annotation file, which is in GFF format but features are recorded following a unique formatting. A Perl script `ReformatJGIGFF.pl` is provided, for converting JGI-formatted GFF annotation to the NCBI-style gene/mRNA/exon/CDS formatting.
+
+```bash
+perl ReformatJGIGFF.pl input_jgi.gff output_ncbi.gff
+```
 
 ## Citation
 

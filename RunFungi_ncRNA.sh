@@ -13,8 +13,8 @@
 source ~/miniforge3/etc/profile.d/conda.sh
 conda activate /projects/health_sciences/bms/biochemistry/brown_lab/davidc/Fun_ncRNA_dependencies
 
-fna_path="./data/CopciAB_new_jgi_20220113.fasta"
-gff_path="./data/CopciAB_new_jgi_20220113.gtf"
+fna_path="./data/GCF_024613125.1_Pisori2_genomic.fna"
+gff_path="./data/GCF_024613125.1_Pisori2_genomic.gff"
 class="Agaricomycetes"
 outdir="example_output"
 

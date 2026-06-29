@@ -1,17 +1,16 @@
 #target name         accession query name           accession mdl mdl from   mdl to seq from   seq to strand trunc pass   gc  bias  score   E-value inc description of target
 #------------------- --------- -------------------- --------- --- -------- -------- -------- -------- ------ ----- ---- ---- ----- ------ --------- --- ---------------------
-scaffold_2           -         SRP_Basido           -          cm        1      269  2962131  2961867      -    no    1 0.55   0.0  271.4   1.2e-86 !   -
-scaffold_1           -         SRP_Basido           -          cm        1      269  3736323  3736216      -    no    1 0.46   0.0   10.2       8.1 ?   -
-scaffold_11          -         SRP_Basido           -          cm        1      269     9455     9500      +    no    1 0.43   0.0    9.9       9.9 ?   -
-scaffold_11          -         SRP_Basido           -          cm        1      269    47388    47433      +    no    1 0.43   0.0    9.9       9.9 ?   -
-scaffold_13          -         SRP_Basido           -          cm        1      269    29807    29852      +    no    1 0.43   0.0    9.9       9.9 ?   -
+NW_026260995.1       -         SRP_Basido           -          cm        1      269     6484     6215      -    no    1 0.53   0.0  263.6   7.3e-84 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_214, whole genome shotgun sequence
+NW_026260791.1       -         SRP_Basido           -          cm        1      269   374378   374109      -    no    1 0.54   0.0  254.8   6.5e-81 !   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_10, whole genome shotgun sequence
+NW_026260792.1       -         SRP_Basido           -          cm      166      182   843684   843668      -    no    1 0.53   0.0   11.3       5.5 ?   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_11, whole genome shotgun sequence
+NW_026261202.1       -         SRP_Basido           -          cm      166      182    10932    10916      -    no    1 0.53   0.0   11.3       5.5 ?   Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_421, whole genome shotgun sequence
 #
 # Program:         cmsearch
 # Version:         1.1.5 (Sep 2023)
 # Pipeline mode:   SEARCH
 # Query file:      /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/SRP_Basidio/SRP_Basidio.cm
-# Target file:     ./data/CopciAB_new_jgi_20220113.fasta
-# Option settings: cmsearch --tblout example_output/NCRNA/CM_SRP/input_genome.srp.tbl --cpu 128 /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/SRP_Basidio/SRP_Basidio.cm ./data/CopciAB_new_jgi_20220113.fasta 
+# Target file:     ./data/GCF_024613125.1_Pisori2_genomic.fna
+# Option settings: cmsearch --tblout example_output/NCRNA/CM_SRP/input_genome.srp.tbl --cpu 128 /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/SRP_Basidio/SRP_Basidio.cm ./data/GCF_024613125.1_Pisori2_genomic.fna 
 # Current dir:     /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026
-# Date:            Sun Jun 21 22:48:44 2026
+# Date:            Mon Jun 29 23:18:23 2026
 # [ok]

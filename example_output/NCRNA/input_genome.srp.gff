@@ -1,1 +1,2 @@
-scaffold_2	cmsearch	SRP_Basido	2961867	2962131	271.4	-	.	evalue=1.2e-86;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=269;trunc=no;pass=1;gc=0.55;bias=0.0;inc=!;desc=-
+NW_026260995.1	cmsearch	SRP_Basido	6215	6484	263.6	-	.	evalue=7.3e-84;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=269;trunc=no;pass=1;gc=0.53;bias=0.0;inc=!;desc=Pisolithus_orientalis_strain_OTSU_chromosome_Unknown_F5J12scaffold_214,_whole_genome_shotgun_sequence
+NW_026260791.1	cmsearch	SRP_Basido	374109	374378	254.8	-	.	evalue=6.5e-81;seqaccn=-;mdlaccn=-;mdl=cm;mdlfrom=1;mdlto=269;trunc=no;pass=1;gc=0.54;bias=0.0;inc=!;desc=Pisolithus_orientalis_strain_OTSU_chromosome_Unknown_F5J12scaffold_10,_whole_genome_shotgun_sequence

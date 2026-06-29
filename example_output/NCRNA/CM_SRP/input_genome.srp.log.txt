@@ -4,123 +4,124 @@
 # Freely distributed under the BSD open source license.
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # query CM file:                         /projects/health_sciences/bms/biochemistry/brown_lab/davidc/JGI_Fungal_Pipeline_2026/SRP_Basidio/SRP_Basidio.cm
-# target sequence database:              ./data/CopciAB_new_jgi_20220113.fasta
+# target sequence database:              ./data/GCF_024613125.1_Pisori2_genomic.fna
 # tabular output of hits:                example_output/NCRNA/CM_SRP/input_genome.srp.tbl
 # number of worker threads:              128 [--cpu]
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 Query:       SRP_Basido  [CLEN=269]
 Hit scores:
- rank     E-value  score  bias  sequence      start     end   mdl trunc   gc  description
- ----   --------- ------ -----  ----------- ------- -------   --- ----- ----  -----------
-  (1) !   1.2e-86  271.4   0.0  scaffold_2  2962131 2961867 -  cm    no 0.55  -
+ rank     E-value  score  bias  sequence        start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------------- ------ ------   --- ----- ----  -----------
+  (1) !   7.3e-84  263.6   0.0  NW_026260995.1   6484   6215 -  cm    no 0.53  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaff
+  (2) !   6.5e-81  254.8   0.0  NW_026260791.1 374378 374109 -  cm    no 0.54  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaff
  ------ inclusion threshold ------
-  (2) ?       8.1   10.2   0.0  scaffold_1  3736323 3736216 -  cm    no 0.46  -
-  (3) ?       9.9    9.9   0.0  scaffold_11    9455    9500 +  cm    no 0.43  -
-  (4) ?       9.9    9.9   0.0  scaffold_11   47388   47433 +  cm    no 0.43  -
-  (5) ?       9.9    9.9   0.0  scaffold_13   29807   29852 +  cm    no 0.43  -
+  (3) ?       5.5   11.3   0.0  NW_026260792.1 843684 843668 -  cm    no 0.53  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaff
+  (4) ?       5.5   11.3   0.0  NW_026261202.1  10932  10916 -  cm    no 0.53  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaff
 
 
 Hit alignments:
->> scaffold_2  
+>> NW_026260995.1  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_214, whole genome shotgun sequence
  rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
  ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
-  (1) !   1.2e-86  271.4   0.0  cm        1      269 []     2962131     2961867 - .. 0.99    no 0.55
+  (1) !   7.3e-84  263.6   0.0  cm        1      269 []        6484        6215 - .. 0.98    no 0.53
 
-                                                        v            v                                           NC
-                     :<<<<<___>>>>>------------[[[[[[[-[[[--------[[[[-----[[-----[[[[[------------[[[[[,,,,,,,, CS
-  SRP_Basido       1 uGGCUgUAAcGGCCcuaAaccGGGAAUGcGgggugguuuuuuuCAgCGgauuaacccauuaGcGCGCUGGUUCAAGaCcgcCCCCUCCAGA 91     
-                     +GGCU:U A:GGCC  AA +CGGGAAU:CGG:: G UUU+U+UCAGCG  UU  :CCAU+AG:GCGCUGGUUCAAGAC:G:CCCCUCCAGA
-  scaffold_2 2962131 CGGCUGUCAUGGCCGCAACUCGGGAAUGCGGAC-GCUUUAUCUCAGCGGGUU-CUCCAUCAGUGCGCUGGUUCAAGACUGUCCCCUCCAGA 2962043
-                     *********************************.***************988.9************************************* PP
+                                                                                                                    NC
+                      :<<<<<___>>>>>------------[[[[[[[-[[[--------[[[[-----[[-----[[[[[------------[[[[[,,,,,,,,,( CS
+      SRP_Basido    1 uGGCUgUAAcGGCCcuaAaccGGGAAUGcGgggugguuuuuuuCAgCGgauuaacccauuaGcGCGCUGGUUCAAGaCcgcCCCCUCCAGAAa 93  
+                      +G CUGUAACGG CCU  A+CGGGAAUGCG::GUGGU U+  UCA:CG:A+U A:CCA+ AG:GCGCUGGUUCAAGAC:G:CCCCUCCAGAAA
+  NW_026260995.1 6484 CGGCUGUAACGGUCCUCCAUCGGGAAUGCGAGGUGGUGUACGUCAGCGAACUCAUCCACGAGUGCGCUGGUUCAAGACUGUCCCCUCCAGAAA 6392
+                      ********************************************************************************************* PP
 
-                                                                                         v                       NC
-                     ,(((-((((,,,,,,,,,,,,<<<<<<<____>>>>>>>,,,,,,,,,,,,,,,,,,,,<<<<<-<-<<<<----<<<<____>>>>---- CS
-  SRP_Basido      92 AaacUuGGcuuccacagucucccgccccGuAAggggugguuugggacuUgGAAUAAUcuguccuUgacagGCCAGGGAAGCAAUUCCGCAA 182    
-                     AAACUUGG:UUCCACAG C+C:CGC:CCGUAAGG:GUG:UUUG G CUUGGAAUAAU+UGUCCUUGAC GGCCAGGGAAGCAAUUCCGCAA
-  scaffold_2 2962042 AAACUUGGUUUCCACAGACCCUCGCGCCGUAAGGUGUGAUUUG-GUCUUGGAAUAAUUUGUCCUUGACUGGCCAGGGAAGCAAUUCCGCAA 2961953
-                     ****************************************877.5********************************************** PP
+                                                                                                                    NC
+                      ((-((((,,,,,,,..,,,,,<<<<<<<____>>>>>>>,,,,,,,,,,,,,,,,,,..,,<<<<<-<-<<<<----<<<<____>>>>---- CS
+      SRP_Basido   94 acUuGGcuuccaca..gucucccgccccGuAAggggugguuugggacuUgGAAUAAU..cuguccuUgacagGCCAGGGAAGCAAUUCCGCAA 182 
+                      ACUUGG:U +CA++  GUCU+ :GCC:CGUAAG:GGU: UU G GAC UGGAAUAA   ++G:CCUUG+C:GGCCAGGGAAGCAAUUCCGCA 
+  NW_026260995.1 6391 ACUUGGUUGUCAUUucGUCUUGUGCCUCGUAAGAGGUAUUU-G-GACAUGGAAUAAAauUGGACCUUGUCUGGCCAGGGAAGCAAUUCCGCAU 6301
+                      ************999*************************4.4.59999999998765599******************************** PP
 
-                       v                                                           v    v                    NC
-                     >>>>>>>>>>,,))))-))),<<<______>>>,,]]]]]-----------]]]]]----]]]]]]]]]]]]]]]]::::::::::: CS
-  SRP_Basido     183 CcugcaggacucgCCgAguuAgUCUUaGGAGAccAGGgcguGUCGUCaGuuCGCgCagugggcCGcgcccccCgCAAACCUUUUuuU 269    
-                     CC GCAGGACU+:CCGAGUUA:UCUU+GGAGA:CAGG:C:UGUCGUCAGU CGC:CAGUGG: CGCG C::CCG:AAACCUUUUU U
-  scaffold_2 2961952 CCUGCAGGACUUGCCGAGUUAGUCUUCGGAGAUCAGGGCAUGUCGUCAGU-CGCGCAGUGGAACGCGUCGUCCGUAAACCUUUUUGU 2961867
-                     **************************************************.************************************ PP
+                                                                                                              NC
+                      >>>>>>>>>>,,))))-))),<<<______>>>,,]]]]]-----------]]]]]----]]]]]]]]]]]]]]]]::::::::::: CS
+      SRP_Basido  183 CcugcaggacucgCCgAguuAgUCUUaGGAGAccAGGgcguGUCGUCaGuuCGCgCagugggcCGcgcccccCgCAAACCUUUUuuU 269 
+                      CC:GCAGG:C++:CCGAGUUA:UC UAGGAGA:CAGG:C: GUCGUCAG  CGC:CAGUGG::CG:GCCC::CGCAAACCUUUUU+U
+  NW_026260995.1 6300 CCAGCAGGUCCUGCCGAGUUAGUCGUAGGAGAUCAGGACACGUCGUCAGC-CGCGCAGUGGAUCGUGCCCUUCGCAAACCUUUUUAU 6215
+                      **************************************************.************************************ PP
 
->> scaffold_1  
+>> NW_026260791.1  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_10, whole genome shotgun sequence
  rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
  ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
-  (2) ?       8.1   10.2   0.0  cm        1      269 []     3736323     3736216 - .. 0.88    no 0.46
+  (2) !   6.5e-81  254.8   0.0  cm        1      269 []      374378      374109 - .. 0.98    no 0.54
 
-                      v  v     v  v                               vv                                             NC
-                     :<<<<<___>>>>>------------[[[[[[[-[[[--------[[[[-----[[-----[[[[[------------~~~~~~~--]]]] CS
-  SRP_Basido       1 uGGCUgUAAcGGCCcuaAaccGGGAAUGcGgggugguuuuuuuCAgCGgauuaacccauuaGcGCGCUGGUUCAAGaC*[153]*uuCGCg 237    
-                       G: GU AC :C   A A++ G AA       U ::UU U  CA   G+UU AC:+ U +G:GCGC GGUUC A  C       U CGC:
-  scaffold_1 3736323 AAGUGGUUACGGCGACAGAUUAG-AA-------UUCGUUCUACCAUCUGUUUCACUU-UGUGAGCGCAGGUUCGAAUC*[  9]*U-CGCU 3736241
-                     *************9887777665.44.......6999***************99985.567**************988....8..4.**** PP
+                                                                                                                  NC
+                        :<<<<<___>>>>>------------[[[[[[[-[[[--------[[[[-----[[-----[[[[[------------[[[[[,,,,,, CS
+      SRP_Basido      1 uGGCUgUAAcGGCCcuaAaccGGGAAUGcGgggugguuuuuuuCAgCGgauuaacccauuaGcGCGCUGGUUCAAGaCcgcCCCCUCCA 89    
+                        +G CUGUAACGG CCU  A+CGGGAAUGCG::GUGGU U+  UCAGCG:A+U A:CCA+ AG:GCGCU GUUCAAGAC:G:CCCCUCCA
+  NW_026260791.1 374378 CGGCUGUAACGGUCCUCCAUCGGGAAUGCGAGGUGGUGUACGUCAGCGAACUCAUCCACGAGUGCGCUAGUUCAAGACUGUCCCCUCCA 374290
+                        ***************************************************************************************** PP
 
-                              vv                      NC
-                     ]----]]]]]]]]]]]]]]]]::::::::::: CS
-  SRP_Basido     238 CagugggcCGcgcccccCgCAAACCUUUUuuU 269    
-                     C++UG:GC   ::         AC   UUUUU
-  scaffold_1 3736240 CUAUGAGCAUUCGG-------CACUCAUUUUU 3736216
-                     ***********999.......99988888899 PP
+                                                                                                                  NC
+                        ,,,(((-((((,,,,,,,..,,,,,<<<<<<<____>>>>>>>,,,,,,,,,,,,,,,,,,.,,<<<<<-<-<<<<----<<<<____> CS
+      SRP_Basido     90 GAAaacUuGGcuuccaca..gucucccgccccGuAAggggugguuugggacuUgGAAUAAU.cuguccuUgacagGCCAGGGAAGCAAU 175   
+                        GAAAACUUGG:U +CA++  GUCU+ :GCC:CGUAAG:GGU: UU G GAC UGGAAUAA  ++G:CCUUG+C:GGCCAGGGAAGCAAU
+  NW_026260791.1 374289 GAAAACUUGGUUGUCAUUucGUCUUGUGCCUCGUAAGAGGUAUUU-G-GACAUGGAAUAAAuUGGACCUUGUCUGGCCAGGGAAGCAAU 374203
+                        ****************999*************************4.4.5999999999876489************************* PP
 
->> scaffold_11  
+                                                                                                                  NC
+                        >>>---->>>>>>>>>>,,))))-))),<<<______>>>,,]]]]]-----------]]]]]----]]]]].]]]]]]]]]]]::::: CS
+      SRP_Basido    176 UCCGCAACcugcaggacucgCCgAguuAgUCUUaGGAGAccAGGgcguGUCGUCaGuuCGCgCagugggcCG.cgcccccCgCAAACCU 263   
+                        UCCGCA CC:GCAGG:C++:CCGAGUUA:UC UAGGAGA:CAGG:C: GUCGUCAG  CGC:CAGUGG::CG CGCCC::CGCAAACCU
+  NW_026260791.1 374202 UCCGCAUCCAGCAGGUCCUGCCGAGUUAGUCGUAGGAGAUCAGGACACGUCGUCAGC-CGCGCAGUGGAUCGuCGCCCUUCGCAAACCU 374115
+                        *********************************************************.**************55*************** PP
+
+                               NC
+                        :::::: CS
+      SRP_Basido    264 UUUuuU 269   
+                        UUUU+ 
+  NW_026260791.1 374114 UUUUAC 374109
+                        ****** PP
+
+>> NW_026260792.1  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_11, whole genome shotgun sequence
  rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
  ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
-  (3) ?       9.9    9.9   0.0  cm        1      269 []        9455        9500 + .. 0.94    no 0.43
+  (3) ?       5.5   11.3   0.0  cm      166      182 ..      843684      843668 - .. 1.00    no 0.53
 
-                                                             NC
-                   :<<<<<___>>>>>---------~~~~~~~::::::::::: CS
-   SRP_Basido    1 uGGCUgUAAcGGCCcuaAaccGG*[235]*AACCUUUUuuU 269 
-                   U:GCU:U  :GGC:CUAAAC GG        A C UU  +U
-  scaffold_11 9455 UGGCUGUGGUGGCUCUAAACAGG*[ 12]*GAGCAUUAACU 9500
-                   *****************999776....9..888******** PP
+                                          NC
+                        -<<<<____>>>>---- CS
+      SRP_Basido    166 GGGAAGCAAUUCCGCAA 182   
+                        GGG AGCAAU CCGCAA
+  NW_026260792.1 843684 GGGUAGCAAUACCGCAA 843668
+                        ***************** PP
 
->> scaffold_11  
+>> NW_026261202.1  Pisolithus orientalis strain OTSU chromosome Unknown F5J12scaffold_421, whole genome shotgun sequence
  rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
  ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
-  (4) ?       9.9    9.9   0.0  cm        1      269 []       47388       47433 + .. 0.94    no 0.43
+  (4) ?       5.5   11.3   0.0  cm      166      182 ..       10932       10916 - .. 1.00    no 0.53
 
-                                                              NC
-                    :<<<<<___>>>>>---------~~~~~~~::::::::::: CS
-   SRP_Basido     1 uGGCUgUAAcGGCCcuaAaccGG*[235]*AACCUUUUuuU 269  
-                    U:GCU:U  :GGC:CUAAAC GG        A C UU  +U
-  scaffold_11 47388 UGGCUGUGGUGGCUCUAAACAGG*[ 12]*GAGCAUUAACU 47433
-                    *****************999776....9..888******** PP
-
->> scaffold_13  
- rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
- ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
-  (5) ?       9.9    9.9   0.0  cm        1      269 []       29807       29852 + .. 0.94    no 0.43
-
-                                                              NC
-                    :<<<<<___>>>>>---------~~~~~~~::::::::::: CS
-   SRP_Basido     1 uGGCUgUAAcGGCCcuaAaccGG*[235]*AACCUUUUuuU 269  
-                    U:GCU:U  :GGC:CUAAAC GG        A C UU  +U
-  scaffold_13 29807 UGGCUGUGGUGGCUCUAAACAGG*[ 12]*GAGCAUUAACU 29852
-                    *****************999776....9..888******** PP
+                                         NC
+                       -<<<<____>>>>---- CS
+      SRP_Basido   166 GGGAAGCAAUUCCGCAA 182  
+                       GGG AGCAAU CCGCAA
+  NW_026261202.1 10932 GGGUAGCAAUACCGCAA 10916
+                       ***************** PP
 
 
 
 Internal CM pipeline statistics summary:
 ----------------------------------------
 Query model(s):                                                  1  (269 consensus positions)
-Target sequences:                                               21  (74542730 residues searched)
-Target sequences re-searched for truncated hits:                21  (28224 residues re-searched)
-Windows   passing  local HMM SSV           filter:           80680  (0.4174); expected (0.35)
-Windows   passing  local HMM Viterbi       filter:           22048  (0.1242); expected (0.15)
-Windows   passing  local HMM Viterbi  bias filter:           20996  (0.1184); expected (0.15)
-Windows   passing  local HMM Forward       filter:             959  (0.005627); expected (0.003)
-Windows   passing  local HMM Forward  bias filter:             922  (0.005428); expected (0.003)
-Windows   passing glocal HMM Forward       filter:             365  (0.002583); expected (0.003)
-Windows   passing glocal HMM Forward  bias filter:             364  (0.002577); expected (0.003)
-Envelopes passing glocal HMM envelope defn filter:             357  (0.001455); expected (0.003)
-Envelopes passing  local CM  CYK           filter:              63  (6.661e-05); expected (0.0001)
-Total CM hits reported:                                          5  (6.853e-06); includes 0 truncated hit(s)
+Target sequences:                                              537  (115994478 residues searched)
+Target sequences re-searched for truncated hits:               537  (721728 residues re-searched)
+Windows   passing  local HMM SSV           filter:          117698  (0.389); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:           30200  (0.1081); expected (0.15)
+Windows   passing  local HMM Viterbi  bias filter:           29548  (0.1059); expected (0.15)
+Windows   passing  local HMM Forward       filter:            1031  (0.003884); expected (0.003)
+Windows   passing  local HMM Forward  bias filter:            1010  (0.003808); expected (0.003)
+Windows   passing glocal HMM Forward       filter:             398  (0.001625); expected (0.003)
+Windows   passing glocal HMM Forward  bias filter:             393  (0.001603); expected (0.003)
+Envelopes passing glocal HMM envelope defn filter:             382  (0.0009851); expected (0.003)
+Envelopes passing  local CM  CYK           filter:              43  (2.835e-05); expected (0.0001)
+Total CM hits reported:                                          4  (4.918e-06); includes 0 truncated hit(s)
 
-# CPU time: 44.23u 2.19s 00:00:46.41 Elapsed: 00:00:03.10
+# CPU time: 49.39u 2.72s 00:00:52.11 Elapsed: 00:00:02.61
 //
 [ok]

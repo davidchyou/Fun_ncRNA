@@ -3,27 +3,27 @@
 #
 
 #= Summary for dataset: example_output/GFFCMP/input_genome.fun.gffcmp.gtf 
-#     Query mRNAs :     337 in     334 loci  (0 multi-exon transcripts)
-#            (0 multi-transcript loci, ~1.0 transcripts per locus)
-# Reference mRNAs :   14750 in   13315 loci  (13596 multi-exon)
-# Super-loci w/ reference transcripts:       22
+#     Query mRNAs :     577 in     519 loci  (0 multi-exon transcripts)
+#            (0 multi-transcript loci, ~1.1 transcripts per locus)
+# Reference mRNAs :   12436 in   11919 loci  (11172 multi-exon)
+# Super-loci w/ reference transcripts:      218
 #-----------------| Sensitivity | Precision  |
-        Base level:     0.0     |     8.9    |
-        Exon level:     0.0     |     0.0    |
+        Base level:     0.1     |     3.5    |
+        Exon level:     0.3     |    36.0    |
       Intron level:     0.0     |    -nan    |
 Intron chain level:     0.0     |    -nan    |
-  Transcript level:     0.0     |     0.0    |
-       Locus level:     0.0     |     0.0    |
+  Transcript level:     1.7     |    36.2    |
+       Locus level:     1.8     |    40.3    |
 
      Matching intron chains:       0
-       Matching transcripts:       0
-              Matching loci:       0
+       Matching transcripts:     209
+              Matching loci:     209
 
-          Missed exons:   81340/81367	(100.0%)
-           Novel exons:     314/337	( 93.2%)
-        Missed introns:   66225/66225	(100.0%)
-           Missed loci:   13293/13315	( 99.8%)
-            Novel loci:     311/334	( 93.1%)
+          Missed exons:   76693/76927	( 99.7%)
+           Novel exons:     358/577	( 62.0%)
+        Missed introns:   64439/64439	(100.0%)
+           Missed loci:   11701/11919	( 98.2%)
+            Novel loci:     301/519	( 58.0%)
 
- Total union super-loci across all input datasets: 333 
-337 out of 337 consensus transcripts written in example_output/GFFCMP/input_genome.fun.gffcmp.annotated.gtf (0 discarded as redundant)
+ Total union super-loci across all input datasets: 519 
+577 out of 577 consensus transcripts written in example_output/GFFCMP/input_genome.fun.gffcmp.annotated.gtf (0 discarded as redundant)

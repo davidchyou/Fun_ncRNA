@@ -1,16 +1,16 @@
-# Core ncRNAs were predicted with Fun_ncRNA (Chyou et al 2026). There were 11 snRNA, 35 snoRNA, 1 RNase P, 1 RNase MRP, 1 SRP, 268 tRNA and 18 rRNA predicted. Of the 18 rRNA, there were 2 5S rRNA, 7 LSU, 3 5.8S rRNA, and 6 SSU predicted. Typically functional rRNA units are found in tandem arrays of SSU-5.8S-LSU.
-U1	2	NA
-U2	3	NA
-U4	1	NA
+# Core ncRNAs were predicted with Fun_ncRNA (Chyou et al 2026). There were 16 snRNA, 36 snoRNA, 2 RNase P, 1 RNase MRP, 2 SRP, 240 tRNA and 278 rRNA predicted. Of the 278 rRNA, there were 15 5S rRNA, 100 LSU, 75 5.8S rRNA, and 88 SSU predicted. Typically functional rRNA units are found in tandem arrays of SSU-5.8S-LSU.
+U1	3	NA
+U2	7	NA
+U4	2	NA
 U5	1	NA
-U6	4	NA
+U6	3	NA
 U1_yeast	0	NA
-RNaseP_nuc	1	NA
+RNaseP_nuc	2	NA
 RNase_MRP	1	NA
-Fungi_SRP	1	NA
-snoRNA	35	NA
-tRNA	268	NA
-LSU_rRNA	7	NA
-SSU_rRNA	6	NA
-5S_rRNA	2	NA
-5.8S_rRNA	3	NA
+Fungi_SRP	2	NA
+snoRNA	36	NA
+tRNA	240	NA
+LSU_rRNA	100	NA
+SSU_rRNA	88	NA
+5S_rRNA	15	NA
+5.8S_rRNA	75	NA
